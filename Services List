@@ -1,0 +1,4340 @@
+# Definition of all the services we want to keep track of in the script
+# Along with their interface 1 destinations and interface 2 destinations
+
+services:
+    UKTV:
+        interface 1 sub: UKTV_SD-PO-SUB
+        interface 2 sub: UKTV_SD-PO-SUB
+        routable_sub: UKTV_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-1
+            - ART-DTH-ENC-112-DST-1R
+            - ART-DTH-ENC-122-DST-5
+            - ART-DTH-ENC-122-DST-5R
+            - ART-OTT-ENC-112-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-1
+            - OXF-DTH-ENC-112-DST-1R
+            - OXF-DTH-ENC-122-DST-5
+            - OXF-DTH-ENC-122-DST-5R
+            - OXF-DSR-ENC-122-DST-13
+            - OXF-DSR-ENC-124-DST-13
+            - OXF-OTT-ENC-112-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-1
+            - ART-DTH-ENC-112-DST-1R
+            - ART-DTH-ENC-122-DST-5
+            - ART-DTH-ENC-122-DST-5R
+            - ART-OTT-ENC-112-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-1
+            - OXF-DTH-ENC-112-DST-1R
+            - OXF-DTH-ENC-122-DST-5
+            - OXF-DTH-ENC-122-DST-5R
+            - OXF-DSR-ENC-122-DST-13
+            - OXF-DSR-ENC-124-DST-13
+            - OXF-OTT-ENC-112-DST-6
+    FoxClassics:
+        interface 1 sub: FoxClassics_SD-PO-SUB
+        interface 2 sub: FoxClassics_SD-PO-SUB
+        routable_sub: FoxClassics_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-1
+            - ART-DTH-ENC-113-DST-1R
+            - ART-DTH-ENC-122-DST-7
+            - ART-DTH-ENC-122-DST-7R
+            - ART-OTT-ENC-113-DST-8
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-1
+            - OXF-DTH-ENC-113-DST-1R
+            - OXF-DTH-ENC-122-DST-7
+            - OXF-DTH-ENC-122-DST-7R
+            - OXF-DSR-ENC-125-DST-8
+            - OXF-DSR-ENC-127-DST-8
+            - OXF-OTT-ENC-113-DST-8
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-1
+            - ART-DTH-ENC-113-DST-1R
+            - ART-OTT-ENC-113-DST-8
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-1
+            - OXF-DTH-ENC-113-DST-1R
+            - OXF-DSR-ENC-125-DST-8
+            - OXF-DSR-ENC-127-DST-8
+            - OXF-OTT-ENC-113-DST-8
+    Nickelodeon:
+        interface 1 sub: Nickelodeon_SD-PT-SUB
+        interface 2 sub: Nickelodeon_SD-PT-SUB
+        routable_sub: Nickelodeon_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-1
+            - ART-DTH-ENC-114-DST-1R
+            - ART-OTT-ENC-112-DST-12
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-1
+            - OXF-DTH-ENC-114-DST-1R
+            - OXF-DSR-ENC-126-DST-5
+            - OXF-DSR-ENC-128-DST-5
+            - OXF-OTT-ENC-112-DST-12
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-1
+            - ART-DTH-ENC-114-DST-1R
+            - ART-OTT-ENC-112-DST-12
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-1
+            - OXF-DTH-ENC-114-DST-1R
+            - OXF-DSR-ENC-126-DST-5
+            - OXF-DSR-ENC-128-DST-5
+            - OXF-OTT-ENC-112-DST-12
+    FoxSpts503:
+        interface 1 sub: FoxSpts503_SD-PO-SUB
+        interface 2 sub: FoxSpts503_SD-PO-SUB
+        routable_sub: FoxSpts503_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-1
+            - ART-DTH-ENC-115-DST-1R
+            - ART-OTT-ENC-115-DST-11
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-1
+            - OXF-DTH-ENC-115-DST-1R
+            - OXF-DSR-ENC-125-DST-4
+            - OXF-DSR-ENC-127-DST-4
+            - OXF-OTT-ENC-115-DST-11
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-1
+            - ART-DTH-ENC-115-DST-1R
+            - ART-OTT-ENC-115-DST-11
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-1
+            - OXF-DTH-ENC-115-DST-1R
+            - OXF-DSR-ENC-125-DST-4
+            - OXF-DSR-ENC-127-DST-4
+            - OXF-OTT-ENC-115-DST-11
+    FoxCricket:
+        interface 1 sub: FoxCricket_SD-PO-SUB
+        interface 2 sub: FoxCricket_SD-PO-SUB
+        routable_sub: FoxCricket_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-1
+            - ART-DTH-ENC-116-DST-1R
+            - ART-OTT-ENC-114-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-1
+            - OXF-DTH-ENC-116-DST-1R
+            - OXF-DSR-ENC-122-DST-11
+            - OXF-DSR-ENC-124-DST-11
+            - OXF-OTT-ENC-114-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-1
+            - ART-DTH-ENC-116-DST-1R
+            - ART-OTT-ENC-114-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-1
+            - OXF-DTH-ENC-116-DST-1R
+            - OXF-DSR-ENC-122-DST-11
+            - OXF-DSR-ENC-124-DST-11
+            - OXF-OTT-ENC-114-DST-6
+    FoxLeague:
+        interface 1 sub: FoxLeague_SD-PO-SUB
+        interface 2 sub: FoxLeague_SD-PO-SUB
+        routable_sub: FoxLeague_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-1
+            - ART-DTH-ENC-110-DST-1R
+            - ART-OTT-ENC-115-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-1
+            - OXF-DTH-ENC-110-DST-1R
+            - OXF-DSR-ENC-121-DST-10
+            - OXF-DSR-ENC-123-DST-10
+            - OXF-OTT-ENC-115-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-1
+            - ART-DTH-ENC-110-DST-1R
+            - ART-OTT-ENC-115-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-1
+            - OXF-DTH-ENC-110-DST-1R
+            - OXF-DSR-ENC-121-DST-10
+            - OXF-DSR-ENC-123-DST-10
+            - OXF-OTT-ENC-115-DST-6
+    FoxSptsMore:
+        interface 1 sub: FoxSptsMore_SD-PO-SUB
+        interface 2 sub: FoxSptsMore_SD-PO-SUB
+        routable_sub: FoxSptsMore_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-1
+            - ART-DTH-ENC-111-DST-1R
+            - ART-OTT-ENC-115-DST-13
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-1
+            - OXF-DTH-ENC-111-DST-1R
+            - OXF-DSR-ENC-125-DST-7
+            - OXF-DSR-ENC-127-DST-7
+            - OXF-OTT-ENC-115-DST-13
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-1
+            - ART-DTH-ENC-111-DST-1R
+            - ART-OTT-ENC-115-DST-13
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-1
+            - OXF-DTH-ENC-111-DST-1R
+            - OXF-DSR-ENC-125-DST-7
+            - OXF-DSR-ENC-127-DST-7
+            - OXF-OTT-ENC-115-DST-13
+    Boomerang:
+        interface 1 sub: Boomerang_SD-PT-SUB
+        interface 2 sub: Boomerang_SD-PT-SUB
+        routable_sub: Boomerang_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-2
+            - ART-DTH-ENC-112-DST-2R
+            - ART-OTT-ENC-112-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-2
+            - OXF-DTH-ENC-112-DST-2R
+            - OXF-DSR-ENC-122-DST-7
+            - OXF-DSR-ENC-124-DST-7
+            - OXF-OTT-ENC-112-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-2
+            - ART-DTH-ENC-112-DST-2R
+            - ART-OTT-ENC-112-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-2
+            - OXF-DTH-ENC-112-DST-2R
+            - OXF-DSR-ENC-122-DST-7
+            - OXF-DSR-ENC-124-DST-7
+            - OXF-OTT-ENC-112-DST-4
+    CNN:
+        interface 1 sub: CNN_HD-PT-SUB
+        interface 2 sub: CNN_HD-PT-SUB
+        routable_sub: CNN_HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-2
+            - ART-DTH-ENC-113-DST-2R
+            - ART-OTT-ENC-113-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-2
+            - OXF-DTH-ENC-113-DST-2R
+            - OXF-DSR-ENC-125-DST-1
+            - OXF-DSR-ENC-127-DST-1
+            - OXF-OTT-ENC-113-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-2
+            - ART-DTH-ENC-113-DST-2R
+            - ART-OTT-ENC-113-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-2
+            - OXF-DTH-ENC-113-DST-2R
+            - OXF-DSR-ENC-125-DST-1
+            - OXF-DSR-ENC-127-DST-1
+            - OXF-OTT-ENC-113-DST-6
+    TVSN:
+        interface 1 sub: TVSN_SD-PT-SUB
+        interface 2 sub: TVSN_SD-PT-SUB
+        routable_sub: TVSN_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-2
+            - ART-DTH-ENC-114-DST-2R
+            - ART-OTT-ENC-115-DST-10
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-2
+            - OXF-DTH-ENC-114-DST-2R
+            - OXF-DSR-ENC-125-DST-3
+            - OXF-DSR-ENC-127-DST-3
+            - OXF-OTT-ENC-115-DST-10
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-2
+            - ART-DTH-ENC-114-DST-2R
+            - ART-OTT-ENC-115-DST-10
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-2
+            - OXF-DTH-ENC-114-DST-2R
+            - OXF-DSR-ENC-125-DST-3
+            - OXF-DSR-ENC-127-DST-3
+            - OXF-OTT-ENC-115-DST-10
+    RAI:
+        interface 1 sub: RAI_SD-PT-SUB
+        interface 2 sub: RAI_SD-PT-SUB
+        routable_sub: RAI_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-2
+            - ART-DTH-ENC-115-DST-2R
+            - ART-OTT-ENC-113-DST-13
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-2
+            - OXF-DTH-ENC-115-DST-2R
+            - OXF-DSR-ENC-125-DST-13
+            - OXF-DSR-ENC-127-DST-13
+            - OXF-OTT-ENC-113-DST-13
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-2
+            - ART-DTH-ENC-115-DST-2R
+            - ART-OTT-ENC-113-DST-13
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-2
+            - OXF-DTH-ENC-115-DST-2R
+            - OXF-DSR-ENC-125-DST-13
+            - OXF-DSR-ENC-127-DST-13
+            - OXF-OTT-ENC-113-DST-13
+    RAIRadio:
+        interface 1 sub: RAIRadio1-RD-SUB
+        interface 2 sub: RAIRadio1-RD-SUB
+        routable_sub: RAIRadio1-RD-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-14
+            - ART-DTH-ENC-116-DST-14R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-14
+            - OXF-DTH-ENC-116-DST-14R
+            - OXF-DSR-ENC-129-DST-1
+            - OXF-DSR-ENC-130-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-14
+            - ART-DTH-ENC-116-DST-14R
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-14
+            - OXF-DTH-ENC-116-DST-14R
+            - OXF-DSR-ENC-129-DST-1
+            - OXF-DSR-ENC-130-DST-1
+    Antenna:
+        interface 1 sub: Antenna_SD-PT-SUB
+        interface 2 sub: Antenna_SD-PT-SUB
+        routable_sub: Antenna_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-3
+            - ART-DTH-ENC-113-DST-3R
+            - ART-OTT-ENC-113-DST-12
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-3
+            - OXF-DTH-ENC-113-DST-3R
+            - OXF-DSR-ENC-125-DST-12
+            - OXF-DSR-ENC-127-DST-12
+            - OXF-OTT-ENC-113-DST-12
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-3
+            - ART-DTH-ENC-113-DST-3R
+            - ART-OTT-ENC-113-DST-12
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-3
+            - OXF-DTH-ENC-113-DST-3R
+            - OXF-DSR-ENC-125-DST-12
+            - OXF-DSR-ENC-127-DST-12
+            - OXF-OTT-ENC-113-DST-12
+    Bloomberg:
+        interface 1 sub: Bloomberg_HD-PT-SUB
+        interface 2 sub: Bloomberg_HD-PT-SUB
+        routable_sub: Bloomberg_HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-2
+            - ART-DTH-ENC-116-DST-2R
+            - ART-OTT-ENC-110-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-2
+            - OXF-DTH-ENC-116-DST-2R
+            - OXF-DSR-ENC-118-DST-1
+            - OXF-DSR-ENC-120-DST-1
+            - OXF-OTT-ENC-110-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-2
+            - ART-DTH-ENC-116-DST-2R
+            - ART-OTT-ENC-110-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-2
+            - OXF-DTH-ENC-116-DST-2R
+            - OXF-DSR-ENC-118-DST-1
+            - OXF-DSR-ENC-120-DST-1
+            - OXF-OTT-ENC-110-DST-6
+    AnimalPlanet:
+        interface 1 sub: AnimalPlanet_SD-PT-SUB
+        interface 2 sub: AnimalPlanet_SD-PT-SUB
+        routable_sub: AnimalPlanet_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-2
+            - ART-DTH-ENC-110-DST-2R
+            - ART-OTT-ENC-112-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-2
+            - OXF-DTH-ENC-110-DST-2R
+            - OXF-DSR-ENC-122-DST-14
+            - OXF-DSR-ENC-124-DST-14
+            - OXF-OTT-ENC-112-DST-7
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-2
+            - ART-DTH-ENC-110-DST-2R
+            - ART-OTT-ENC-112-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-2
+            - OXF-DTH-ENC-110-DST-2R
+            - OXF-DSR-ENC-122-DST-14
+            - OXF-DSR-ENC-124-DST-14
+            - OXF-OTT-ENC-112-DST-7
+    SKYWeather:
+        interface 1 sub: SKYWeather_SD-PT-SUB
+        interface 2 sub: SKYWeather_SD-PT-SUB
+        routable_sub: SKYWeather_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-2
+            - ART-DTH-ENC-111-DST-2R
+            - ART-OTT-ENC-113-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-2
+            - OXF-DTH-ENC-111-DST-2R
+            - OXF-DSR-ENC-121-DST-4
+            - OXF-DSR-ENC-123-DST-4
+            - OXF-OTT-ENC-113-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-2
+            - ART-DTH-ENC-111-DST-2R
+            - ART-OTT-ENC-113-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-2
+            - OXF-DTH-ENC-111-DST-2R
+            - OXF-DSR-ENC-121-DST-4
+            - OXF-DSR-ENC-123-DST-4
+            - OXF-OTT-ENC-113-DST-2
+    LifeStyleFood:
+        interface 1 sub: LifeStyleFood_SD-PO-SUB
+        interface 2 sub: LifeStyleFood_SD-PO-SUB
+        routable_sub: LifeStyleFood_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-3
+            - ART-DTH-ENC-112-DST-3R
+            - ART-DTH-ENC-121-DST-5
+            - ART-DTH-ENC-121-DST-5R
+            - ART-OTT-ENC-112-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-3
+            - OXF-DTH-ENC-112-DST-3R
+            - OXF-DTH-ENC-121-DST-5
+            - OXF-DTH-ENC-121-DST-5R
+            - OXF-DSR-ENC-122-DST-10
+            - OXF-DSR-ENC-124-DST-10
+            - OXF-OTT-ENC-112-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-3
+            - ART-DTH-ENC-112-DST-3R
+            - ART-DTH-ENC-121-DST-5
+            - ART-DTH-ENC-121-DST-5R
+            - ART-OTT-ENC-112-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-3
+            - OXF-DTH-ENC-112-DST-3R
+            - OXF-DTH-ENC-121-DST-5
+            - OXF-DTH-ENC-121-DST-5R
+            - OXF-DSR-ENC-122-DST-10
+            - OXF-DSR-ENC-124-DST-10
+            - OXF-OTT-ENC-112-DST-5
+    NickJr:
+        interface 1 sub: NickJr_SD-PT-SUB
+        interface 2 sub: NickJr_SD-PT-SUB
+        routable_sub: NickJr_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-4
+            - ART-DTH-ENC-113-DST-4R
+            - ART-OTT-ENC-113-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-4
+            - OXF-DTH-ENC-113-DST-4R
+            - OXF-DSR-ENC-121-DST-7
+            - OXF-DSR-ENC-123-DST-7
+            - OXF-OTT-ENC-113-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-4
+            - ART-DTH-ENC-113-DST-4R
+            - ART-OTT-ENC-113-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-4
+            - OXF-DTH-ENC-113-DST-4R
+            - OXF-DSR-ENC-121-DST-7
+            - OXF-DSR-ENC-123-DST-7
+            - OXF-OTT-ENC-113-DST-4
+    FoxFootyLV:
+        interface 1 sub: FoxFootyLV_SD-PO-SUB
+        interface 2 sub: FoxFootyLV_SD-PO-SUB
+        routable_sub: FoxFootyLV_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-3
+            - ART-DTH-ENC-114-DST-3R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-3
+            - OXF-DTH-ENC-114-DST-3R
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-3
+            - ART-DTH-ENC-114-DST-3R
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-3
+            - OXF-DTH-ENC-114-DST-3R
+    BBCWldNews:
+        interface 1 sub: BBCWldNews_SD-PT-SUB
+        interface 2 sub: BBCWldNews_SD-PT-SUB
+        routable_sub: BBCWldNews_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-3
+            - ART-DTH-ENC-115-DST-3R
+            - ART-OTT-ENC-115-DST-8
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-3
+            - OXF-DTH-ENC-115-DST-3R
+            - OXF-DSR-ENC-121-DST-12
+            - OXF-DSR-ENC-123-DST-12
+            - OXF-OTT-ENC-115-DST-8
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-3
+            - ART-DTH-ENC-115-DST-3R
+            - ART-OTT-ENC-115-DST-8
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-3
+            - OXF-DTH-ENC-115-DST-3R
+            - OXF-DSR-ENC-121-DST-12
+            - OXF-DSR-ENC-123-DST-12
+            - OXF-OTT-ENC-115-DST-8
+    ID:
+        interface 1 sub: ID_SD-PT-SUB
+        interface 2 sub: ID_SD-PT-SUB
+        routable_sub: ID_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-3
+            - ART-DTH-ENC-116-DST-3R
+            - ART-OTT-ENC-112-DST-9
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-3
+            - OXF-DTH-ENC-116-DST-3R
+            - OXF-DSR-ENC-126-DST-2
+            - OXF-DSR-ENC-128-DST-2
+            - OXF-OTT-ENC-112-DST-9
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-3
+            - ART-DTH-ENC-116-DST-3R
+            - ART-OTT-ENC-112-DST-9
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-3
+            - OXF-DTH-ENC-116-DST-3R
+            - OXF-DSR-ENC-126-DST-2
+            - OXF-DSR-ENC-128-DST-2
+            - OXF-OTT-ENC-112-DST-9
+    NHKWorld:
+        interface 1 sub: NHKWorld_SD-PT-SUB
+        interface 2 sub: NHKWorld_SD-PT-SUB
+        routable_sub: NHKWorld_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-4
+            - ART-DTH-ENC-110-DST-4R
+            - ART-OTT-ENC-112-DST-8
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-4
+            - OXF-DTH-ENC-110-DST-4R
+            - OXF-DSR-ENC-126-DST-1
+            - OXF-DSR-ENC-128-DST-1
+            - OXF-OTT-ENC-112-DST-8
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-4
+            - ART-DTH-ENC-110-DST-4R
+            - ART-OTT-ENC-112-DST-8
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-4
+            - OXF-DTH-ENC-110-DST-4R
+            - OXF-DSR-ENC-126-DST-1
+            - OXF-DSR-ENC-128-DST-1
+            - OXF-OTT-ENC-112-DST-8
+    FoxSpts505:
+        interface 1 sub: FoxSpts505_SD-PO-SUB
+        interface 2 sub: FoxSpts505_SD-PO-SUB
+        routable_sub: FoxSpts505_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-3
+            - ART-DTH-ENC-111-DST-3R
+            - ART-OTT-ENC-115-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-3
+            - OXF-DTH-ENC-111-DST-3R
+            - OXF-DSR-ENC-121-DST-6
+            - OXF-DSR-ENC-123-DST-6
+            - OXF-OTT-ENC-115-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-3
+            - ART-DTH-ENC-111-DST-3R
+            - ART-OTT-ENC-115-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-3
+            - OXF-DTH-ENC-111-DST-3R
+            - OXF-DSR-ENC-121-DST-6
+            - OXF-DSR-ENC-123-DST-6
+            - OXF-OTT-ENC-115-DST-3
+    CRIMEINVEST:
+        interface 1 sub: CRIMEINVESTHD-PO-SUB
+        interface 2 sub: CRIMEINVESTHD-PO-SUB
+        routable_sub: CRIMEINVESTHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-5
+            - ART-DTH-ENC-104-DST-5R
+            - ART-OTT-ENC-112-DST-13
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-5
+            - OXF-DTH-ENC-104-DST-5R
+            - OXF-DSR-ENC-110-DST-3
+            - OXF-DSR-ENC-112-DST-3
+            - OXF-OTT-ENC-112-DST-13
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-5
+            - ART-DTH-ENC-104-DST-5R
+            - ART-OTT-ENC-112-DST-13
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-5
+            - OXF-DTH-ENC-104-DST-5R
+            - OXF-DSR-ENC-110-DST-3
+            - OXF-DSR-ENC-112-DST-3
+            - OXF-OTT-ENC-112-DST-13
+    CRIMEINVESTHD:
+        interface 1 sub: CRIMEINVESTHD-PO-SUB
+        interface 2 sub: CRIMEINVESTHD-PO-SUB
+        routable_sub: CRIMEINVESTHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-5
+            - ART-DTH-ENC-104-DST-5R
+            - ART-OTT-ENC-112-DST-13
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-5
+            - OXF-DTH-ENC-104-DST-5R
+            - OXF-DSR-ENC-110-DST-3
+            - OXF-DSR-ENC-112-DST-3
+            - OXF-OTT-ENC-112-DST-13
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-5
+            - ART-DTH-ENC-104-DST-5R
+            - ART-OTT-ENC-112-DST-13
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-5
+            - OXF-DTH-ENC-104-DST-5R
+            - OXF-DSR-ENC-110-DST-3
+            - OXF-DSR-ENC-112-DST-3
+            - OXF-OTT-ENC-112-DST-13
+    MTV:
+        interface 1 sub: MTV_SD-PT-SUB
+        interface 2 sub: MTV_SD-PT-SUB
+        routable_sub: MTV_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-5
+            - ART-DTH-ENC-112-DST-5R
+            - ART-OTT-ENC-112-DST-11
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-5
+            - OXF-DTH-ENC-112-DST-5R
+            - OXF-DSR-ENC-126-DST-4
+            - OXF-DSR-ENC-128-DST-4
+            - OXF-OTT-ENC-112-DST-11
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-5
+            - ART-DTH-ENC-112-DST-5R
+            - ART-OTT-ENC-112-DST-11
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-5
+            - OXF-DTH-ENC-112-DST-5R
+            - OXF-DSR-ENC-126-DST-4
+            - OXF-DSR-ENC-128-DST-4
+            - OXF-OTT-ENC-112-DST-11
+    MTVClassic:
+        interface 1 sub: MTVClassic_SD-PT-SUB
+        interface 2 sub: MTVClassic_SD-PT-SUB
+        routable_sub: MTVClassic_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-5
+            - ART-DTH-ENC-113-DST-5R
+            - ART-OTT-ENC-114-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-5
+            - OXF-DTH-ENC-113-DST-5R
+            - OXF-DSR-ENC-122-DST-8
+            - OXF-DSR-ENC-124-DST-8
+            - OXF-OTT-ENC-114-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-5
+            - ART-DTH-ENC-113-DST-5R
+            - ART-OTT-ENC-114-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-5
+            - OXF-DTH-ENC-113-DST-5R
+            - OXF-DSR-ENC-122-DST-8
+            - OXF-DSR-ENC-124-DST-8
+            - OXF-OTT-ENC-114-DST-4
+    RACINGCOM:
+        interface 1 sub: RACINGCOM_SD-PT-SUB
+        interface 2 sub: RACINGCOM_SD-PT-SUB
+        routable_sub: RACINGCOM_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-4
+            - ART-DTH-ENC-114-DST-4R
+            - ART-OTT-ENC-104-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-4
+            - OXF-DTH-ENC-114-DST-4R
+            - OXF-OTT-ENC-104-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-4
+            - ART-DTH-ENC-114-DST-4R
+            - ART-OTT-ENC-104-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-4
+            - OXF-DTH-ENC-114-DST-4R
+            - OXF-OTT-ENC-104-DST-1
+    ClubMTV:
+        interface 1 sub: ClubMTV__SD-PT-SUB
+        interface 2 sub: ClubMTV__SD-PT-SUB
+        routable_sub: ClubMTV__SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-4
+            - ART-DTH-ENC-115-DST-4R
+            - ART-OTT-ENC-113-DST-11
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-4
+            - OXF-DTH-ENC-115-DST-4R
+            - OXF-DSR-ENC-125-DST-11
+            - OXF-DSR-ENC-127-DST-11
+            - OXF-OTT-ENC-113-DST-11
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-4
+            - ART-DTH-ENC-115-DST-4R
+            - ART-OTT-ENC-113-DST-11
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-4
+            - OXF-DTH-ENC-115-DST-4R
+            - OXF-DSR-ENC-125-DST-11
+            - OXF-DSR-ENC-127-DST-11
+            - OXF-OTT-ENC-113-DST-11
+    10PeachBris:
+        interface 1 sub: 10PeachBris_SD-PT-SUB
+        interface 2 sub: 10PeachBris_SD-PT-SUB
+        routable_sub: 10PeachBris_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-4
+            - ART-DTH-ENC-116-DST-4R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-4
+            - OXF-DTH-ENC-116-DST-4R
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-4
+            - ART-DTH-ENC-116-DST-4R
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-4
+            - OXF-DTH-ENC-116-DST-4R
+    10PeachMel:
+        interface 1 sub: 10PeachMel_SD-PT-SUB
+        interface 2 sub: 10PeachMel_SD-PT-SUB
+        routable_sub: 10PeachMel_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-5
+            - ART-DTH-ENC-110-DST-5R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-5
+            - OXF-DTH-ENC-110-DST-5R
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-5
+            - ART-DTH-ENC-110-DST-5R
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-5
+            - OXF-DTH-ENC-110-DST-5R
+    10PeachSyd:
+        interface 1 sub: 10PeachSyd_SD-PT-SUB
+        interface 2 sub: 10PeachSyd_SD-PT-SUB
+        routable_sub: 10PeachSyd_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-5
+            - ART-DTH-ENC-111-DST-5R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-5
+            - OXF-DTH-ENC-111-DST-5R
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-5
+            - ART-DTH-ENC-111-DST-5R
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-5
+            - OXF-DTH-ENC-111-DST-5R
+    7mateBris:
+        interface 1 sub: 7mateBris_SD-PT-SUB
+        interface 2 sub: 7mateBris_SD-PT-SUB
+        routable_sub: 7mateBris_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-7
+            - ART-DTH-ENC-112-DST-7R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-7
+            - OXF-DTH-ENC-112-DST-7R
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-7
+            - ART-DTH-ENC-112-DST-7R
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-7
+            - OXF-DTH-ENC-112-DST-7R
+    7mateMel:
+        interface 1 sub: 7mateMel_SD-PT-SUB
+        interface 2 sub: 7mateMel_SD-PT-SUB
+        routable_sub: 7mateMel_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-6
+            - ART-DTH-ENC-113-DST-6R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-6
+            - OXF-DTH-ENC-113-DST-6R
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-6
+            - ART-DTH-ENC-113-DST-6R
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-6
+            - OXF-DTH-ENC-113-DST-6R
+    7mateSyd:
+        interface 1 sub: 7mateSyd_SD-PT-SUB
+        interface 2 sub: 7mateSyd_SD-PT-SUB
+        routable_sub: 7mateSyd_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-5
+            - ART-DTH-ENC-114-DST-5R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-5
+            - OXF-DTH-ENC-114-DST-5R
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-5
+            - ART-DTH-ENC-114-DST-5R
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-5
+            - OXF-DTH-ENC-114-DST-5R
+    FoxSpts506:
+        interface 1 sub: FoxSpts506_SD-PO-SUB
+        interface 2 sub: FoxSpts506_SD-PO-SUB
+        routable_sub: FoxSpts506_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-5
+            - ART-DTH-ENC-115-DST-5R
+            - ART-OTT-ENC-115-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-5
+            - OXF-DTH-ENC-115-DST-5R
+            - OXF-DSR-ENC-121-DST-2
+            - OXF-DSR-ENC-123-DST-2
+            - OXF-OTT-ENC-115-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-5
+            - ART-DTH-ENC-115-DST-5R
+            - ART-OTT-ENC-115-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-5
+            - OXF-DTH-ENC-115-DST-5R
+            - OXF-DSR-ENC-121-DST-2
+            - OXF-DSR-ENC-123-DST-2
+            - OXF-OTT-ENC-115-DST-2
+    FoxComedy:
+        interface 1 sub: FoxComedyHD-PO-SUB
+        interface 2 sub: FoxComedyHD-PO-SUB
+        routable_sub: FoxComedyHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-5
+            - ART-DTH-ENC-106-DST-5R
+            - ART-DTH-ENC-123-DST-6
+            - ART-DTH-ENC-123-DST-6R
+            - ART-OTT-ENC-114-DST-8
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-5
+            - OXF-DTH-ENC-106-DST-5R
+            - OXF-DTH-ENC-123-DST-6
+            - OXF-DTH-ENC-123-DST-6R
+            - OXF-DSR-ENC-109-DST-2
+            - OXF-DSR-ENC-111-DST-2
+            - OXF-OTT-ENC-114-DST-8
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-5
+            - ART-DTH-ENC-106-DST-5R
+            - ART-DTH-ENC-123-DST-6
+            - ART-DTH-ENC-123-DST-6R
+            - ART-OTT-ENC-114-DST-8
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-5
+            - OXF-DTH-ENC-106-DST-5R
+            - OXF-DTH-ENC-123-DST-6
+            - OXF-DTH-ENC-123-DST-6R
+            - OXF-DSR-ENC-109-DST-2
+            - OXF-DSR-ENC-111-DST-2
+            - OXF-OTT-ENC-114-DST-8
+    FoxComedyHD:
+        interface 1 sub: FoxComedyHD-PO-SUB
+        interface 2 sub: FoxComedyHD-PO-SUB
+        routable_sub: FoxComedyHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-5
+            - ART-DTH-ENC-106-DST-5R
+            - ART-DTH-ENC-123-DST-6
+            - ART-DTH-ENC-123-DST-6R
+            - ART-OTT-ENC-114-DST-8
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-5
+            - OXF-DTH-ENC-106-DST-5R
+            - OXF-DTH-ENC-123-DST-6
+            - OXF-DTH-ENC-123-DST-6R
+            - OXF-DSR-ENC-109-DST-2
+            - OXF-DSR-ENC-111-DST-2
+            - OXF-OTT-ENC-114-DST-8
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-5
+            - ART-DTH-ENC-106-DST-5R
+            - ART-DTH-ENC-123-DST-6
+            - ART-DTH-ENC-123-DST-6R
+            - ART-OTT-ENC-114-DST-8
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-5
+            - OXF-DTH-ENC-106-DST-5R
+            - OXF-DTH-ENC-123-DST-6
+            - OXF-DTH-ENC-123-DST-6R
+            - OXF-DSR-ENC-109-DST-2
+            - OXF-DSR-ENC-111-DST-2
+            - OXF-OTT-ENC-114-DST-8
+    NickMusic:
+        interface 1 sub: NickMusic_SD-PT-SUB
+        interface 2 sub: NickMusic_SD-PT-SUB
+        routable_sub: NickMusic_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-6
+            - ART-DTH-ENC-111-DST-6R
+            - ART-OTT-ENC-113-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-6
+            - OXF-DTH-ENC-111-DST-6R
+            - OXF-DSR-ENC-121-DST-5
+            - OXF-DSR-ENC-123-DST-5
+            - OXF-OTT-ENC-113-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-6
+            - ART-DTH-ENC-111-DST-6R
+            - ART-OTT-ENC-113-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-6
+            - OXF-DTH-ENC-111-DST-6R
+            - OXF-DSR-ENC-121-DST-5
+            - OXF-DSR-ENC-123-DST-5
+            - OXF-OTT-ENC-113-DST-3
+    TLC:
+        interface 1 sub: TLC_SD-PT-SUB
+        interface 2 sub: TLC_SD-PT-SUB
+        routable_sub: TLC_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-8
+            - ART-DTH-ENC-112-DST-8R
+            - ART-DTH-ENC-121-DST-1
+            - ART-DTH-ENC-121-DST-1R
+            - ART-OTT-ENC-112-DST-10
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-8
+            - OXF-DTH-ENC-112-DST-8R
+            - OXF-DTH-ENC-121-DST-1
+            - OXF-DTH-ENC-121-DST-1R
+            - OXF-DSR-ENC-126-DST-3
+            - OXF-DSR-ENC-128-DST-3
+            - OXF-OTT-ENC-112-DST-10
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-8
+            - ART-DTH-ENC-112-DST-8R
+            - ART-DTH-ENC-121-DST-1
+            - ART-DTH-ENC-121-DST-1R
+            - ART-OTT-ENC-112-DST-10
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-8
+            - OXF-DTH-ENC-112-DST-8R
+            - OXF-DTH-ENC-121-DST-1
+            - OXF-DTH-ENC-121-DST-1R
+            - OXF-DSR-ENC-126-DST-3
+            - OXF-DSR-ENC-128-DST-3
+            - OXF-OTT-ENC-112-DST-10
+    CMT:
+        interface 1 sub: CMT_SD-PT-SUB
+        interface 2 sub: CMT_SD-PT-SUB
+        routable_sub: CMT_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-8
+            - ART-DTH-ENC-113-DST-8R
+            - ART-OTT-ENC-113-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-8
+            - OXF-DTH-ENC-113-DST-8R
+            - OXF-DSR-ENC-121-DST-13
+            - OXF-DSR-ENC-123-DST-13
+            - OXF-OTT-ENC-113-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-8
+            - ART-DTH-ENC-113-DST-8R
+            - ART-OTT-ENC-113-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-8
+            - OXF-DTH-ENC-113-DST-8R
+            - OXF-DSR-ENC-121-DST-13
+            - OXF-DSR-ENC-123-DST-13
+            - OXF-OTT-ENC-113-DST-5
+    Cartoon:
+        interface 1 sub: Cartoon_SD-PT-SUB
+        interface 2 sub: Cartoon_SD-PT-SUB
+        routable_sub: Cartoon_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-7
+            - ART-DTH-ENC-114-DST-7R
+            - ART-OTT-ENC-112-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-7
+            - OXF-DTH-ENC-114-DST-7R
+            - OXF-DSR-ENC-122-DST-4
+            - OXF-DSR-ENC-124-DST-4
+            - OXF-OTT-ENC-112-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-7
+            - ART-DTH-ENC-114-DST-7R
+            - ART-OTT-ENC-112-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-7
+            - OXF-DTH-ENC-114-DST-7R
+            - OXF-DSR-ENC-122-DST-4
+            - OXF-DSR-ENC-124-DST-4
+            - OXF-OTT-ENC-112-DST-1
+    ESPN2:
+        interface 1 sub: ESPN2HD-PT-SUB
+        interface 2 sub: ESPN2HD-PT-SUB
+        routable_sub: ESPN2HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-109-DST-1
+            - ART-DTH-ENC-109-DST-1R
+            - ART-OTT-ENC-101-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-109-DST-1
+            - OXF-DTH-ENC-109-DST-1R
+            - OXF-DSR-ENC-101-DST-2
+            - OXF-DSR-ENC-103-DST-2
+            - OXF-OTT-ENC-101-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-109-DST-1
+            - ART-DTH-ENC-109-DST-1R
+            - ART-OTT-ENC-101-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-109-DST-1
+            - OXF-DTH-ENC-109-DST-1R
+            - OXF-DSR-ENC-101-DST-2
+            - OXF-DSR-ENC-103-DST-2
+            - OXF-OTT-ENC-101-DST-1
+    ESPN2HD:
+        interface 1 sub: ESPN2HD-PT-SUB
+        interface 2 sub: ESPN2HD-PT-SUB
+        routable_sub: ESPN2HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-109-DST-1
+            - ART-DTH-ENC-109-DST-1R
+            - ART-OTT-ENC-101-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-109-DST-1
+            - OXF-DTH-ENC-109-DST-1R
+            - OXF-DSR-ENC-101-DST-2
+            - OXF-DSR-ENC-103-DST-2
+            - OXF-OTT-ENC-101-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-109-DST-1
+            - ART-DTH-ENC-109-DST-1R
+            - ART-OTT-ENC-101-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-109-DST-1
+            - OXF-DTH-ENC-109-DST-1R
+            - OXF-DSR-ENC-101-DST-2
+            - OXF-DSR-ENC-103-DST-2
+            - OXF-OTT-ENC-101-DST-1
+    FoxCricketHDLV:
+        interface 1 sub: FoxCricketHDLV-PO-SUB
+        interface 2 sub: FoxCricketHDLV-PO-SUB
+        routable_sub: FoxCricketHDLV-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-15
+            - ART-DTH-ENC-112-DST-15R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-15
+            - OXF-DTH-ENC-112-DST-15R
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-15
+            - ART-DTH-ENC-112-DST-15R
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-15
+            - OXF-DTH-ENC-112-DST-15R
+    Discovery:
+        interface 1 sub: DiscoveryHD-PT-SUB
+        interface 2 sub: DiscoveryHD-PT-SUB
+        routable_sub: DiscoveryHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-108-DST-1
+            - ART-DTH-ENC-108-DST-1R
+            - ART-DTH-ENC-121-DST-3
+            - ART-DTH-ENC-121-DST-3R
+            - ART-OTT-ENC-106-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-108-DST-1
+            - OXF-DTH-ENC-108-DST-1R
+            - OXF-DTH-ENC-121-DST-3
+            - OXF-DTH-ENC-121-DST-3R
+            - OXF-DSR-ENC-110-DST-1
+            - OXF-DSR-ENC-112-DST-1
+            - OXF-OTT-ENC-106-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-108-DST-1
+            - ART-DTH-ENC-108-DST-1R
+            - ART-DTH-ENC-121-DST-3
+            - ART-DTH-ENC-121-DST-3R
+            - ART-OTT-ENC-106-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-108-DST-1
+            - OXF-DTH-ENC-108-DST-1R
+            - OXF-DTH-ENC-121-DST-3
+            - OXF-DTH-ENC-121-DST-3R
+            - OXF-DSR-ENC-110-DST-1
+            - OXF-DSR-ENC-112-DST-1
+            - OXF-OTT-ENC-106-DST-1
+    DiscoveryHD:
+        interface 1 sub: DiscoveryHD-PT-SUB
+        interface 2 sub: DiscoveryHD-PT-SUB
+        routable_sub: DiscoveryHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-108-DST-1
+            - ART-DTH-ENC-108-DST-1R
+            - ART-DTH-ENC-121-DST-3
+            - ART-DTH-ENC-121-DST-3R
+            - ART-OTT-ENC-106-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-108-DST-1
+            - OXF-DTH-ENC-108-DST-1R
+            - OXF-DTH-ENC-121-DST-3
+            - OXF-DTH-ENC-121-DST-3R
+            - OXF-DSR-ENC-110-DST-1
+            - OXF-DSR-ENC-112-DST-1
+            - OXF-OTT-ENC-106-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-108-DST-1
+            - ART-DTH-ENC-108-DST-1R
+            - ART-DTH-ENC-121-DST-3
+            - ART-DTH-ENC-121-DST-3R
+            - ART-OTT-ENC-106-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-108-DST-1
+            - OXF-DTH-ENC-108-DST-1R
+            - OXF-DTH-ENC-121-DST-3
+            - OXF-DTH-ENC-121-DST-3R
+            - OXF-DSR-ENC-110-DST-1
+            - OXF-DSR-ENC-112-DST-1
+            - OXF-OTT-ENC-106-DST-1
+    FOX8:
+        interface 1 sub: FOX8HD-PO-SUB
+        interface 2 sub: FOX8HD-PO-SUB
+        routable_sub: FOX8HD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-3
+            - ART-DTH-ENC-101-DST-3R
+            - ART-DTH-ENC-123-DST-1
+            - ART-DTH-ENC-123-DST-1R
+            - ART-OTT-ENC-107-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-3
+            - OXF-DTH-ENC-101-DST-3R
+            - OXF-DTH-ENC-123-DST-1
+            - OXF-DTH-ENC-123-DST-1R
+            - OXF-DSR-ENC-109-DST-3
+            - OXF-DSR-ENC-111-DST-3
+            - OXF-OTT-ENC-107-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-3
+            - ART-DTH-ENC-101-DST-3R
+            - ART-DTH-ENC-123-DST-1
+            - ART-DTH-ENC-123-DST-1R
+            - ART-OTT-ENC-107-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-3
+            - OXF-DTH-ENC-101-DST-3R
+            - OXF-DTH-ENC-123-DST-1
+            - OXF-DTH-ENC-123-DST-1R
+            - OXF-DSR-ENC-109-DST-3
+            - OXF-DSR-ENC-111-DST-3
+            - OXF-OTT-ENC-107-DST-3
+    FOX8HD:
+        interface 1 sub: FOX8HD-PO-SUB
+        interface 2 sub: FOX8HD-PO-SUB
+        routable_sub: FOX8HD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-3
+            - ART-DTH-ENC-101-DST-3R
+            - ART-DTH-ENC-123-DST-1
+            - ART-DTH-ENC-123-DST-1R
+            - ART-OTT-ENC-107-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-3
+            - OXF-DTH-ENC-101-DST-3R
+            - OXF-DTH-ENC-123-DST-1
+            - OXF-DTH-ENC-123-DST-1R
+            - OXF-DSR-ENC-109-DST-3
+            - OXF-DSR-ENC-111-DST-3
+            - OXF-OTT-ENC-107-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-3
+            - ART-DTH-ENC-101-DST-3R
+            - ART-DTH-ENC-123-DST-1
+            - ART-DTH-ENC-123-DST-1R
+            - ART-OTT-ENC-107-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-3
+            - OXF-DTH-ENC-101-DST-3R
+            - OXF-DTH-ENC-123-DST-1
+            - OXF-DTH-ENC-123-DST-1R
+            - OXF-DSR-ENC-109-DST-3
+            - OXF-DSR-ENC-111-DST-3
+            - OXF-OTT-ENC-107-DST-3
+    FoxLeagueHD:
+        interface 1 sub: FoxLeagueHD-PO-SUB
+        interface 2 sub: FoxLeagueHD-PO-SUB
+        routable_sub: FoxLeagueHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-7
+            - ART-DTH-ENC-110-DST-7R
+            - ART-OTT-ENC-102-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-7
+            - OXF-DTH-ENC-110-DST-7R
+            - OXF-DSR-ENC-102-DST-5
+            - OXF-DSR-ENC-104-DST-5
+            - OXF-OTT-ENC-102-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-7
+            - ART-DTH-ENC-110-DST-7R
+            - ART-OTT-ENC-102-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-7
+            - OXF-DTH-ENC-110-DST-7R
+            - OXF-DSR-ENC-102-DST-5
+            - OXF-DSR-ENC-104-DST-5
+            - OXF-OTT-ENC-102-DST-5
+    ESPN:
+        interface 1 sub: ESPNHD-PT-SUB
+        interface 2 sub: ESPNHD-PT-SUB
+        routable_sub: ESPNHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-108-DST-2
+            - ART-DTH-ENC-108-DST-2R
+            - ART-OTT-ENC-102-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-108-DST-2
+            - OXF-DTH-ENC-108-DST-2R
+            - OXF-DSR-ENC-102-DST-2
+            - OXF-DSR-ENC-104-DST-2
+            - OXF-OTT-ENC-102-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-108-DST-2
+            - ART-DTH-ENC-108-DST-2R
+            - ART-OTT-ENC-102-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-108-DST-2
+            - OXF-DTH-ENC-108-DST-2R
+            - OXF-DSR-ENC-102-DST-2
+            - OXF-DSR-ENC-104-DST-2
+            - OXF-OTT-ENC-102-DST-2
+    ESPNHD:
+        interface 1 sub: ESPNHD-PT-SUB
+        interface 2 sub: ESPNHD-PT-SUB
+        routable_sub: ESPNHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-108-DST-2
+            - ART-DTH-ENC-108-DST-2R
+            - ART-OTT-ENC-102-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-108-DST-2
+            - OXF-DTH-ENC-108-DST-2R
+            - OXF-DSR-ENC-102-DST-2
+            - OXF-DSR-ENC-104-DST-2
+            - OXF-OTT-ENC-102-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-108-DST-2
+            - ART-DTH-ENC-108-DST-2R
+            - ART-OTT-ENC-102-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-108-DST-2
+            - OXF-DTH-ENC-108-DST-2R
+            - OXF-DSR-ENC-102-DST-2
+            - OXF-DSR-ENC-104-DST-2
+            - OXF-OTT-ENC-102-DST-2
+    MovThriller:
+        interface 1 sub: MovThrillerHD-PO-SUB
+        interface 2 sub: MovThrillerHD-PO-SUB
+        routable_sub: MovThrillerHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-1
+            - ART-DTH-ENC-102-DST-1R
+            - ART-OTT-ENC-108-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-1
+            - OXF-DTH-ENC-102-DST-1R
+            - OXF-DSR-ENC-114-DST-2
+            - OXF-DSR-ENC-116-DST-2
+            - OXF-OTT-ENC-108-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-1
+            - ART-DTH-ENC-102-DST-1R
+            - ART-OTT-ENC-108-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-1
+            - OXF-DTH-ENC-102-DST-1R
+            - OXF-DSR-ENC-114-DST-2
+            - OXF-DSR-ENC-116-DST-2
+            - OXF-OTT-ENC-108-DST-2
+    MovThrillerHD:
+        interface 1 sub: MovThrillerHD-PO-SUB
+        interface 2 sub: MovThrillerHD-PO-SUB
+        routable_sub: MovThrillerHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-1
+            - ART-DTH-ENC-102-DST-1R
+            - ART-OTT-ENC-108-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-1
+            - OXF-DTH-ENC-102-DST-1R
+            - OXF-DSR-ENC-114-DST-2
+            - OXF-DSR-ENC-116-DST-2
+            - OXF-OTT-ENC-108-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-1
+            - ART-DTH-ENC-102-DST-1R
+            - ART-OTT-ENC-108-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-1
+            - OXF-DTH-ENC-102-DST-1R
+            - OXF-DSR-ENC-114-DST-2
+            - OXF-DSR-ENC-116-DST-2
+            - OXF-OTT-ENC-108-DST-2
+    MovKids:
+        interface 1 sub: MovKidsHD-PO-SUB
+        interface 2 sub: MovKidsHD-PO-SUB
+        routable_sub: MovKidsHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-2
+            - ART-DTH-ENC-102-DST-2R
+            - ART-OTT-ENC-108-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-2
+            - OXF-DTH-ENC-102-DST-2R
+            - OXF-DSR-ENC-106-DST-2
+            - OXF-DSR-ENC-108-DST-2
+            - OXF-OTT-ENC-108-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-2
+            - ART-DTH-ENC-102-DST-2R
+            - ART-OTT-ENC-108-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-2
+            - OXF-DTH-ENC-102-DST-2R
+            - OXF-DSR-ENC-106-DST-2
+            - OXF-DSR-ENC-108-DST-2
+            - OXF-OTT-ENC-108-DST-6
+    MovKidsHD:
+        interface 1 sub: MovKidsHD-PO-SUB
+        interface 2 sub: MovKidsHD-PO-SUB
+        routable_sub: MovKidsHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-2
+            - ART-DTH-ENC-102-DST-2R
+            - ART-OTT-ENC-108-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-2
+            - OXF-DTH-ENC-102-DST-2R
+            - OXF-DSR-ENC-106-DST-2
+            - OXF-DSR-ENC-108-DST-2
+            - OXF-OTT-ENC-108-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-2
+            - ART-DTH-ENC-102-DST-2R
+            - ART-OTT-ENC-108-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-2
+            - OXF-DTH-ENC-102-DST-2R
+            - OXF-DSR-ENC-106-DST-2
+            - OXF-DSR-ENC-108-DST-2
+            - OXF-OTT-ENC-108-DST-6
+    FoxSpts503HD:
+        interface 1 sub: FoxSpts503HD-PO-SUB
+        interface 2 sub: FoxSpts503HD-PO-SUB
+        routable_sub: FoxSpts503HD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-7
+            - ART-DTH-ENC-111-DST-7R
+            - ART-OTT-ENC-103-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-7
+            - OXF-DTH-ENC-111-DST-7R
+            - OXF-DSR-ENC-105-DST-2
+            - OXF-DSR-ENC-107-DST-2
+            - OXF-OTT-ENC-103-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-7
+            - ART-DTH-ENC-111-DST-7R
+            - ART-OTT-ENC-103-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-7
+            - OXF-DTH-ENC-111-DST-7R
+            - OXF-DSR-ENC-105-DST-2
+            - OXF-DSR-ENC-107-DST-2
+            - OXF-OTT-ENC-103-DST-3
+    BBCFirst:
+        interface 1 sub: BBCFirstHD-PO-SUB
+        interface 2 sub: BBCFirstHD-PO-SUB
+        routable_sub: BBCFirstHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-1
+            - ART-DTH-ENC-103-DST-1R
+            - ART-OTT-ENC-109-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-1
+            - OXF-DTH-ENC-103-DST-1R
+            - OXF-DSR-ENC-117-DST-1
+            - OXF-DSR-ENC-119-DST-1
+            - OXF-OTT-ENC-109-DST-7
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-1
+            - ART-DTH-ENC-103-DST-1R
+            - ART-OTT-ENC-109-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-1
+            - OXF-DTH-ENC-103-DST-1R
+            - OXF-DSR-ENC-117-DST-1
+            - OXF-DSR-ENC-119-DST-1
+            - OXF-OTT-ENC-109-DST-7
+    BBCFirstHD:
+        interface 1 sub: BBCFirstHD-PO-SUB
+        interface 2 sub: BBCFirstHD-PO-SUB
+        routable_sub: BBCFirstHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-1
+            - ART-DTH-ENC-103-DST-1R
+            - ART-OTT-ENC-109-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-1
+            - OXF-DTH-ENC-103-DST-1R
+            - OXF-DSR-ENC-117-DST-1
+            - OXF-DSR-ENC-119-DST-1
+            - OXF-OTT-ENC-109-DST-7
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-1
+            - ART-DTH-ENC-103-DST-1R
+            - ART-OTT-ENC-109-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-1
+            - OXF-DTH-ENC-103-DST-1R
+            - OXF-DSR-ENC-117-DST-1
+            - OXF-DSR-ENC-119-DST-1
+            - OXF-OTT-ENC-109-DST-7
+    FoxOne:
+        interface 1 sub: FoxOneHD-PO-SUB
+        interface 2 sub: FoxOneHD-PO-SUB
+        routable_sub: FoxOneHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-2
+            - ART-DTH-ENC-103-DST-2R
+            - ART-DTH-ENC-123-DST-5
+            - ART-DTH-ENC-123-DST-5R
+            - ART-OTT-ENC-107-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-2
+            - OXF-DTH-ENC-103-DST-2R
+            - OXF-DTH-ENC-123-DST-5
+            - OXF-DTH-ENC-123-DST-5R
+            - OXF-DSR-ENC-109-DST-5
+            - OXF-DSR-ENC-111-DST-5
+            - OXF-OTT-ENC-107-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-2
+            - ART-DTH-ENC-103-DST-2R
+            - ART-DTH-ENC-123-DST-5
+            - ART-DTH-ENC-123-DST-5R
+            - ART-OTT-ENC-107-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-2
+            - OXF-DTH-ENC-103-DST-2R
+            - OXF-DTH-ENC-123-DST-5
+            - OXF-DTH-ENC-123-DST-5R
+            - OXF-DSR-ENC-109-DST-5
+            - OXF-DSR-ENC-111-DST-5
+            - OXF-OTT-ENC-107-DST-5
+    FoxOneHD:
+        interface 1 sub: FoxOneHD-PO-SUB
+        interface 2 sub: FoxOneHD-PO-SUB
+        routable_sub: FoxOneHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-2
+            - ART-DTH-ENC-103-DST-2R
+            - ART-DTH-ENC-123-DST-5
+            - ART-DTH-ENC-123-DST-5R
+            - ART-OTT-ENC-107-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-2
+            - OXF-DTH-ENC-103-DST-2R
+            - OXF-DTH-ENC-123-DST-5
+            - OXF-DTH-ENC-123-DST-5R
+            - OXF-DSR-ENC-109-DST-5
+            - OXF-DSR-ENC-111-DST-5
+            - OXF-OTT-ENC-107-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-2
+            - ART-DTH-ENC-103-DST-2R
+            - ART-DTH-ENC-123-DST-5
+            - ART-DTH-ENC-123-DST-5R
+            - ART-OTT-ENC-107-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-2
+            - OXF-DTH-ENC-103-DST-2R
+            - OXF-DTH-ENC-123-DST-5
+            - OXF-DTH-ENC-123-DST-5R
+            - OXF-DSR-ENC-109-DST-5
+            - OXF-DSR-ENC-111-DST-5
+            - OXF-OTT-ENC-107-DST-5
+    Action:
+        interface 1 sub: MovActionHD-PO-SUB
+        interface 2 sub: MovActionHD-PO-SUB
+        routable_sub: MovActionHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-1
+            - ART-DTH-ENC-104-DST-1R
+            - ART-DTH-ENC-121-DST-4
+            - ART-DTH-ENC-121-DST-4R
+            - ART-OTT-ENC-106-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-1
+            - OXF-DTH-ENC-104-DST-1R
+            - OXF-DTH-ENC-121-DST-4
+            - OXF-DTH-ENC-121-DST-4R
+            - OXF-DSR-ENC-110-DST-6
+            - OXF-DSR-ENC-112-DST-6
+            - OXF-OTT-ENC-106-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-1
+            - ART-DTH-ENC-104-DST-1R
+            - ART-DTH-ENC-121-DST-4
+            - ART-DTH-ENC-121-DST-4R
+            - ART-OTT-ENC-106-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-1
+            - OXF-DTH-ENC-104-DST-1R
+            - OXF-DTH-ENC-121-DST-4
+            - OXF-DTH-ENC-121-DST-4R
+            - OXF-DSR-ENC-110-DST-6
+            - OXF-DSR-ENC-112-DST-6
+            - OXF-OTT-ENC-106-DST-5
+    ActionHD:
+        interface 1 sub: MovActionHD-PO-SUB
+        interface 2 sub: MovActionHD-PO-SUB
+        routable_sub: MovActionHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-1
+            - ART-DTH-ENC-104-DST-1R
+            - ART-DTH-ENC-121-DST-4
+            - ART-DTH-ENC-121-DST-4R
+            - ART-OTT-ENC-106-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-1
+            - OXF-DTH-ENC-104-DST-1R
+            - OXF-DTH-ENC-121-DST-4
+            - OXF-DTH-ENC-121-DST-4R
+            - OXF-DSR-ENC-110-DST-6
+            - OXF-DSR-ENC-112-DST-6
+            - OXF-OTT-ENC-106-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-1
+            - ART-DTH-ENC-104-DST-1R
+            - ART-DTH-ENC-121-DST-4
+            - ART-DTH-ENC-121-DST-4R
+            - ART-OTT-ENC-106-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-1
+            - OXF-DTH-ENC-104-DST-1R
+            - OXF-DTH-ENC-121-DST-4
+            - OXF-DTH-ENC-121-DST-4R
+            - OXF-DSR-ENC-110-DST-6
+            - OXF-DSR-ENC-112-DST-6
+            - OXF-OTT-ENC-106-DST-5
+    MainEvent:
+        interface 1 sub: MainEventHD-PO-SUB
+        interface 2 sub: MainEventHD-PO-SUB
+        routable_sub: MainEventHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-2
+            - ART-DTH-ENC-104-DST-2R
+            - ART-OTT-ENC-102-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-2
+            - OXF-DTH-ENC-104-DST-2R
+            - OXF-DSR-ENC-102-DST-1
+            - OXF-DSR-ENC-104-DST-1
+            - OXF-OTT-ENC-102-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-2
+            - ART-DTH-ENC-104-DST-2R
+            - ART-OTT-ENC-102-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-2
+            - OXF-DTH-ENC-104-DST-2R
+            - OXF-DSR-ENC-102-DST-1
+            - OXF-DSR-ENC-104-DST-1
+            - OXF-OTT-ENC-102-DST-1
+    MainEventHD:
+        interface 1 sub: MainEventHD-PO-SUB
+        interface 2 sub: MainEventHD-PO-SUB
+        routable_sub: MainEventHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-2
+            - ART-DTH-ENC-104-DST-2R
+            - ART-OTT-ENC-102-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-2
+            - OXF-DTH-ENC-104-DST-2R
+            - OXF-DSR-ENC-102-DST-1
+            - OXF-DSR-ENC-104-DST-1
+            - OXF-OTT-ENC-102-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-2
+            - ART-DTH-ENC-104-DST-2R
+            - ART-OTT-ENC-102-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-2
+            - OXF-DTH-ENC-104-DST-2R
+            - OXF-DSR-ENC-102-DST-1
+            - OXF-DSR-ENC-104-DST-1
+            - OXF-OTT-ENC-102-DST-1
+    FoxNews:
+        interface 1 sub: FoxNewsHD-PT-SUB
+        interface 2 sub: FoxNewsHD-PT-SUB
+        routable_sub: FoxNewsHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-108-DST-3
+            - ART-DTH-ENC-108-DST-3R
+            - ART-OTT-ENC-110-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-108-DST-3
+            - OXF-DTH-ENC-108-DST-3R
+            - OXF-DSR-ENC-118-DST-4
+            - OXF-DSR-ENC-120-DST-4
+            - OXF-OTT-ENC-110-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-108-DST-3
+            - ART-DTH-ENC-108-DST-3R
+            - ART-OTT-ENC-110-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-108-DST-3
+            - OXF-DTH-ENC-108-DST-3R
+            - OXF-DSR-ENC-118-DST-4
+            - OXF-DSR-ENC-120-DST-4
+            - OXF-OTT-ENC-110-DST-3
+    FoxNewsHD:
+        interface 1 sub: FoxNewsHD-PT-SUB
+        interface 2 sub: FoxNewsHD-PT-SUB
+        routable_sub: FoxNewsHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-108-DST-3
+            - ART-DTH-ENC-108-DST-3R
+            - ART-OTT-ENC-110-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-108-DST-3
+            - OXF-DTH-ENC-108-DST-3R
+            - OXF-DSR-ENC-118-DST-4
+            - OXF-DSR-ENC-120-DST-4
+            - OXF-OTT-ENC-110-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-108-DST-3
+            - ART-DTH-ENC-108-DST-3R
+            - ART-OTT-ENC-110-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-108-DST-3
+            - OXF-DTH-ENC-108-DST-3R
+            - OXF-DSR-ENC-118-DST-4
+            - OXF-DSR-ENC-120-DST-4
+            - OXF-OTT-ENC-110-DST-3
+    FoxSpts505HD:
+        interface 1 sub: FoxSpts505HD-PO-SUB
+        interface 2 sub: FoxSpts505HD-PO-SUB
+        routable_sub: FoxSpts505HD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-9
+            - ART-DTH-ENC-112-DST-9R
+            - ART-OTT-ENC-104-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-9
+            - OXF-DTH-ENC-112-DST-9R
+            - OXF-DSR-ENC-106-DST-4
+            - OXF-DSR-ENC-108-DST-4
+            - OXF-OTT-ENC-104-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-9
+            - ART-DTH-ENC-112-DST-9R
+            - ART-OTT-ENC-104-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-9
+            - OXF-DTH-ENC-112-DST-9R
+            - OXF-DSR-ENC-106-DST-4
+            - OXF-DSR-ENC-108-DST-4
+            - OXF-OTT-ENC-104-DST-3
+    FoxFooty:
+        interface 1 sub: FoxFooty_SD-PO-SUB
+        interface 2 sub: FoxFooty_SD-PO-SUB
+        routable_sub: FoxFooty_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-7
+            - ART-DTH-ENC-116-DST-7R
+            - ART-OTT-ENC-116-DST-2
+            - ART-OTT-ENC-114-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-7
+            - OXF-DTH-ENC-116-DST-7R
+            - OXF-DSR-ENC-122-DST-1
+            - OXF-DSR-ENC-124-DST-1
+            - OXF-OTT-ENC-116-DST-2
+            - OXF-OTT-ENC-114-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-7
+            - ART-DTH-ENC-116-DST-7R
+            - ART-OTT-ENC-116-DST-2
+            - ART-OTT-ENC-114-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-7
+            - OXF-DTH-ENC-116-DST-7R
+            - OXF-DSR-ENC-122-DST-1
+            - OXF-DSR-ENC-124-DST-1
+            - OXF-OTT-ENC-116-DST-2
+            - OXF-OTT-ENC-114-DST-1
+    SkyRacing1:
+        interface 1 sub: SkyRacing1HD-PT-SUB
+        interface 2 sub: SkyRacing1HD-PT-SUB
+        routable_sub: SkyRacing1HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-9
+            - ART-DTH-ENC-110-DST-9R
+            - ART-OTT-ENC-114-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-9
+            - OXF-DTH-ENC-110-DST-9R
+            - OXF-DSR-ENC-122-DST-3
+            - OXF-DSR-ENC-124-DST-3
+            - OXF-OTT-ENC-114-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-9
+            - ART-DTH-ENC-110-DST-9R
+            - ART-OTT-ENC-114-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-9
+            - OXF-DTH-ENC-110-DST-9R
+            - OXF-DSR-ENC-122-DST-3
+            - OXF-DSR-ENC-124-DST-3
+            - OXF-OTT-ENC-114-DST-3
+    SkyRacing1HD:
+        interface 1 sub: SkyRacing1HD-PT-SUB
+        interface 2 sub: SkyRacing1HD-PT-SUB
+        routable_sub: SkyRacing1HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-9
+            - ART-DTH-ENC-110-DST-9R
+            - ART-OTT-ENC-114-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-9
+            - OXF-DTH-ENC-110-DST-9R
+            - OXF-DSR-ENC-122-DST-3
+            - OXF-DSR-ENC-124-DST-3
+            - OXF-OTT-ENC-114-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-9
+            - ART-DTH-ENC-110-DST-9R
+            - ART-OTT-ENC-114-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-9
+            - OXF-DTH-ENC-110-DST-9R
+            - OXF-DSR-ENC-122-DST-3
+            - OXF-DSR-ENC-124-DST-3
+            - OXF-OTT-ENC-114-DST-3
+    SkyRacing2:
+        interface 1 sub: SkyRacing2HD-PT-SUB
+        interface 2 sub: SkyRacing2HD-PT-SUB
+        routable_sub: SkyRacing2HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-8
+            - ART-DTH-ENC-111-DST-8R
+            - ART-OTT-ENC-115-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-8
+            - OXF-DTH-ENC-111-DST-8R
+            - OXF-DSR-ENC-121-DST-1
+            - OXF-DSR-ENC-123-DST-1
+            - OXF-OTT-ENC-115-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-8
+            - ART-DTH-ENC-111-DST-8R
+            - ART-OTT-ENC-115-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-8
+            - OXF-DTH-ENC-111-DST-8R
+            - OXF-DSR-ENC-121-DST-1
+            - OXF-DSR-ENC-123-DST-1
+            - OXF-OTT-ENC-115-DST-1
+    SkyRacing2HD:
+        interface 1 sub: SkyRacing2HD-PT-SUB
+        interface 2 sub: SkyRacing2HD-PT-SUB
+        routable_sub: SkyRacing2HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-8
+            - ART-DTH-ENC-111-DST-8R
+            - ART-OTT-ENC-115-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-8
+            - OXF-DTH-ENC-111-DST-8R
+            - OXF-DSR-ENC-121-DST-1
+            - OXF-DSR-ENC-123-DST-1
+            - OXF-OTT-ENC-115-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-8
+            - ART-DTH-ENC-111-DST-8R
+            - ART-OTT-ENC-115-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-8
+            - OXF-DTH-ENC-111-DST-8R
+            - OXF-DSR-ENC-121-DST-1
+            - OXF-DSR-ENC-123-DST-1
+            - OXF-OTT-ENC-115-DST-1
+    SkyTbred:
+        interface 1 sub: SkyTbredHD-PT-SUB
+        interface 2 sub: SkyTbredHD-PT-SUB
+        routable_sub: SkyTbredHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-10
+            - ART-DTH-ENC-112-DST-10R
+            - ART-OTT-ENC-103-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-10
+            - OXF-DTH-ENC-112-DST-10R
+            - OXF-DSR-ENC-101-DST-1
+            - OXF-DSR-ENC-103-DST-1
+            - OXF-OTT-ENC-103-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-10
+            - ART-DTH-ENC-112-DST-10R
+            - ART-OTT-ENC-103-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-10
+            - OXF-DTH-ENC-112-DST-10R
+            - OXF-DSR-ENC-101-DST-1
+            - OXF-DSR-ENC-103-DST-1
+            - OXF-OTT-ENC-103-DST-1
+    SkyTbredHD:
+        interface 1 sub: SkyTbredHD-PT-SUB
+        interface 2 sub: SkyTbredHD-PT-SUB
+        routable_sub: SkyTbredHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-10
+            - ART-DTH-ENC-112-DST-10R
+            - ART-OTT-ENC-103-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-10
+            - OXF-DTH-ENC-112-DST-10R
+            - OXF-DSR-ENC-101-DST-1
+            - OXF-DSR-ENC-103-DST-1
+            - OXF-OTT-ENC-103-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-10
+            - ART-DTH-ENC-112-DST-10R
+            - ART-OTT-ENC-103-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-10
+            - OXF-DTH-ENC-112-DST-10R
+            - OXF-DSR-ENC-101-DST-1
+            - OXF-DSR-ENC-103-DST-1
+            - OXF-OTT-ENC-103-DST-1
+    CNBC:
+        interface 1 sub: CNBC_SD-PT-SUB
+        interface 2 sub: CNBC_SD-PT-SUB
+        routable_sub: CNBC_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-9
+            - ART-DTH-ENC-113-DST-9R
+            - ART-OTT-ENC-113-DST-9
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-9
+            - OXF-DTH-ENC-113-DST-9R
+            - OXF-DSR-ENC-125-DST-9
+            - OXF-DSR-ENC-127-DST-9
+            - OXF-OTT-ENC-113-DST-9
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-9
+            - ART-DTH-ENC-113-DST-9R
+            - ART-OTT-ENC-113-DST-9
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-9
+            - OXF-DTH-ENC-113-DST-9R
+            - OXF-DSR-ENC-125-DST-9
+            - OXF-DSR-ENC-127-DST-9
+            - OXF-OTT-ENC-113-DST-9
+    BBCCBeebies:
+        interface 1 sub: BBCCBeebies_SD-PO-SUB
+        interface 2 sub: BBCCBeebies_SD-PO-SUB
+        routable_sub: BBCCBeebies_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-8
+            - ART-DTH-ENC-114-DST-8R
+            - ART-OTT-ENC-112-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-8
+            - OXF-DTH-ENC-114-DST-8R
+            - OXF-DSR-ENC-122-DST-5
+            - OXF-DSR-ENC-124-DST-5
+            - OXF-OTT-ENC-112-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-8
+            - ART-DTH-ENC-114-DST-8R
+            - ART-OTT-ENC-112-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-8
+            - OXF-DTH-ENC-114-DST-8R
+            - OXF-DSR-ENC-122-DST-5
+            - OXF-DSR-ENC-124-DST-5
+            - OXF-OTT-ENC-112-DST-2
+    FoxFootyHDLV:
+        interface 1 sub: FoxFootyHDLV-PO-SUB
+        interface 2 sub: FoxFootyHDLV-PO-SUB
+        routable_sub: FoxFootyHDLV-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-10
+            - ART-DTH-ENC-113-DST-10R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-10
+            - OXF-DTH-ENC-113-DST-10R
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-10
+            - ART-DTH-ENC-113-DST-10R
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-10
+            - OXF-DTH-ENC-113-DST-10R
+    FoxLeagueHDLV:
+        interface 1 sub: FoxLeagueHDLV-PO-SUB
+        interface 2 sub: FoxLeagueHDLV-PO-SUB
+        routable_sub: FoxLeagueHDLV-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-9
+            - ART-DTH-ENC-114-DST-9R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-9
+            - OXF-DTH-ENC-114-DST-9R
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-9
+            - ART-DTH-ENC-114-DST-9R
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-9
+            - OXF-DTH-ENC-114-DST-9R
+    EntPopUpHD:
+        interface 1 sub: EntPopUpHD-PO-SUB
+        interface 2 sub: EntPopUpHD-PO-SUB
+        routable_sub: EntPopUpHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-1
+            - ART-DTH-ENC-105-DST-1R
+            - ART-OTT-ENC-110-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-1
+            - OXF-DTH-ENC-105-DST-1R
+            - OXF-DSR-ENC-118-DST-3
+            - OXF-DSR-ENC-120-DST-3
+            - OXF-OTT-ENC-110-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-1
+            - ART-DTH-ENC-105-DST-1R
+            - ART-OTT-ENC-110-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-1
+            - OXF-DTH-ENC-105-DST-1R
+            - OXF-DSR-ENC-118-DST-3
+            - OXF-DSR-ENC-120-DST-3
+            - OXF-OTT-ENC-110-DST-2
+    DreamWorks:
+        interface 1 sub: DreamWorks_HD-PT-SUB
+        interface 2 sub: DreamWorks_HD-PT-SUB
+        routable_sub: DreamWorks_HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-8
+            - ART-DTH-ENC-115-DST-8R
+            - ART-OTT-ENC-111-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-8
+            - OXF-DTH-ENC-115-DST-8R
+            - OXF-DSR-ENC-117-DST-4
+            - OXF-DSR-ENC-119-DST-4
+            - OXF-OTT-ENC-111-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-8
+            - ART-DTH-ENC-115-DST-8R
+            - ART-OTT-ENC-111-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-8
+            - OXF-DTH-ENC-115-DST-8R
+            - OXF-DSR-ENC-117-DST-4
+            - OXF-DSR-ENC-119-DST-4
+            - OXF-OTT-ENC-111-DST-4
+    DreamWorksHD:
+        interface 1 sub: DreamWorks_HD-PT-SUB
+        interface 2 sub: DreamWorks_HD-PT-SUB
+        routable_sub: DreamWorks_HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-8
+            - ART-DTH-ENC-115-DST-8R
+            - ART-OTT-ENC-111-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-8
+            - OXF-DTH-ENC-115-DST-8R
+            - OXF-DSR-ENC-117-DST-4
+            - OXF-DSR-ENC-119-DST-4
+            - OXF-OTT-ENC-111-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-8
+            - ART-DTH-ENC-115-DST-8R
+            - ART-OTT-ENC-111-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-8
+            - OXF-DTH-ENC-115-DST-8R
+            - OXF-DSR-ENC-117-DST-4
+            - OXF-DSR-ENC-119-DST-4
+            - OXF-OTT-ENC-111-DST-4
+    PBSKIDS:
+        interface 1 sub: PBSKIDS_HD-PT-SUB
+        interface 2 sub: PBSKIDS_HD-PT-SUB
+        routable_sub: PBSKIDS_HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-8
+            - ART-DTH-ENC-116-DST-8R
+            - ART-OTT-ENC-110-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-8
+            - OXF-DTH-ENC-116-DST-8R
+            - OXF-DSR-ENC-118-DST-5
+            - OXF-DSR-ENC-120-DST-5
+            - OXF-OTT-ENC-110-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-8
+            - ART-DTH-ENC-116-DST-8R
+            - ART-OTT-ENC-110-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-8
+            - OXF-DTH-ENC-116-DST-8R
+            - OXF-DSR-ENC-118-DST-5
+            - OXF-DSR-ENC-120-DST-5
+            - OXF-OTT-ENC-110-DST-4
+    PBSKIDSHD:
+        interface 1 sub: PBSKIDS_HD-PT-SUB
+        interface 2 sub: PBSKIDS_HD-PT-SUB
+        routable_sub: PBSKIDS_HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-8
+            - ART-DTH-ENC-116-DST-8R
+            - ART-OTT-ENC-110-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-8
+            - OXF-DTH-ENC-116-DST-8R
+            - OXF-DSR-ENC-118-DST-5
+            - OXF-DSR-ENC-120-DST-5
+            - OXF-OTT-ENC-110-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-8
+            - ART-DTH-ENC-116-DST-8R
+            - ART-OTT-ENC-110-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-8
+            - OXF-DTH-ENC-116-DST-8R
+            - OXF-DSR-ENC-118-DST-5
+            - OXF-DSR-ENC-120-DST-5
+            - OXF-OTT-ENC-110-DST-4
+    EXPO:
+        interface 1 sub: EXPO_SD-PT-SUB
+        interface 2 sub: EXPO_SD-PT-SUB
+        routable_sub: EXPO_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-11
+            - ART-DTH-ENC-110-DST-11R
+            - ART-OTT-ENC-114-DST-10
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-11
+            - OXF-DTH-ENC-110-DST-11R
+            - OXF-DSR-ENC-126-DST-10
+            - OXF-DSR-ENC-128-DST-10
+            - OXF-OTT-ENC-114-DST-10
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-11
+            - ART-DTH-ENC-110-DST-11R
+            - ART-OTT-ENC-114-DST-10
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-11
+            - OXF-DTH-ENC-110-DST-11R
+            - OXF-DSR-ENC-126-DST-10
+            - OXF-DSR-ENC-128-DST-10
+            - OXF-OTT-ENC-114-DST-10
+    MovPremiere:
+        interface 1 sub: MovPremiereHD-PO-SUB
+        interface 2 sub: MovPremiereHD-PO-SUB
+        routable_sub: MovPremiereHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-2
+            - ART-DTH-ENC-105-DST-2R
+            - ART-DTH-ENC-122-DST-3
+            - ART-DTH-ENC-122-DST-3R
+            - ART-OTT-ENC-107-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-2
+            - OXF-DTH-ENC-105-DST-2R
+            - OXF-DTH-ENC-122-DST-3
+            - OXF-DTH-ENC-122-DST-3R
+            - OXF-DSR-ENC-117-DST-5
+            - OXF-DSR-ENC-119-DST-5
+            - OXF-OTT-ENC-107-DST-7
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-2
+            - ART-DTH-ENC-105-DST-2R
+            - ART-DTH-ENC-122-DST-3
+            - ART-DTH-ENC-122-DST-3R
+            - ART-OTT-ENC-107-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-2
+            - OXF-DTH-ENC-105-DST-2R
+            - OXF-DTH-ENC-122-DST-3
+            - OXF-DTH-ENC-122-DST-3R
+            - OXF-DSR-ENC-117-DST-5
+            - OXF-DSR-ENC-119-DST-5
+            - OXF-OTT-ENC-107-DST-7
+    MovPremiereHD:
+        interface 1 sub: MovPremiereHD-PO-SUB
+        interface 2 sub: MovPremiereHD-PO-SUB
+        routable_sub: MovPremiereHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-2
+            - ART-DTH-ENC-105-DST-2R
+            - ART-DTH-ENC-122-DST-3
+            - ART-DTH-ENC-122-DST-3R
+            - ART-OTT-ENC-107-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-2
+            - OXF-DTH-ENC-105-DST-2R
+            - OXF-DTH-ENC-122-DST-3
+            - OXF-DTH-ENC-122-DST-3R
+            - OXF-DSR-ENC-117-DST-5
+            - OXF-DSR-ENC-119-DST-5
+            - OXF-OTT-ENC-107-DST-7
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-2
+            - ART-DTH-ENC-105-DST-2R
+            - ART-DTH-ENC-122-DST-3
+            - ART-DTH-ENC-122-DST-3R
+            - ART-OTT-ENC-107-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-2
+            - OXF-DTH-ENC-105-DST-2R
+            - OXF-DTH-ENC-122-DST-3
+            - OXF-DTH-ENC-122-DST-3R
+            - OXF-DSR-ENC-117-DST-5
+            - OXF-DSR-ENC-119-DST-5
+            - OXF-OTT-ENC-107-DST-7
+    FoxShowcase:
+        interface 1 sub: FoxShowcaseHD-PO-SUB
+        interface 2 sub: FoxShowcaseHD-PO-SUB
+        routable_sub: FoxShowcaseHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-1
+            - ART-DTH-ENC-106-DST-1R
+            - ART-DTH-ENC-123-DST-4
+            - ART-DTH-ENC-123-DST-4R
+            - ART-OTT-ENC-106-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-1
+            - OXF-DTH-ENC-106-DST-1R
+            - OXF-DTH-ENC-123-DST-4
+            - OXF-DTH-ENC-123-DST-4R
+            - OXF-OTT-ENC-106-DST-6
+            - OXF-DSR-ENC-106-DST-1
+            - OXF-DSR-ENC-108-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-1
+            - ART-DTH-ENC-106-DST-1R
+            - ART-DTH-ENC-123-DST-4
+            - ART-DTH-ENC-123-DST-4R
+            - ART-OTT-ENC-106-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-1
+            - OXF-DTH-ENC-106-DST-1R
+            - OXF-DTH-ENC-123-DST-4
+            - OXF-DTH-ENC-123-DST-4R
+            - OXF-OTT-ENC-106-DST-6
+            - OXF-DSR-ENC-106-DST-1
+            - OXF-DSR-ENC-108-DST-1
+    FoxShowcaseHD:
+        interface 1 sub: FoxShowcaseHD-PO-SUB
+        interface 2 sub: FoxShowcaseHD-PO-SUB
+        routable_sub: FoxShowcaseHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-1
+            - ART-DTH-ENC-106-DST-1R
+            - ART-DTH-ENC-123-DST-4
+            - ART-DTH-ENC-123-DST-4R
+            - ART-OTT-ENC-106-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-1
+            - OXF-DTH-ENC-106-DST-1R
+            - OXF-DTH-ENC-123-DST-4
+            - OXF-DTH-ENC-123-DST-4R
+            - OXF-OTT-ENC-106-DST-6
+            - OXF-DSR-ENC-106-DST-1
+            - OXF-DSR-ENC-108-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-1
+            - ART-DTH-ENC-106-DST-1R
+            - ART-DTH-ENC-123-DST-4
+            - ART-DTH-ENC-123-DST-4R
+            - ART-OTT-ENC-106-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-1
+            - OXF-DTH-ENC-106-DST-1R
+            - OXF-DTH-ENC-123-DST-4
+            - OXF-DTH-ENC-123-DST-4R
+            - OXF-OTT-ENC-106-DST-6
+            - OXF-DSR-ENC-106-DST-1
+            - OXF-DSR-ENC-108-DST-1
+    MovComedy:
+        interface 1 sub: MovComedyHD-PO-SUB
+        interface 2 sub: MovComedyHD-PO-SUB
+        routable_sub: MovComedyHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-3
+            - ART-DTH-ENC-105-DST-3R
+            - ART-OTT-ENC-109-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-3
+            - OXF-DTH-ENC-105-DST-3R
+            - OXF-DSR-ENC-113-DST-6
+            - OXF-DSR-ENC-115-DST-6
+            - OXF-OTT-ENC-109-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-3
+            - ART-DTH-ENC-105-DST-3R
+            - ART-OTT-ENC-109-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-3
+            - OXF-DTH-ENC-105-DST-3R
+            - OXF-DSR-ENC-113-DST-6
+            - OXF-DSR-ENC-115-DST-6
+            - OXF-OTT-ENC-109-DST-6
+    MovComedyHD:
+        interface 1 sub: MovComedyHD-PO-SUB
+        interface 2 sub: MovComedyHD-PO-SUB
+        routable_sub: MovComedyHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-3
+            - ART-DTH-ENC-105-DST-3R
+            - ART-OTT-ENC-109-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-3
+            - OXF-DTH-ENC-105-DST-3R
+            - OXF-DSR-ENC-113-DST-6
+            - OXF-DSR-ENC-115-DST-6
+            - OXF-OTT-ENC-109-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-3
+            - ART-DTH-ENC-105-DST-3R
+            - ART-OTT-ENC-109-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-3
+            - OXF-DTH-ENC-105-DST-3R
+            - OXF-DSR-ENC-113-DST-6
+            - OXF-DSR-ENC-115-DST-6
+            - OXF-OTT-ENC-109-DST-6
+    MovRomance:
+        interface 1 sub: MovRomanceHD-PO-SUB
+        interface 2 sub: MovRomanceHD-PO-SUB
+        routable_sub: MovRomanceHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-2
+            - ART-DTH-ENC-106-DST-2R
+            - ART-OTT-ENC-108-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-2
+            - OXF-DTH-ENC-106-DST-2R
+            - OXF-DSR-ENC-114-DST-4
+            - OXF-DSR-ENC-116-DST-4
+            - OXF-OTT-ENC-108-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-2
+            - ART-DTH-ENC-106-DST-2R
+            - ART-OTT-ENC-108-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-2
+            - OXF-DTH-ENC-106-DST-2R
+            - OXF-DSR-ENC-114-DST-4
+            - OXF-DSR-ENC-116-DST-4
+            - OXF-OTT-ENC-108-DST-4
+    MovRomanceHD:
+        interface 1 sub: MovRomanceHD-PO-SUB
+        interface 2 sub: MovRomanceHD-PO-SUB
+        routable_sub: MovRomanceHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-2
+            - ART-DTH-ENC-106-DST-2R
+            - ART-OTT-ENC-108-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-2
+            - OXF-DTH-ENC-106-DST-2R
+            - OXF-DSR-ENC-114-DST-4
+            - OXF-DSR-ENC-116-DST-4
+            - OXF-OTT-ENC-108-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-2
+            - ART-DTH-ENC-106-DST-2R
+            - ART-OTT-ENC-108-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-2
+            - OXF-DTH-ENC-106-DST-2R
+            - OXF-DSR-ENC-114-DST-4
+            - OXF-DSR-ENC-116-DST-4
+            - OXF-OTT-ENC-108-DST-4
+    FoxCricketHD:
+        interface 1 sub: FoxCricketHD-PO-SUB
+        interface 2 sub: FoxCricketHD-PO-SUB
+        routable_sub: FoxCricketHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-11
+            - ART-DTH-ENC-115-DST-11R
+            - ART-OTT-ENC-101-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-11
+            - OXF-DTH-ENC-115-DST-11R
+            - OXF-DSR-ENC-105-DST-1
+            - OXF-DSR-ENC-107-DST-1
+            - OXF-OTT-ENC-101-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-11
+            - ART-DTH-ENC-115-DST-11R
+            - ART-OTT-ENC-101-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-11
+            - OXF-DTH-ENC-115-DST-11R
+            - OXF-DSR-ENC-105-DST-1
+            - OXF-DSR-ENC-107-DST-1
+            - OXF-OTT-ENC-101-DST-5
+    BBCEarth:
+        interface 1 sub: BBCEarthHD-PO-SUB
+        interface 2 sub: BBCEarthHD-PO-SUB
+        routable_sub: BBCEarthHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-4
+            - ART-DTH-ENC-105-DST-4R
+            - ART-OTT-ENC-109-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-4
+            - OXF-DTH-ENC-105-DST-4R
+            - OXF-DSR-ENC-113-DST-5
+            - OXF-DSR-ENC-115-DST-5
+            - OXF-OTT-ENC-109-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-4
+            - ART-DTH-ENC-105-DST-4R
+            - ART-OTT-ENC-109-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-4
+            - OXF-DTH-ENC-105-DST-4R
+            - OXF-DSR-ENC-113-DST-5
+            - OXF-DSR-ENC-115-DST-5
+            - OXF-OTT-ENC-109-DST-5
+    BBCEarthHD:
+        interface 1 sub: BBCEarthHD-PO-SUB
+        interface 2 sub: BBCEarthHD-PO-SUB
+        routable_sub: BBCEarthHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-4
+            - ART-DTH-ENC-105-DST-4R
+            - ART-OTT-ENC-109-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-4
+            - OXF-DTH-ENC-105-DST-4R
+            - OXF-DSR-ENC-113-DST-5
+            - OXF-DSR-ENC-115-DST-5
+            - OXF-OTT-ENC-109-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-4
+            - ART-DTH-ENC-105-DST-4R
+            - ART-OTT-ENC-109-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-4
+            - OXF-DTH-ENC-105-DST-4R
+            - OXF-DSR-ENC-113-DST-5
+            - OXF-DSR-ENC-115-DST-5
+            - OXF-OTT-ENC-109-DST-5
+    AE:
+        interface 1 sub: AEHD-PO-SUB
+        interface 2 sub: AEHD-PO-SUB
+        routable_sub: AEHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-3
+            - ART-DTH-ENC-106-DST-3R
+            - ART-DTH-ENC-123-DST-3
+            - ART-DTH-ENC-123-DST-3R
+            - ART-OTT-ENC-106-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-3
+            - OXF-DTH-ENC-106-DST-3R
+            - OXF-DTH-ENC-123-DST-3
+            - OXF-DTH-ENC-123-DST-3R
+            - OXF-DSR-ENC-110-DST-2
+            - OXF-DSR-ENC-112-DST-2
+            - OXF-OTT-ENC-106-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-3
+            - ART-DTH-ENC-106-DST-3R
+            - ART-DTH-ENC-123-DST-3
+            - ART-DTH-ENC-123-DST-3R
+            - ART-OTT-ENC-106-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-3
+            - OXF-DTH-ENC-106-DST-3R
+            - OXF-DTH-ENC-123-DST-3
+            - OXF-DTH-ENC-123-DST-3R
+            - OXF-DSR-ENC-110-DST-2
+            - OXF-DSR-ENC-112-DST-2
+            - OXF-OTT-ENC-106-DST-2
+    AEHD:
+        interface 1 sub: AEHD-PO-SUB
+        interface 2 sub: AEHD-PO-SUB
+        routable_sub: AEHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-3
+            - ART-DTH-ENC-106-DST-3R
+            - ART-DTH-ENC-123-DST-3
+            - ART-DTH-ENC-123-DST-3R
+            - ART-OTT-ENC-106-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-3
+            - OXF-DTH-ENC-106-DST-3R
+            - OXF-DTH-ENC-123-DST-3
+            - OXF-DTH-ENC-123-DST-3R
+            - OXF-DSR-ENC-110-DST-2
+            - OXF-DSR-ENC-112-DST-2
+            - OXF-OTT-ENC-106-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-3
+            - ART-DTH-ENC-106-DST-3R
+            - ART-DTH-ENC-123-DST-3
+            - ART-DTH-ENC-123-DST-3R
+            - ART-OTT-ENC-106-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-3
+            - OXF-DTH-ENC-106-DST-3R
+            - OXF-DTH-ENC-123-DST-3
+            - OXF-DTH-ENC-123-DST-3R
+            - OXF-DSR-ENC-110-DST-2
+            - OXF-DSR-ENC-112-DST-2
+            - OXF-OTT-ENC-106-DST-2
+    MovLMN:
+        interface 1 sub: MovLMNHD-PO-SUB
+        interface 2 sub: MovLMNHD-PO-SUB
+        routable_sub: MovLMNHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-5
+            - ART-DTH-ENC-101-DST-5R
+            - ART-OTT-ENC-108-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-5
+            - OXF-DTH-ENC-101-DST-5R
+            - OXF-DSR-ENC-110-DST-5
+            - OXF-DSR-ENC-112-DST-5
+            - OXF-OTT-ENC-108-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-5
+            - ART-DTH-ENC-101-DST-5R
+            - ART-OTT-ENC-108-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-5
+            - OXF-DTH-ENC-101-DST-5R
+            - OXF-DSR-ENC-110-DST-5
+            - OXF-DSR-ENC-112-DST-5
+            - OXF-OTT-ENC-108-DST-1
+    MovLMNHD:
+        interface 1 sub: MovLMNHD-PO-SUB
+        interface 2 sub: MovLMNHD-PO-SUB
+        routable_sub: MovLMNHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-5
+            - ART-DTH-ENC-101-DST-5R
+            - ART-OTT-ENC-108-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-5
+            - OXF-DTH-ENC-101-DST-5R
+            - OXF-DSR-ENC-110-DST-5
+            - OXF-DSR-ENC-112-DST-5
+            - OXF-OTT-ENC-108-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-5
+            - ART-DTH-ENC-101-DST-5R
+            - ART-OTT-ENC-108-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-5
+            - OXF-DTH-ENC-101-DST-5R
+            - OXF-DSR-ENC-110-DST-5
+            - OXF-DSR-ENC-112-DST-5
+            - OXF-OTT-ENC-108-DST-1
+    KidsPopUp:
+        interface 1 sub: KidsPopUp_SD-PT-SUB
+        interface 2 sub: KidsPopUp_SD-PT-SUB
+        routable_sub: KidsPopUp_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-11
+            - ART-DTH-ENC-111-DST-11R
+            - ART-OTT-ENC-113-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-11
+            - OXF-DTH-ENC-111-DST-11R
+            - OXF-DSR-ENC-121-DST-3
+            - OXF-DSR-ENC-123-DST-3
+            - OXF-OTT-ENC-113-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-11
+            - ART-DTH-ENC-111-DST-11R
+            - ART-OTT-ENC-113-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-11
+            - OXF-DTH-ENC-111-DST-11R
+            - OXF-DSR-ENC-121-DST-3
+            - OXF-DSR-ENC-123-DST-3
+            - OXF-OTT-ENC-113-DST-1
+    MTVHits:
+        interface 1 sub: MTVHits_SD-PT-SUB
+        interface 2 sub: MTVHits_SD-PT-SUB
+        routable_sub: MTVHits_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-13
+            - ART-DTH-ENC-112-DST-13R
+            - ART-OTT-ENC-114-DST-9
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-13
+            - OXF-DTH-ENC-112-DST-13R
+            - OXF-DSR-ENC-126-DST-8
+            - OXF-DSR-ENC-128-DST-8
+            - OXF-OTT-ENC-114-DST-9
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-13
+            - ART-DTH-ENC-112-DST-13R
+            - ART-OTT-ENC-114-DST-9
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-13
+            - OXF-DTH-ENC-112-DST-13R
+            - OXF-DSR-ENC-126-DST-8
+            - OXF-DSR-ENC-128-DST-8
+            - OXF-OTT-ENC-114-DST-9
+    SkyNewsExtra:
+        interface 1 sub: SkyNewsExtra_SD-PT-SUB
+        interface 2 sub: SkyNewsExtra_SD-PT-SUB
+        routable_sub: SkyNewsExtra_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-13
+            - ART-DTH-ENC-113-DST-13R
+            - ART-OTT-ENC-113-DST-10
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-13
+            - OXF-DTH-ENC-113-DST-13R
+            - OXF-DSR-ENC-125-DST-10
+            - OXF-DSR-ENC-127-DST-10
+            - OXF-OTT-ENC-113-DST-10
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-13
+            - ART-DTH-ENC-113-DST-13R
+            - ART-OTT-ENC-113-DST-10
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-13
+            - OXF-DTH-ENC-113-DST-13R
+            - OXF-DSR-ENC-125-DST-10
+            - OXF-DSR-ENC-127-DST-10
+            - OXF-OTT-ENC-113-DST-10
+    Aurora:
+        interface 1 sub: Aurora_SD-PT-SUB
+        interface 2 sub: Aurora_SD-PT-SUB
+        routable_sub: Aurora_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-12
+            - ART-DTH-ENC-114-DST-12R
+            - ART-OTT-ENC-114-DST-11
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-12
+            - OXF-DTH-ENC-114-DST-12R
+            - OXF-OTT-ENC-114-DST-11
+            - OXF-DSR-ENC-126-DST-11
+            - OXF-DSR-ENC-128-DST-11
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-12
+            - ART-DTH-ENC-114-DST-12R
+            - ART-OTT-ENC-114-DST-11
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-12
+            - OXF-DTH-ENC-114-DST-12R
+            - OXF-OTT-ENC-114-DST-11
+            - OXF-DSR-ENC-126-DST-11
+            - OXF-DSR-ENC-128-DST-11
+    FoxLeagueLV:
+        interface 1 sub: FoxLeagueLV_SD-PO-SUB
+        interface 2 sub: FoxLeagueLV_SD-PO-SUB
+        routable_sub: FoxLeagueLV_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-12
+            - ART-DTH-ENC-115-DST-12R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-12
+            - OXF-DTH-ENC-115-DST-12R
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-12
+            - ART-DTH-ENC-115-DST-12R
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-12
+            - OXF-DTH-ENC-115-DST-12R
+    FoxCricketLV:
+        interface 1 sub: FoxCricketLV_SD-PO-SUB
+        interface 2 sub: FoxCricketLV_SD-PO-SUB
+        routable_sub: FoxCricketLV_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-14
+            - ART-DTH-ENC-114-DST-14R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-14
+            - OXF-DTH-ENC-114-DST-14R
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-14
+            - ART-DTH-ENC-114-DST-14R
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-14
+            - OXF-DTH-ENC-114-DST-14R
+    LifeStyleHome:
+        interface 1 sub: LifeStyleHome_SD-PO-SUB
+        interface 2 sub: LifeStyleHome_SD-PO-SUB
+        routable_sub: LifeStyleHome_SD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-11
+            - ART-DTH-ENC-116-DST-11R
+            - ART-OTT-ENC-112-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-11
+            - OXF-DTH-ENC-116-DST-11R
+            - OXF-OTT-ENC-112-DST-3
+            - OXF-DSR-ENC-122-DST-6
+            - OXF-DSR-ENC-124-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-11
+            - ART-DTH-ENC-116-DST-11R
+            - ART-OTT-ENC-112-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-11
+            - OXF-DTH-ENC-116-DST-11R
+            - OXF-OTT-ENC-112-DST-3
+            - OXF-DSR-ENC-122-DST-6
+            - OXF-DSR-ENC-124-DST-6
+    FoxSptsUHD1:
+        interface 1 sub: FoxSptsUHD1-PO-SUB
+        interface 2 sub: FoxSptsUHD1-PO-SUB
+        routable_sub: FoxSptsUHD1-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-141-DST-1
+            - ART-DTH-ENC-142-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-141-DST-1
+            - OXF-DTH-ENC-142-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-141-DST-1
+            - ART-DTH-ENC-142-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-141-DST-1
+            - OXF-DTH-ENC-142-DST-1
+    FoxSptsUHD2:
+        interface 1 sub: FoxSptsUHD2-PO-SUB
+        interface 2 sub: FoxSptsUHD2-PO-SUB
+        routable_sub: FoxSptsUHD2-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-145-DST-1
+            - ART-DTH-ENC-146-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-145-DST-1
+            - OXF-DTH-ENC-146-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-145-DST-1
+            - ART-DTH-ENC-146-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-145-DST-1
+            - OXF-DTH-ENC-146-DST-1
+    FoxSptsUHD3:
+        interface 1 sub: FoxSptsUHD3-PO-SUB
+        interface 2 sub: FoxSptsUHD3-PO-SUB
+        routable_sub: FoxSptsUHD3-PO-SUB
+        routable_dst_ART:
+        routable_dst_OXF:
+        interface 1 destinations:
+        interface 2 destinations:
+    FoxSptsUHD4:
+        interface 1 sub: FoxSptsUHD4-PO-SUB
+        interface 2 sub: FoxSptsUHD4-PO-SUB
+        routable_sub: FoxSptsUHD4-PO-SUB
+        routable_dst_ART:
+        routable_dst_OXF:
+        interface 1 destinations:
+        interface 2 destinations:
+    FoxSptsUHD5:
+        interface 1 sub: FoxSptsUHD5-PO-SUB
+        interface 2 sub: FoxSptsUHD5-PO-SUB
+        routable_sub: FoxSptsUHD5-PO-SUB
+        routable_dst_ART:
+        routable_dst_OXF:
+        interface 1 destinations:
+        interface 2 destinations:
+    FoxSptsUHD6:
+        interface 1 sub: FoxSptsUHD6-PO-SUB
+        interface 2 sub: FoxSptsUHD6-PO-SUB
+        routable_sub: FoxSptsUHD6-PO-SUB
+        routable_dst_ART:
+        routable_dst_OXF:
+        interface 1 destinations:
+        interface 2 destinations:
+    beINSpts1:
+        interface 1 sub: beINSpts1HD-PT-SUB
+        interface 2 sub: beINSpts1HD-PT-SUB
+        routable_sub: beINSpts1HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-109-DST-3
+            - ART-DTH-ENC-109-DST-3R
+            - ART-OTT-ENC-101-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-109-DST-3
+            - OXF-DTH-ENC-109-DST-3R
+            - OXF-DSR-ENC-101-DST-3
+            - OXF-DSR-ENC-103-DST-3
+            - OXF-OTT-ENC-101-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-109-DST-3
+            - ART-DTH-ENC-109-DST-3R
+            - ART-OTT-ENC-101-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-109-DST-3
+            - OXF-DTH-ENC-109-DST-3R
+            - OXF-DSR-ENC-101-DST-3
+            - OXF-DSR-ENC-103-DST-3
+            - OXF-OTT-ENC-101-DST-2
+    beINSpts1HD:
+        interface 1 sub: beINSpts1HD-PT-SUB
+        interface 2 sub: beINSpts1HD-PT-SUB
+        routable_sub: beINSpts1HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-109-DST-3
+            - ART-DTH-ENC-109-DST-3R
+            - ART-OTT-ENC-101-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-109-DST-3
+            - OXF-DTH-ENC-109-DST-3R
+            - OXF-DSR-ENC-101-DST-3
+            - OXF-DSR-ENC-103-DST-3
+            - OXF-OTT-ENC-101-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-109-DST-3
+            - ART-DTH-ENC-109-DST-3R
+            - ART-OTT-ENC-101-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-109-DST-3
+            - OXF-DTH-ENC-109-DST-3R
+            - OXF-DSR-ENC-101-DST-3
+            - OXF-DSR-ENC-103-DST-3
+            - OXF-OTT-ENC-101-DST-2
+    beINSpts2:
+        interface 1 sub: beINSpts2HD-PT-SUB
+        interface 2 sub: beINSpts2HD-PT-SUB
+        routable_sub: beINSpts2HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-108-DST-4
+            - ART-DTH-ENC-108-DST-4R
+            - ART-OTT-ENC-102-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-108-DST-4
+            - OXF-DTH-ENC-108-DST-4R
+            - OXF-DSR-ENC-102-DST-3
+            - OXF-DSR-ENC-104-DST-3
+            - OXF-OTT-ENC-102-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-108-DST-4
+            - ART-DTH-ENC-108-DST-4R
+            - ART-OTT-ENC-102-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-108-DST-4
+            - OXF-DTH-ENC-108-DST-4R
+            - OXF-DSR-ENC-102-DST-3
+            - OXF-DSR-ENC-104-DST-3
+            - OXF-OTT-ENC-102-DST-3
+    beINSpts2HD:
+        interface 1 sub: beINSpts2HD-PT-SUB
+        interface 2 sub: beINSpts2HD-PT-SUB
+        routable_sub: beINSpts2HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-108-DST-4
+            - ART-DTH-ENC-108-DST-4R
+            - ART-OTT-ENC-102-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-108-DST-4
+            - OXF-DTH-ENC-108-DST-4R
+            - OXF-DSR-ENC-102-DST-3
+            - OXF-DSR-ENC-104-DST-3
+            - OXF-OTT-ENC-102-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-108-DST-4
+            - ART-DTH-ENC-108-DST-4R
+            - ART-OTT-ENC-102-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-108-DST-4
+            - OXF-DTH-ENC-108-DST-4R
+            - OXF-DSR-ENC-102-DST-3
+            - OXF-DSR-ENC-104-DST-3
+            - OXF-OTT-ENC-102-DST-3
+    beINSpts3:
+        interface 1 sub: beINSpts3HD-PT-SUB
+        interface 2 sub: beINSpts3HD-PT-SUB
+        routable_sub: beINSpts3HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-109-DST-4
+            - ART-DTH-ENC-109-DST-4R
+            - ART-OTT-ENC-101-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-109-DST-4
+            - OXF-DTH-ENC-109-DST-4R
+            - OXF-DSR-ENC-101-DST-4
+            - OXF-DSR-ENC-103-DST-4
+            - OXF-OTT-ENC-101-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-109-DST-4
+            - ART-DTH-ENC-109-DST-4R
+            - ART-OTT-ENC-101-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-109-DST-4
+            - OXF-DTH-ENC-109-DST-4R
+            - OXF-DSR-ENC-101-DST-4
+            - OXF-DSR-ENC-103-DST-4
+            - OXF-OTT-ENC-101-DST-3
+    beINSpts3HD:
+        interface 1 sub: beINSpts3HD-PT-SUB
+        interface 2 sub: beINSpts3HD-PT-SUB
+        routable_sub: beINSpts3HD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-109-DST-4
+            - ART-DTH-ENC-109-DST-4R
+            - ART-OTT-ENC-101-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-109-DST-4
+            - OXF-DTH-ENC-109-DST-4R
+            - OXF-DSR-ENC-101-DST-4
+            - OXF-DSR-ENC-103-DST-4
+            - OXF-OTT-ENC-101-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-109-DST-4
+            - ART-DTH-ENC-109-DST-4R
+            - ART-OTT-ENC-101-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-109-DST-4
+            - OXF-DTH-ENC-109-DST-4R
+            - OXF-DSR-ENC-101-DST-4
+            - OXF-DSR-ENC-103-DST-4
+            - OXF-OTT-ENC-101-DST-3
+    FoxSptsMoreHD:
+        interface 1 sub: FoxSptsMoreHD-PO-SUB
+        interface 2 sub: FoxSptsMoreHD-PO-SUB
+        routable_sub: FoxSptsMoreHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-12
+            - ART-DTH-ENC-116-DST-12R
+            - ART-OTT-ENC-102-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-12
+            - OXF-DTH-ENC-116-DST-12R
+            - OXF-DSR-ENC-102-DST-4
+            - OXF-DSR-ENC-104-DST-4
+            - OXF-OTT-ENC-102-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-12
+            - ART-DTH-ENC-116-DST-12R
+            - ART-OTT-ENC-102-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-12
+            - OXF-DTH-ENC-116-DST-12R
+            - OXF-DSR-ENC-102-DST-4
+            - OXF-DSR-ENC-104-DST-4
+            - OXF-OTT-ENC-102-DST-4
+    FoxCrime:
+        interface 1 sub: FoxCrimeHD-PO-SUB
+        interface 2 sub: FoxCrimeHD-PO-SUB
+        routable_sub: FoxCrimeHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-5
+            - ART-DTH-ENC-105-DST-5R
+            - ART-DTH-ENC-122-DST-2
+            - ART-DTH-ENC-122-DST-2R
+            - ART-OTT-ENC-111-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-5
+            - OXF-DTH-ENC-105-DST-5R
+            - OXF-DTH-ENC-122-DST-2
+            - OXF-DTH-ENC-122-DST-2R
+            - OXF-DSR-ENC-117-DST-3
+            - OXF-DSR-ENC-119-DST-3
+            - OXF-OTT-ENC-111-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-5
+            - ART-DTH-ENC-105-DST-5R
+            - ART-DTH-ENC-122-DST-2
+            - ART-DTH-ENC-122-DST-2R
+            - ART-OTT-ENC-111-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-5
+            - OXF-DTH-ENC-105-DST-5R
+            - OXF-DTH-ENC-122-DST-2
+            - OXF-DTH-ENC-122-DST-2R
+            - OXF-DSR-ENC-117-DST-3
+            - OXF-DSR-ENC-119-DST-3
+            - OXF-OTT-ENC-111-DST-3
+    FoxCrimeHD:
+        interface 1 sub: FoxCrimeHD-PO-SUB
+        interface 2 sub: FoxCrimeHD-PO-SUB
+        routable_sub: FoxCrimeHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-105-DST-5
+            - ART-DTH-ENC-105-DST-5R
+            - ART-DTH-ENC-122-DST-2
+            - ART-DTH-ENC-122-DST-2R
+            - ART-OTT-ENC-111-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-105-DST-5
+            - OXF-DTH-ENC-105-DST-5R
+            - OXF-DTH-ENC-122-DST-2
+            - OXF-DTH-ENC-122-DST-2R
+            - OXF-DSR-ENC-117-DST-3
+            - OXF-DSR-ENC-119-DST-3
+            - OXF-OTT-ENC-111-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-105-DST-5
+            - ART-DTH-ENC-105-DST-5R
+            - ART-DTH-ENC-122-DST-2
+            - ART-DTH-ENC-122-DST-2R
+            - ART-OTT-ENC-111-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-105-DST-5
+            - OXF-DTH-ENC-105-DST-5R
+            - OXF-DTH-ENC-122-DST-2
+            - OXF-DTH-ENC-122-DST-2R
+            - OXF-DSR-ENC-117-DST-3
+            - OXF-DSR-ENC-119-DST-3
+            - OXF-OTT-ENC-111-DST-3
+    RealLife:
+        interface 1 sub: RealLifeHD-PO-SUB
+        interface 2 sub: RealLifeHD-PO-SUB
+        routable_sub: RealLifeHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-1
+            - ART-DTH-ENC-101-DST-1R
+            - ART-DTH-ENC-122-DST-4
+            - ART-DTH-ENC-122-DST-4R
+            - ART-OTT-ENC-111-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-1
+            - OXF-DTH-ENC-101-DST-1R
+            - OXF-DTH-ENC-122-DST-4
+            - OXF-DTH-ENC-122-DST-4R
+            - OXF-DSR-ENC-117-DST-2
+            - OXF-DSR-ENC-119-DST-2
+            - OXF-OTT-ENC-111-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-1
+            - ART-DTH-ENC-101-DST-1R
+            - ART-DTH-ENC-122-DST-4
+            - ART-DTH-ENC-122-DST-4R
+            - ART-OTT-ENC-111-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-1
+            - OXF-DTH-ENC-101-DST-1R
+            - OXF-DTH-ENC-122-DST-4
+            - OXF-DTH-ENC-122-DST-4R
+            - OXF-DSR-ENC-117-DST-2
+            - OXF-DSR-ENC-119-DST-2
+            - OXF-OTT-ENC-111-DST-2
+    RealLifeHD:
+        interface 1 sub: RealLifeHD-PO-SUB
+        interface 2 sub: RealLifeHD-PO-SUB
+        routable_sub: RealLifeHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-1
+            - ART-DTH-ENC-101-DST-1R
+            - ART-DTH-ENC-122-DST-4
+            - ART-DTH-ENC-122-DST-4R
+            - ART-OTT-ENC-111-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-1
+            - OXF-DTH-ENC-101-DST-1R
+            - OXF-DTH-ENC-122-DST-4
+            - OXF-DTH-ENC-122-DST-4R
+            - OXF-DSR-ENC-117-DST-2
+            - OXF-DSR-ENC-119-DST-2
+            - OXF-OTT-ENC-111-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-1
+            - ART-DTH-ENC-101-DST-1R
+            - ART-DTH-ENC-122-DST-4
+            - ART-DTH-ENC-122-DST-4R
+            - ART-OTT-ENC-111-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-1
+            - OXF-DTH-ENC-101-DST-1R
+            - OXF-DTH-ENC-122-DST-4
+            - OXF-DTH-ENC-122-DST-4R
+            - OXF-DSR-ENC-117-DST-2
+            - OXF-DSR-ENC-119-DST-2
+            - OXF-OTT-ENC-111-DST-2
+    SkyNewsUK:
+        interface 1 sub: SkyNewsUKHD-PT-SUB
+        interface 2 sub: SkyNewsUKHD-PT-SUB
+        routable_sub: SkyNewsUKHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-107-DST-1
+            - ART-DTH-ENC-107-DST-1R
+            - ART-OTT-ENC-107-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-107-DST-1
+            - OXF-DTH-ENC-107-DST-1R
+            - OXF-DSR-ENC-109-DST-6
+            - OXF-DSR-ENC-111-DST-6
+            - OXF-OTT-ENC-107-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-107-DST-1
+            - ART-DTH-ENC-107-DST-1R
+            - ART-OTT-ENC-107-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-107-DST-1
+            - OXF-DTH-ENC-107-DST-1R
+            - OXF-DSR-ENC-109-DST-6
+            - OXF-DSR-ENC-111-DST-6
+            - OXF-OTT-ENC-107-DST-6
+    SkyNewsUKHD:
+        interface 1 sub: SkyNewsUKHD-PT-SUB
+        interface 2 sub: SkyNewsUKHD-PT-SUB
+        routable_sub: SkyNewsUKHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-107-DST-1
+            - ART-DTH-ENC-107-DST-1R
+            - ART-OTT-ENC-107-DST-6
+        routable_dst_OXF:
+            - OXF-DTH-ENC-107-DST-1
+            - OXF-DTH-ENC-107-DST-1R
+            - OXF-DSR-ENC-109-DST-6
+            - OXF-DSR-ENC-111-DST-6
+            - OXF-OTT-ENC-107-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-107-DST-1
+            - ART-DTH-ENC-107-DST-1R
+            - ART-OTT-ENC-107-DST-6
+        interface 2 destinations:
+            - OXF-DTH-ENC-107-DST-1
+            - OXF-DTH-ENC-107-DST-1R
+            - OXF-DSR-ENC-109-DST-6
+            - OXF-DSR-ENC-111-DST-6
+            - OXF-OTT-ENC-107-DST-6
+    MovHits:
+        interface 1 sub: MovHitsHD-PO-SUB
+        interface 2 sub: MovHitsHD-PO-SUB
+        routable_sub: MovHitsHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-107-DST-2
+            - ART-DTH-ENC-107-DST-2R
+            - ART-OTT-ENC-109-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-107-DST-2
+            - OXF-DTH-ENC-107-DST-2R
+            - OXF-DSR-ENC-113-DST-4
+            - OXF-DSR-ENC-115-DST-4
+            - OXF-OTT-ENC-109-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-107-DST-2
+            - ART-DTH-ENC-107-DST-2R
+            - ART-OTT-ENC-109-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-107-DST-2
+            - OXF-DTH-ENC-107-DST-2R
+            - OXF-DSR-ENC-113-DST-4
+            - OXF-DSR-ENC-115-DST-4
+            - OXF-OTT-ENC-109-DST-4
+    MovHitsHD:
+        interface 1 sub: MovHitsHD-PO-SUB
+        interface 2 sub: MovHitsHD-PO-SUB
+        routable_sub: MovHitsHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-107-DST-2
+            - ART-DTH-ENC-107-DST-2R
+            - ART-OTT-ENC-109-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-107-DST-2
+            - OXF-DTH-ENC-107-DST-2R
+            - OXF-DSR-ENC-113-DST-4
+            - OXF-DSR-ENC-115-DST-4
+            - OXF-OTT-ENC-109-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-107-DST-2
+            - ART-DTH-ENC-107-DST-2R
+            - ART-OTT-ENC-109-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-107-DST-2
+            - OXF-DTH-ENC-107-DST-2R
+            - OXF-DSR-ENC-113-DST-4
+            - OXF-DSR-ENC-115-DST-4
+            - OXF-OTT-ENC-109-DST-4
+    FoxSpts506HD:
+        interface 1 sub: FoxSpts506HD-PO-SUB
+        interface 2 sub: FoxSpts506HD-PO-SUB
+        routable_sub: FoxSpts506HD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-12
+            - ART-DTH-ENC-110-DST-12R
+            - ART-OTT-ENC-104-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-12
+            - OXF-DTH-ENC-110-DST-12R
+            - OXF-DSR-ENC-106-DST-5
+            - OXF-DSR-ENC-108-DST-5
+            - OXF-OTT-ENC-104-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-12
+            - ART-DTH-ENC-110-DST-12R
+            - ART-OTT-ENC-104-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-12
+            - OXF-DTH-ENC-110-DST-12R
+            - OXF-DSR-ENC-106-DST-5
+            - OXF-DSR-ENC-108-DST-5
+            - OXF-OTT-ENC-104-DST-4
+    FoxSciFi:
+        interface 1 sub: FoxSciFiHD-PO-SUB
+        interface 2 sub: FoxSciFiHD-PO-SUB
+        routable_sub: FoxSciFiHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-4
+            - ART-DTH-ENC-101-DST-4R
+            - ART-DTH-ENC-121-DST-6
+            - ART-DTH-ENC-121-DST-6R
+            - ART-OTT-ENC-109-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-4
+            - OXF-DTH-ENC-101-DST-4R
+            - OXF-DTH-ENC-121-DST-6
+            - OXF-DTH-ENC-121-DST-6R
+            - OXF-DSR-ENC-113-DST-2
+            - OXF-DSR-ENC-115-DST-2
+            - OXF-OTT-ENC-109-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-4
+            - ART-DTH-ENC-101-DST-4R
+            - ART-DTH-ENC-121-DST-6
+            - ART-DTH-ENC-121-DST-6R
+            - ART-OTT-ENC-109-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-4
+            - OXF-DTH-ENC-101-DST-4R
+            - OXF-DTH-ENC-121-DST-6
+            - OXF-DTH-ENC-121-DST-6R
+            - OXF-DSR-ENC-113-DST-2
+            - OXF-DSR-ENC-115-DST-2
+            - OXF-OTT-ENC-109-DST-2
+    FoxSciFiHD:
+        interface 1 sub: FoxSciFiHD-PO-SUB
+        interface 2 sub: FoxSciFiHD-PO-SUB
+        routable_sub: FoxSciFiHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-4
+            - ART-DTH-ENC-101-DST-4R
+            - ART-DTH-ENC-121-DST-6
+            - ART-DTH-ENC-121-DST-6R
+            - ART-OTT-ENC-109-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-4
+            - OXF-DTH-ENC-101-DST-4R
+            - OXF-DTH-ENC-121-DST-6
+            - OXF-DTH-ENC-121-DST-6R
+            - OXF-DSR-ENC-113-DST-2
+            - OXF-DSR-ENC-115-DST-2
+            - OXF-OTT-ENC-109-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-4
+            - ART-DTH-ENC-101-DST-4R
+            - ART-DTH-ENC-121-DST-6
+            - ART-DTH-ENC-121-DST-6R
+            - ART-OTT-ENC-109-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-4
+            - OXF-DTH-ENC-101-DST-4R
+            - OXF-DTH-ENC-121-DST-6
+            - OXF-DTH-ENC-121-DST-6R
+            - OXF-DSR-ENC-113-DST-2
+            - OXF-DSR-ENC-115-DST-2
+            - OXF-OTT-ENC-109-DST-2
+    LifeStyle:
+        interface 1 sub: LifeStyleHD-PO-SUB
+        interface 2 sub: LifeStyleHD-PO-SUB
+        routable_sub: LifeStyleHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-3
+            - ART-DTH-ENC-102-DST-3R
+            - ART-DTH-ENC-123-DST-2
+            - ART-DTH-ENC-123-DST-2R
+            - ART-OTT-ENC-106-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-3
+            - OXF-DTH-ENC-102-DST-3R
+            - OXF-DTH-ENC-123-DST-2
+            - OXF-DTH-ENC-123-DST-2R
+            - OXF-OTT-ENC-106-DST-4
+            - OXF-DSR-ENC-110-DST-4
+            - OXF-DSR-ENC-112-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-3
+            - ART-DTH-ENC-102-DST-3R
+            - ART-DTH-ENC-123-DST-2
+            - ART-DTH-ENC-123-DST-2R
+            - ART-OTT-ENC-106-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-3
+            - OXF-DTH-ENC-102-DST-3R
+            - OXF-DTH-ENC-123-DST-2
+            - OXF-DTH-ENC-123-DST-2R
+            - OXF-OTT-ENC-106-DST-4
+            - OXF-DSR-ENC-110-DST-4
+            - OXF-DSR-ENC-112-DST-4
+    LifeStyleHD:
+        interface 1 sub: LifeStyleHD-PO-SUB
+        interface 2 sub: LifeStyleHD-PO-SUB
+        routable_sub: LifeStyleHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-3
+            - ART-DTH-ENC-102-DST-3R
+            - ART-DTH-ENC-123-DST-2
+            - ART-DTH-ENC-123-DST-2R
+            - ART-OTT-ENC-106-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-3
+            - OXF-DTH-ENC-102-DST-3R
+            - OXF-DTH-ENC-123-DST-2
+            - OXF-DTH-ENC-123-DST-2R
+            - OXF-OTT-ENC-106-DST-4
+            - OXF-DSR-ENC-110-DST-4
+            - OXF-DSR-ENC-112-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-3
+            - ART-DTH-ENC-102-DST-3R
+            - ART-DTH-ENC-123-DST-2
+            - ART-DTH-ENC-123-DST-2R
+            - ART-OTT-ENC-106-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-3
+            - OXF-DTH-ENC-102-DST-3R
+            - OXF-DTH-ENC-123-DST-2
+            - OXF-DTH-ENC-123-DST-2R
+            - OXF-OTT-ENC-106-DST-4
+            - OXF-DSR-ENC-110-DST-4
+            - OXF-DSR-ENC-112-DST-4
+    MovFamily:
+        interface 1 sub: MovFamilyHD-PO-SUB
+        interface 2 sub: MovFamilyHD-PO-SUB
+        routable_sub: MovFamilyHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-3
+            - ART-DTH-ENC-103-DST-3R
+            - ART-DTH-ENC-122-DST-8
+            - ART-DTH-ENC-122-DST-8R
+            - ART-OTT-ENC-109-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-3
+            - OXF-DTH-ENC-103-DST-3R
+            - OXF-DTH-ENC-122-DST-8
+            - OXF-DTH-ENC-122-DST-8R
+            - OXF-DSR-ENC-113-DST-1
+            - OXF-DSR-ENC-115-DST-1
+            - OXF-OTT-ENC-109-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-3
+            - ART-DTH-ENC-103-DST-3R
+            - ART-DTH-ENC-122-DST-8
+            - ART-DTH-ENC-122-DST-8R
+            - ART-OTT-ENC-109-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-3
+            - OXF-DTH-ENC-103-DST-3R
+            - OXF-DTH-ENC-122-DST-8
+            - OXF-DTH-ENC-122-DST-8R
+            - OXF-DSR-ENC-113-DST-1
+            - OXF-DSR-ENC-115-DST-1
+            - OXF-OTT-ENC-109-DST-1
+    MovFamilyHD:
+        interface 1 sub: MovFamilyHD-PO-SUB
+        interface 2 sub: MovFamilyHD-PO-SUB
+        routable_sub: MovFamilyHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-3
+            - ART-DTH-ENC-103-DST-3R
+            - ART-DTH-ENC-122-DST-8
+            - ART-DTH-ENC-122-DST-8R
+            - ART-OTT-ENC-109-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-3
+            - OXF-DTH-ENC-103-DST-3R
+            - OXF-DTH-ENC-122-DST-8
+            - OXF-DTH-ENC-122-DST-8R
+            - OXF-DSR-ENC-113-DST-1
+            - OXF-DSR-ENC-115-DST-1
+            - OXF-OTT-ENC-109-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-3
+            - ART-DTH-ENC-103-DST-3R
+            - ART-DTH-ENC-122-DST-8
+            - ART-DTH-ENC-122-DST-8R
+            - ART-OTT-ENC-109-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-3
+            - OXF-DTH-ENC-103-DST-3R
+            - OXF-DTH-ENC-122-DST-8
+            - OXF-DTH-ENC-122-DST-8R
+            - OXF-DSR-ENC-113-DST-1
+            - OXF-DSR-ENC-115-DST-1
+            - OXF-OTT-ENC-109-DST-1
+    FoxFootyHD:
+        interface 1 sub: FoxFootyHD-PO-SUB
+        interface 2 sub: FoxFootyHD-PO-SUB
+        routable_sub: FoxFootyHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-12
+            - ART-DTH-ENC-111-DST-12R
+            - ART-OTT-ENC-101-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-12
+            - OXF-DTH-ENC-111-DST-12R
+            - OXF-DSR-ENC-101-DST-5
+            - OXF-DSR-ENC-103-DST-5
+            - OXF-OTT-ENC-101-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-12
+            - ART-DTH-ENC-111-DST-12R
+            - ART-OTT-ENC-101-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-12
+            - OXF-DTH-ENC-111-DST-12R
+            - OXF-DSR-ENC-101-DST-5
+            - OXF-DSR-ENC-103-DST-5
+            - OXF-OTT-ENC-101-DST-4
+    MovDrama:
+        interface 1 sub: MovDramaHD-PO-SUB
+        interface 2 sub: MovDramaHD-PO-SUB
+        routable_sub: MovDramaHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-3
+            - ART-DTH-ENC-104-DST-3R
+            - ART-OTT-ENC-108-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-3
+            - OXF-DTH-ENC-104-DST-3R
+            - OXF-DSR-ENC-114-DST-3
+            - OXF-DSR-ENC-116-DST-3
+            - OXF-OTT-ENC-108-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-3
+            - ART-DTH-ENC-104-DST-3R
+            - ART-OTT-ENC-108-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-3
+            - OXF-DTH-ENC-104-DST-3R
+            - OXF-DSR-ENC-114-DST-3
+            - OXF-DSR-ENC-116-DST-3
+            - OXF-OTT-ENC-108-DST-3
+    MovDramaHD:
+        interface 1 sub: MovDramaHD-PO-SUB
+        interface 2 sub: MovDramaHD-PO-SUB
+        routable_sub: MovDramaHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-3
+            - ART-DTH-ENC-104-DST-3R
+            - ART-OTT-ENC-108-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-3
+            - OXF-DTH-ENC-104-DST-3R
+            - OXF-DSR-ENC-114-DST-3
+            - OXF-DSR-ENC-116-DST-3
+            - OXF-OTT-ENC-108-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-3
+            - ART-DTH-ENC-104-DST-3R
+            - ART-OTT-ENC-108-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-3
+            - OXF-DTH-ENC-104-DST-3R
+            - OXF-DSR-ENC-114-DST-3
+            - OXF-DSR-ENC-116-DST-3
+            - OXF-OTT-ENC-108-DST-3
+    MovGreats:
+        interface 1 sub: MovGreatsHD-PO-SUB
+        interface 2 sub: MovGreatsHD-PO-SUB
+        routable_sub: MovGreatsHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-4
+            - ART-DTH-ENC-106-DST-4R
+            - ART-OTT-ENC-108-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-4
+            - OXF-DTH-ENC-106-DST-4R
+            - OXF-DSR-ENC-114-DST-5
+            - OXF-DSR-ENC-116-DST-5
+            - OXF-OTT-ENC-108-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-4
+            - ART-DTH-ENC-106-DST-4R
+            - ART-OTT-ENC-108-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-4
+            - OXF-DTH-ENC-106-DST-4R
+            - OXF-DSR-ENC-114-DST-5
+            - OXF-DSR-ENC-116-DST-5
+            - OXF-OTT-ENC-108-DST-5
+    MovGreatsHD:
+        interface 1 sub: MovGreatsHD-PO-SUB
+        interface 2 sub: MovGreatsHD-PO-SUB
+        routable_sub: MovGreatsHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-106-DST-4
+            - ART-DTH-ENC-106-DST-4R
+            - ART-OTT-ENC-108-DST-5
+        routable_dst_OXF:
+            - OXF-DTH-ENC-106-DST-4
+            - OXF-DTH-ENC-106-DST-4R
+            - OXF-DSR-ENC-114-DST-5
+            - OXF-DSR-ENC-116-DST-5
+            - OXF-OTT-ENC-108-DST-5
+        interface 1 destinations:
+            - ART-DTH-ENC-106-DST-4
+            - ART-DTH-ENC-106-DST-4R
+            - ART-OTT-ENC-108-DST-5
+        interface 2 destinations:
+            - OXF-DTH-ENC-106-DST-4
+            - OXF-DTH-ENC-106-DST-4R
+            - OXF-DSR-ENC-114-DST-5
+            - OXF-DSR-ENC-116-DST-5
+            - OXF-OTT-ENC-108-DST-5
+    BoxSets:
+        interface 1 sub: BoxSetsHD-PO-SUB
+        interface 2 sub: BoxSetsHD-PO-SUB
+        routable_sub: BoxSetsHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-4
+            - ART-DTH-ENC-104-DST-4R
+            - ART-OTT-ENC-108-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-4
+            - OXF-DTH-ENC-104-DST-4R
+            - OXF-OTT-ENC-108-DST-7
+            - OXF-DSR-ENC-118-DST-2
+            - OXF-DSR-ENC-120-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-4
+            - ART-DTH-ENC-104-DST-4R
+            - ART-OTT-ENC-108-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-4
+            - OXF-DTH-ENC-104-DST-4R
+            - OXF-OTT-ENC-108-DST-7
+            - OXF-DSR-ENC-118-DST-2
+            - OXF-DSR-ENC-120-DST-2
+    BoxSetsHD:
+        interface 1 sub: BoxSetsHD-PO-SUB
+        interface 2 sub: BoxSetsHD-PO-SUB
+        routable_sub: BoxSetsHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-104-DST-4
+            - ART-DTH-ENC-104-DST-4R
+            - ART-OTT-ENC-108-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-104-DST-4
+            - OXF-DTH-ENC-104-DST-4R
+            - OXF-OTT-ENC-108-DST-7
+            - OXF-DSR-ENC-118-DST-2
+            - OXF-DSR-ENC-120-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-104-DST-4
+            - ART-DTH-ENC-104-DST-4R
+            - ART-OTT-ENC-108-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-104-DST-4
+            - OXF-DTH-ENC-104-DST-4R
+            - OXF-OTT-ENC-108-DST-7
+            - OXF-DSR-ENC-118-DST-2
+            - OXF-DSR-ENC-120-DST-2
+    FoxSleuth:
+        interface 1 sub: FoxSleuthHD-PO-SUB
+        interface 2 sub: FoxSleuthHD-PO-SUB
+        routable_sub: FoxSleuthHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-4
+            - ART-DTH-ENC-103-DST-4R
+            - ART-DTH-ENC-121-DST-7
+            - ART-DTH-ENC-121-DST-7R
+            - ART-OTT-ENC-109-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-4
+            - OXF-DTH-ENC-103-DST-4R
+            - OXF-DTH-ENC-121-DST-7
+            - OXF-DTH-ENC-121-DST-7R
+            - OXF-DSR-ENC-113-DST-3
+            - OXF-DSR-ENC-115-DST-3
+            - OXF-OTT-ENC-109-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-4
+            - ART-DTH-ENC-103-DST-4R
+            - ART-DTH-ENC-121-DST-7
+            - ART-DTH-ENC-121-DST-7R
+            - ART-OTT-ENC-109-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-4
+            - OXF-DTH-ENC-103-DST-4R
+            - OXF-DTH-ENC-121-DST-7
+            - OXF-DTH-ENC-121-DST-7R
+            - OXF-DSR-ENC-113-DST-3
+            - OXF-DSR-ENC-115-DST-3
+            - OXF-OTT-ENC-109-DST-3
+    FoxSleuthHD:
+        interface 1 sub: FoxSleuthHD-PO-SUB
+        interface 2 sub: FoxSleuthHD-PO-SUB
+        routable_sub: FoxSleuthHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-4
+            - ART-DTH-ENC-103-DST-4R
+            - ART-DTH-ENC-121-DST-7
+            - ART-DTH-ENC-121-DST-7R
+            - ART-OTT-ENC-109-DST-3
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-4
+            - OXF-DTH-ENC-103-DST-4R
+            - OXF-DTH-ENC-121-DST-7
+            - OXF-DTH-ENC-121-DST-7R
+            - OXF-DSR-ENC-113-DST-3
+            - OXF-DSR-ENC-115-DST-3
+            - OXF-OTT-ENC-109-DST-3
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-4
+            - ART-DTH-ENC-103-DST-4R
+            - ART-DTH-ENC-121-DST-7
+            - ART-DTH-ENC-121-DST-7R
+            - ART-OTT-ENC-109-DST-3
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-4
+            - OXF-DTH-ENC-103-DST-4R
+            - OXF-DTH-ENC-121-DST-7
+            - OXF-DTH-ENC-121-DST-7R
+            - OXF-DSR-ENC-113-DST-3
+            - OXF-DSR-ENC-115-DST-3
+            - OXF-OTT-ENC-109-DST-3
+    HISTORY:
+        interface 1 sub: HISTORYHD-PO-SUB
+        interface 2 sub: HISTORYHD-PO-SUB
+        routable_sub: HISTORYHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-4
+            - ART-DTH-ENC-102-DST-4R
+            - ART-OTT-ENC-106-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-4
+            - OXF-DTH-ENC-102-DST-4R
+            - OXF-DSR-ENC-114-DST-1
+            - OXF-DSR-ENC-116-DST-1
+            - OXF-OTT-ENC-106-DST-7
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-4
+            - ART-DTH-ENC-102-DST-4R
+            - ART-OTT-ENC-106-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-4
+            - OXF-DTH-ENC-102-DST-4R
+            - OXF-DSR-ENC-114-DST-1
+            - OXF-DSR-ENC-116-DST-1
+            - OXF-OTT-ENC-106-DST-7
+    HISTORYHD:
+        interface 1 sub: HISTORYHD-PO-SUB
+        interface 2 sub: HISTORYHD-PO-SUB
+        routable_sub: HISTORYHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-4
+            - ART-DTH-ENC-102-DST-4R
+            - ART-OTT-ENC-106-DST-7
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-4
+            - OXF-DTH-ENC-102-DST-4R
+            - OXF-DSR-ENC-114-DST-1
+            - OXF-DSR-ENC-116-DST-1
+            - OXF-OTT-ENC-106-DST-7
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-4
+            - ART-DTH-ENC-102-DST-4R
+            - ART-OTT-ENC-106-DST-7
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-4
+            - OXF-DTH-ENC-102-DST-4R
+            - OXF-DSR-ENC-114-DST-1
+            - OXF-DSR-ENC-116-DST-1
+            - OXF-OTT-ENC-106-DST-7
+    UniversalTV:
+        interface 1 sub: UniversalTVHD-PT-SUB
+        interface 2 sub: UniversalTVHD-PT-SUB
+        routable_sub: UniversalTVHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-109-DST-5
+            - ART-DTH-ENC-109-DST-5R
+            - ART-OTT-ENC-110-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-109-DST-5
+            - OXF-DTH-ENC-109-DST-5R
+            - OXF-DSR-ENC-114-DST-6
+            - OXF-DSR-ENC-116-DST-6
+            - OXF-OTT-ENC-110-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-109-DST-5
+            - ART-DTH-ENC-109-DST-5R
+            - ART-OTT-ENC-110-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-109-DST-5
+            - OXF-DTH-ENC-109-DST-5R
+            - OXF-DSR-ENC-114-DST-6
+            - OXF-DSR-ENC-116-DST-6
+            - OXF-OTT-ENC-110-DST-1
+    UniversalTVHD:
+        interface 1 sub: UniversalTVHD-PT-SUB
+        interface 2 sub: UniversalTVHD-PT-SUB
+        routable_sub: UniversalTVHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-109-DST-5
+            - ART-DTH-ENC-109-DST-5R
+            - ART-OTT-ENC-110-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-109-DST-5
+            - OXF-DTH-ENC-109-DST-5R
+            - OXF-DSR-ENC-114-DST-6
+            - OXF-DSR-ENC-116-DST-6
+            - OXF-OTT-ENC-110-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-109-DST-5
+            - ART-DTH-ENC-109-DST-5R
+            - ART-OTT-ENC-110-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-109-DST-5
+            - OXF-DTH-ENC-109-DST-5R
+            - OXF-DSR-ENC-114-DST-6
+            - OXF-DSR-ENC-116-DST-6
+            - OXF-OTT-ENC-110-DST-1
+    FoxARENA:
+        interface 1 sub: FoxARENAHD-PO-SUB
+        interface 2 sub: FoxARENAHD-PO-SUB
+        routable_sub: FoxARENAHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-2
+            - ART-DTH-ENC-101-DST-2R
+            - ART-DTH-ENC-122-DST-6
+            - ART-DTH-ENC-122-DST-6R
+            - ART-OTT-ENC-107-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-2
+            - OXF-DTH-ENC-101-DST-2R
+            - OXF-DTH-ENC-122-DST-6
+            - OXF-DTH-ENC-122-DST-6R
+            - OXF-DSR-ENC-109-DST-4
+            - OXF-DSR-ENC-111-DST-4
+            - OXF-OTT-ENC-107-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-2
+            - ART-DTH-ENC-101-DST-2R
+            - ART-DTH-ENC-122-DST-6
+            - ART-DTH-ENC-122-DST-6R
+            - ART-OTT-ENC-107-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-2
+            - OXF-DTH-ENC-101-DST-2R
+            - OXF-DTH-ENC-122-DST-6
+            - OXF-DTH-ENC-122-DST-6R
+            - OXF-DSR-ENC-109-DST-4
+            - OXF-DSR-ENC-111-DST-4
+            - OXF-OTT-ENC-107-DST-4
+    FoxARENAHD:
+        interface 1 sub: FoxARENAHD-PO-SUB
+        interface 2 sub: FoxARENAHD-PO-SUB
+        routable_sub: FoxARENAHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-101-DST-2
+            - ART-DTH-ENC-101-DST-2R
+            - ART-DTH-ENC-122-DST-6
+            - ART-DTH-ENC-122-DST-6R
+            - ART-OTT-ENC-107-DST-4
+        routable_dst_OXF:
+            - OXF-DTH-ENC-101-DST-2
+            - OXF-DTH-ENC-101-DST-2R
+            - OXF-DTH-ENC-122-DST-6
+            - OXF-DTH-ENC-122-DST-6R
+            - OXF-DSR-ENC-109-DST-4
+            - OXF-DSR-ENC-111-DST-4
+            - OXF-OTT-ENC-107-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-101-DST-2
+            - ART-DTH-ENC-101-DST-2R
+            - ART-DTH-ENC-122-DST-6
+            - ART-DTH-ENC-122-DST-6R
+            - ART-OTT-ENC-107-DST-4
+        interface 2 destinations:
+            - OXF-DTH-ENC-101-DST-2
+            - OXF-DTH-ENC-101-DST-2R
+            - OXF-DTH-ENC-122-DST-6
+            - OXF-DTH-ENC-122-DST-6R
+            - OXF-DSR-ENC-109-DST-4
+            - OXF-DSR-ENC-111-DST-4
+            - OXF-OTT-ENC-107-DST-4
+    FoxSptsNews:
+        interface 1 sub: FoxSptsNewsHD-PT-SUB
+        interface 2 sub: FoxSptsNewsHD-PT-SUB
+        routable_sub: FoxSptsNewsHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-5
+            - ART-DTH-ENC-102-DST-5R
+            - ART-OTT-ENC-104-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-5
+            - OXF-DTH-ENC-102-DST-5R
+            - OXF-DSR-ENC-106-DST-3
+            - OXF-DSR-ENC-108-DST-3
+            - OXF-OTT-ENC-104-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-5
+            - ART-DTH-ENC-102-DST-5R
+            - ART-OTT-ENC-104-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-5
+            - OXF-DTH-ENC-102-DST-5R
+            - OXF-DSR-ENC-106-DST-3
+            - OXF-DSR-ENC-108-DST-3
+            - OXF-OTT-ENC-104-DST-2
+    FoxSptsNewsHD:
+        interface 1 sub: FoxSptsNewsHD-PT-SUB
+        interface 2 sub: FoxSptsNewsHD-PT-SUB
+        routable_sub: FoxSptsNewsHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-102-DST-5
+            - ART-DTH-ENC-102-DST-5R
+            - ART-OTT-ENC-104-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-102-DST-5
+            - OXF-DTH-ENC-102-DST-5R
+            - OXF-DSR-ENC-106-DST-3
+            - OXF-DSR-ENC-108-DST-3
+            - OXF-OTT-ENC-104-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-102-DST-5
+            - ART-DTH-ENC-102-DST-5R
+            - ART-OTT-ENC-104-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-102-DST-5
+            - OXF-DTH-ENC-102-DST-5R
+            - OXF-DSR-ENC-106-DST-3
+            - OXF-DSR-ENC-108-DST-3
+            - OXF-OTT-ENC-104-DST-2
+    FoxDocos:
+        interface 1 sub: FoxDocosHD-PO-SUB
+        interface 2 sub: FoxDocosHD-PO-SUB
+        routable_sub: FoxDocosHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-5
+            - ART-DTH-ENC-103-DST-5R
+            - ART-OTT-ENC-111-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-5
+            - OXF-DTH-ENC-103-DST-5R
+            - OXF-OTT-ENC-111-DST-1
+            - OXF-DSR-ENC-117-DST-6
+            - OXF-DSR-ENC-119-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-5
+            - ART-DTH-ENC-103-DST-5R
+            - ART-OTT-ENC-111-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-5
+            - OXF-DTH-ENC-103-DST-5R
+            - OXF-OTT-ENC-111-DST-1
+            - OXF-DSR-ENC-117-DST-6
+            - OXF-DSR-ENC-119-DST-6
+    FoxDocosHD:
+        interface 1 sub: FoxDocosHD-PO-SUB
+        interface 2 sub: FoxDocosHD-PO-SUB
+        routable_sub: FoxDocosHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-103-DST-5
+            - ART-DTH-ENC-103-DST-5R
+            - ART-OTT-ENC-111-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-103-DST-5
+            - OXF-DTH-ENC-103-DST-5R
+            - OXF-OTT-ENC-111-DST-1
+            - OXF-DSR-ENC-117-DST-6
+            - OXF-DSR-ENC-119-DST-6
+        interface 1 destinations:
+            - ART-DTH-ENC-103-DST-5
+            - ART-DTH-ENC-103-DST-5R
+            - ART-OTT-ENC-111-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-103-DST-5
+            - OXF-DTH-ENC-103-DST-5R
+            - OXF-OTT-ENC-111-DST-1
+            - OXF-DSR-ENC-117-DST-6
+            - OXF-DSR-ENC-119-DST-6
+    SkyNews:
+        interface 1 sub: SkyNewsHD-PT-SUB
+        interface 2 sub: SkyNewsHD-PT-SUB
+        routable_sub: SkyNewsHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-107-DST-3
+            - ART-DTH-ENC-107-DST-3R
+            - ART-OTT-ENC-107-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-107-DST-3
+            - OXF-DTH-ENC-107-DST-3R
+            - OXF-DSR-ENC-109-DST-1
+            - OXF-DSR-ENC-111-DST-1
+            - OXF-OTT-ENC-107-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-107-DST-3
+            - ART-DTH-ENC-107-DST-3R
+            - ART-OTT-ENC-107-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-107-DST-3
+            - OXF-DTH-ENC-107-DST-3R
+            - OXF-DSR-ENC-109-DST-1
+            - OXF-DSR-ENC-111-DST-1
+            - OXF-OTT-ENC-107-DST-1
+    SkyNewsHD:
+        interface 1 sub: SkyNewsHD-PT-SUB
+        interface 2 sub: SkyNewsHD-PT-SUB
+        routable_sub: SkyNewsHD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-107-DST-3
+            - ART-DTH-ENC-107-DST-3R
+            - ART-OTT-ENC-107-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-107-DST-3
+            - OXF-DTH-ENC-107-DST-3R
+            - OXF-DSR-ENC-109-DST-1
+            - OXF-DSR-ENC-111-DST-1
+            - OXF-OTT-ENC-107-DST-1
+        interface 1 destinations:
+            - ART-DTH-ENC-107-DST-3
+            - ART-DTH-ENC-107-DST-3R
+            - ART-OTT-ENC-107-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-107-DST-3
+            - OXF-DTH-ENC-107-DST-3R
+            - OXF-DSR-ENC-109-DST-1
+            - OXF-DSR-ENC-111-DST-1
+            - OXF-OTT-ENC-107-DST-1
+    10Bris:
+        interface 1 sub: 10Bris_SD-PT-SUB
+        interface 2 sub: 10Bris_SD-PT-SUB
+        routable_sub: 10Bris_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-13
+            - ART-DTH-ENC-110-DST-13R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-13
+            - OXF-DTH-ENC-110-DST-13R
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-13
+            - ART-DTH-ENC-110-DST-13R
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-13
+            - OXF-DTH-ENC-110-DST-13R
+    9Bris:
+        interface 1 sub: 9Bris_SD-PT-SUB
+        interface 2 sub: 9Bris_SD-PT-SUB
+        routable_sub: 9Bris_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-13
+            - ART-DTH-ENC-111-DST-13R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-13
+            - OXF-DTH-ENC-111-DST-13R
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-13
+            - ART-DTH-ENC-111-DST-13R
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-13
+            - OXF-DTH-ENC-111-DST-13R
+    10Mel:
+        interface 1 sub: 10Mel_SD-PT-SUB
+        interface 2 sub: 10Mel_SD-PT-SUB
+        routable_sub: 10Mel_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-112-DST-14
+            - ART-DTH-ENC-112-DST-14R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-112-DST-14
+            - OXF-DTH-ENC-112-DST-14R
+        interface 1 destinations:
+            - ART-DTH-ENC-112-DST-14
+            - ART-DTH-ENC-112-DST-14R
+        interface 2 destinations:
+            - OXF-DTH-ENC-112-DST-14
+            - OXF-DTH-ENC-112-DST-14R
+    9Mel:
+        interface 1 sub: 9Mel_SD-PT-SUB
+        interface 2 sub: 9Mel_SD-PT-SUB
+        routable_sub: 9Mel_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-14
+            - ART-DTH-ENC-113-DST-14R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-14
+            - OXF-DTH-ENC-113-DST-14R
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-14
+            - ART-DTH-ENC-113-DST-14R
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-14
+            - OXF-DTH-ENC-113-DST-14R
+    9Syd:
+        interface 1 sub: 9Syd_SD-PT-SUB
+        interface 2 sub: 9Syd_SD-PT-SUB
+        routable_sub: 9Syd_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-114-DST-13
+            - ART-DTH-ENC-114-DST-13R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-114-DST-13
+            - OXF-DTH-ENC-114-DST-13R
+        interface 1 destinations:
+            - ART-DTH-ENC-114-DST-13
+            - ART-DTH-ENC-114-DST-13R
+        interface 2 destinations:
+            - OXF-DTH-ENC-114-DST-13
+            - OXF-DTH-ENC-114-DST-13R
+    10Syd:
+        interface 1 sub: 10Syd_SD-PT-SUB
+        interface 2 sub: 10Syd_SD-PT-SUB
+        routable_sub: 10Syd_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-13
+            - ART-DTH-ENC-115-DST-13R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-13
+            - OXF-DTH-ENC-115-DST-13R
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-13
+            - ART-DTH-ENC-115-DST-13R
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-13
+            - OXF-DTH-ENC-115-DST-13R
+    7Bris:
+        interface 1 sub: 7Bris_SD-PT-SUB
+        interface 2 sub: 7Bris_SD-PT-SUB
+        routable_sub: 7Bris_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-116-DST-13
+            - ART-DTH-ENC-116-DST-13R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-116-DST-13
+            - OXF-DTH-ENC-116-DST-13R
+        interface 1 destinations:
+            - ART-DTH-ENC-116-DST-13
+            - ART-DTH-ENC-116-DST-13R
+        interface 2 destinations:
+            - OXF-DTH-ENC-116-DST-13
+            - OXF-DTH-ENC-116-DST-13R
+    7Mel:
+        interface 1 sub: 7Mel_SD-PT-SUB
+        interface 2 sub: 7Mel_SD-PT-SUB
+        routable_sub: 7Mel_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-14
+            - ART-DTH-ENC-110-DST-14R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-14
+            - OXF-DTH-ENC-110-DST-14R
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-14
+            - ART-DTH-ENC-110-DST-14R
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-14
+            - OXF-DTH-ENC-110-DST-14R
+    7Syd:
+        interface 1 sub: 7Syd_SD-PT-SUB
+        interface 2 sub: 7Syd_SD-PT-SUB
+        routable_sub: 7Syd_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-14
+            - ART-DTH-ENC-111-DST-14R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-14
+            - OXF-DTH-ENC-111-DST-14R
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-14
+            - ART-DTH-ENC-111-DST-14R
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-14
+            - OXF-DTH-ENC-111-DST-14R
+    TBNInspire:
+        interface 1 sub: TBNInspire_SD-PT-SUB
+        interface 2 sub: TBNInspire_SD-PT-SUB
+        routable_sub: TBNInspire_SD-PT-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-115-DST-7
+        routable_dst_OXF:
+            - OXF-DSR-ENC-121-DST-11
+            - OXF-DSR-ENC-123-DST-11
+            - OXF-OTT-ENC-115-DST-7
+        interface 1 destinations:
+            - ART-OTT-ENC-115-DST-7
+        interface 2 destinations:
+            - OXF-DSR-ENC-121-DST-11
+            - OXF-DSR-ENC-123-DST-11
+            - OXF-OTT-ENC-115-DST-7
+    GOOD:
+        interface 1 sub: GOOD_SD-PT-SUB
+        interface 2 sub: GOOD_SD-PT-SUB
+        routable_sub: GOOD_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-113-DST-15
+            - ART-DTH-ENC-113-DST-15R
+            - ART-OTT-ENC-115-DST-9
+        routable_dst_OXF:
+            - OXF-DTH-ENC-113-DST-15
+            - OXF-DTH-ENC-113-DST-15R
+            - OXF-OTT-ENC-115-DST-9
+            - OXF-DSR-ENC-125-DST-2
+            - OXF-DSR-ENC-127-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-113-DST-15
+            - ART-DTH-ENC-113-DST-15R
+            - ART-OTT-ENC-115-DST-9
+        interface 2 destinations:
+            - OXF-DTH-ENC-113-DST-15
+            - OXF-DTH-ENC-113-DST-15R
+            - OXF-OTT-ENC-115-DST-9
+            - OXF-DSR-ENC-125-DST-2
+            - OXF-DSR-ENC-127-DST-2
+    SonLife:
+        interface 1 sub: SonLife_SD-PT-SUB
+        interface 2 sub: SonLife_SD-PT-SUB
+        routable_sub: SonLife_SD-PT-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-115-DST-12
+        routable_dst_OXF:
+            - OXF-DSR-ENC-125-DST-5
+            - OXF-DSR-ENC-127-DST-5
+            - OXF-OTT-ENC-115-DST-12
+        interface 1 destinations:
+            - ART-OTT-ENC-115-DST-12
+        interface 2 destinations:
+            - OXF-DSR-ENC-125-DST-5
+            - OXF-DSR-ENC-127-DST-5
+            - OXF-OTT-ENC-115-DST-12
+    CGTN:
+        interface 1 sub: CGTN_SD-PT-SUB
+        interface 2 sub: CGTN_SD-PT-SUB
+        routable_sub: CGTN_SD-PT-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-114-DST-5
+        routable_dst_OXF:
+            - OXF-DSR-ENC-122-DST-9
+            - OXF-DSR-ENC-124-DST-9
+            - OXF-OTT-ENC-114-DST-5
+        interface 1 destinations:
+            - ART-OTT-ENC-114-DST-5
+        interface 2 destinations:
+            - OXF-DSR-ENC-122-DST-9
+            - OXF-DSR-ENC-124-DST-9
+            - OXF-OTT-ENC-114-DST-5
+    AlJazeera:
+        interface 1 sub: AlJazeera_SD-PT-SUB
+        interface 2 sub: AlJazeera_SD-PT-SUB
+        routable_sub: AlJazeera_SD-PT-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-115-DST-4
+        routable_dst_OXF:
+            - OXF-DSR-ENC-121-DST-8
+            - OXF-DSR-ENC-123-DST-8
+            - OXF-OTT-ENC-115-DST-4
+        interface 1 destinations:
+            - ART-OTT-ENC-115-DST-4
+        interface 2 destinations:
+            - OXF-DSR-ENC-121-DST-8
+            - OXF-DSR-ENC-123-DST-8
+            - OXF-OTT-ENC-115-DST-4
+    CGTNDoco:
+        interface 1 sub: CGTNDoco_SD-PT-SUB
+        interface 2 sub: CGTNDoco_SD-PT-SUB
+        routable_sub: CGTNDoco_SD-PT-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-115-DST-5
+        routable_dst_OXF:
+            - OXF-DSR-ENC-121-DST-9
+            - OXF-DSR-ENC-123-DST-9
+            - OXF-OTT-ENC-115-DST-5
+        interface 1 destinations:
+            - ART-OTT-ENC-115-DST-5
+        interface 2 destinations:
+            - OXF-DSR-ENC-121-DST-9
+            - OXF-DSR-ENC-123-DST-9
+            - OXF-OTT-ENC-115-DST-5
+    Daystar:
+        interface 1 sub: Daystar_SD-PT-SUB
+        interface 2 sub: Daystar_SD-PT-SUB
+        routable_sub: Daystar_SD-PT-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-114-DST-7
+        routable_dst_OXF:
+            - OXF-DSR-ENC-122-DST-12
+            - OXF-DSR-ENC-124-DST-12
+            - OXF-OTT-ENC-114-DST-7
+        interface 1 destinations:
+            - ART-OTT-ENC-114-DST-7
+        interface 2 destinations:
+            - OXF-DSR-ENC-122-DST-12
+            - OXF-DSR-ENC-124-DST-12
+            - OXF-OTT-ENC-114-DST-7
+    France24:
+        interface 1 sub: France24HD-PT-SUB
+        interface 2 sub: France24HD-PT-SUB
+        routable_sub: France24HD-PT-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-110-DST-5
+        routable_dst_OXF:
+            - OXF-DSR-ENC-118-DST-6
+            - OXF-DSR-ENC-120-DST-6
+            - OXF-OTT-ENC-110-DST-5
+        interface 1 destinations:
+            - ART-OTT-ENC-110-DST-5
+        interface 2 destinations:
+            - OXF-DSR-ENC-118-DST-6
+            - OXF-DSR-ENC-120-DST-6
+            - OXF-OTT-ENC-110-DST-5
+    France24HD:
+        interface 1 sub: France24HD-PT-SUB
+        interface 2 sub: France24HD-PT-SUB
+        routable_sub: France24HD-PT-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-110-DST-5
+        routable_dst_OXF:
+            - OXF-DSR-ENC-118-DST-6
+            - OXF-DSR-ENC-120-DST-6
+            - OXF-OTT-ENC-110-DST-5
+        interface 1 destinations:
+            - ART-OTT-ENC-110-DST-5
+        interface 2 destinations:
+            - OXF-DSR-ENC-118-DST-6
+            - OXF-DSR-ENC-120-DST-6
+            - OXF-OTT-ENC-110-DST-5
+    DiscTurbo:
+        interface 1 sub: DiscTurbo_SD-PT-SUB
+        interface 2 sub: DiscTurbo_SD-PT-SUB
+        routable_sub: DiscTurbo_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-110-DST-6
+            - ART-DTH-ENC-110-DST-6R
+            - ART-DTH-ENC-122-DST-1
+            - ART-DTH-ENC-122-DST-1R
+            - ART-OTT-ENC-114-DST-2
+        routable_dst_OXF:
+            - OXF-DTH-ENC-110-DST-6
+            - OXF-DTH-ENC-110-DST-6R
+            - OXF-DTH-ENC-122-DST-1
+            - OXF-DTH-ENC-122-DST-1R
+            - OXF-DSR-ENC-122-DST-2
+            - OXF-DSR-ENC-124-DST-2
+            - OXF-OTT-ENC-114-DST-2
+        interface 1 destinations:
+            - ART-DTH-ENC-110-DST-6
+            - ART-DTH-ENC-110-DST-6R
+            - ART-DTH-ENC-122-DST-1
+            - ART-DTH-ENC-122-DST-1R
+            - ART-OTT-ENC-114-DST-2
+        interface 2 destinations:
+            - OXF-DTH-ENC-110-DST-6
+            - OXF-DTH-ENC-110-DST-6R
+            - OXF-DTH-ENC-122-DST-1
+            - OXF-DTH-ENC-122-DST-1R
+            - OXF-DSR-ENC-122-DST-2
+            - OXF-DSR-ENC-124-DST-2
+            - OXF-OTT-ENC-114-DST-2
+    BBCEarthNZHD:
+        interface 1 sub: BBCEarthNZHD-PO-SUB
+        interface 2 sub: BBCEarthNZHD-PO-SUB
+        routable_sub: BBCEarthNZHD-PO-SUB
+        routable_dst_ART:
+            - BBCEarthNZHD-PO-TX1A
+        routable_dst_OXF:
+            - BBCEarthNZHD-PO-TX2A
+        interface 1 destinations:
+            - BBCEarthNZHD-PO-TX1A
+        interface 2 destinations:
+            - BBCEarthNZHD-PO-TX2A
+    BBCCBeebiesNZ:
+        interface 1 sub: BBCCBeebiesNZ_SD-PO-SUB
+        interface 2 sub: BBCCBeebiesNZ_SD-PO-SUB
+        routable_sub: BBCCBeebiesNZ_SD-PO-SUB
+        routable_dst_ART:
+            - BBCCBeebiesNZ_SD-PO-TX1A
+        routable_dst_OXF:
+            - BBCCBeebiesNZ_SD-PO-TX2A
+        interface 1 destinations:
+            - BBCCBeebiesNZ_SD-PO-TX1A
+        interface 2 destinations:
+            - BBCCBeebiesNZ_SD-PO-TX2A
+    CRIMEINVESTNZ:
+        interface 1 sub: CRIMEINVESTNZ_SD-PO-SUB
+        interface 2 sub: CRIMEINVESTNZ_SD-PO-SUB
+        routable_sub: CRIMEINVESTNZ_SD-PO-SUB
+        routable_dst_ART:
+            - CRIMEINVESTNZ_SD-PO-TX1A
+        routable_dst_OXF:
+            - CRIMEINVESTNZ_SD-PO-TX2A
+        interface 1 destinations:
+            - CRIMEINVESTNZ_SD-PO-TX1A
+        interface 2 destinations:
+            - CRIMEINVESTNZ_SD-PO-TX2A
+    HISTORYNZ:
+        interface 1 sub: HISTORYNZ_SD-PO-SUB
+        interface 2 sub: HISTORYNZ_SD-PO-SUB
+        routable_sub: HISTORYNZ_SD-PO-SUB
+        routable_dst_ART:
+            - HISTORYNZ_SD-PO-TX1A
+        routable_dst_OXF:
+            - HISTORYNZ_SD-PO-TX2A
+        interface 1 destinations:
+            - HISTORYNZ_SD-PO-TX1A
+        interface 2 destinations:
+            - HISTORYNZ_SD-PO-TX2A
+    UKTVNZHD:
+        interface 1 sub: UKTVNZHD-PO-SUB
+        interface 2 sub: UKTVNZHD-PO-SUB
+        routable_sub: UKTVNZHD-PO-SUB
+        routable_dst_ART:
+            - UKTVNZHD-PO-TX1A
+        routable_dst_OXF:
+            - UKTVNZHD-PO-TX2A
+        interface 1 destinations:
+            - UKTVNZHD-PO-TX1A
+        interface 2 destinations:
+            - UKTVNZHD-PO-TX2A
+    WATCH AFL:
+        interface 1 sub: FoxFootyHD-PO-SUB
+        interface 2 sub: FoxFootyHD-PO-SUB
+        routable_sub: FoxFootyHD-PO-SUB
+        routable_dst_ART:
+            - ART-OTT-ENC-103-DST-5
+        routable_dst_OXF: 
+            - OXF-OTT-ENC-103-DST-5
+        interface 1 destinations:
+            - ART-OTT-ENC-103-DST-5
+        interface 2 destinations:
+            - OXF-OTT-ENC-103-DST-5
+    WATCH NRL:
+        interface 1 sub: FoxLeagueHD-PO-SUB
+        interface 2 sub: FoxLeagueHD-PO-SUB
+        routable_sub: FoxLeagueHD-PO-SUB
+        routable_dst_ART: 
+            - ART-OTT-ENC-104-DST-5
+        routable_dst_OXF: 
+            - OXF-OTT-ENC-104-DST-5
+        interface 1 destinations:
+            - ART-OTT-ENC-104-DST-5
+        interface 2 destinations:
+            - OXF-OTT-ENC-104-DST-5
+    WWEHD:
+        interface 1 sub: WWEHD-PO-SUB
+        interface 2 sub: WWEHD-PO-SUB
+        routable_sub: WWEHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-107-DST-5
+            - ART-DTH-ENC-107-DST-5R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-107-DST-5
+            - OXF-DTH-ENC-107-DST-5R
+            - OXF-DSR-ENC-117-DST-7
+            - OXF-DSR-ENC-119-DST-7
+        interface 1 destinations:
+            - ART-DTH-ENC-107-DST-5
+            - ART-DTH-ENC-107-DST-5R
+        interface 2 destinations:
+            - OXF-DTH-ENC-107-DST-5
+            - OXF-DTH-ENC-107-DST-5R
+            - OXF-DSR-ENC-117-DST-7
+            - OXF-DSR-ENC-119-DST-7
+    MoviesUHD:
+        interface 1 sub: MoviesUHD-PO-SUB
+        interface 2 sub: MoviesUHD-PO-SUB
+        routable_sub: MoviesUHD-PO-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-143-DST-1
+            - ART-DTH-ENC-144-DST-1
+        routable_dst_OXF:
+            - OXF-DTH-ENC-143-DST-1
+            - OXF-DTH-ENC-144-DST-1
+            - OXF-DSR-031-UHD-MAIN
+            - OXF-DSR-032-UHD-STANDBY
+        interface 1 destinations:
+            - ART-DTH-ENC-143-DST-1
+            - ART-DTH-ENC-144-DST-1
+        interface 2 destinations:
+            - OXF-DTH-ENC-143-DST-1
+            - OXF-DTH-ENC-144-DST-1
+            - OXF-DSR-031-UHD-MAIN
+            - OXF-DSR-032-UHD-STANDBY
+    HELP_BBCWldRadio:
+        interface 1 sub: HELP_BBCWldRadio-PT-SUB
+        interface 2 sub: HELP_BBCWldRadio-PT-SUB
+        routable_sub: HELP_BBCWldRadio-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-115-DST-14
+            - ART-DTH-ENC-115-DST-14R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-115-DST-14
+            - OXF-DTH-ENC-115-DST-14R
+            - OXF-DSR-ENC-129-DST-4
+            - OXF-DSR-ENC-130-DST-4
+        interface 1 destinations:
+            - ART-DTH-ENC-115-DST-14
+            - ART-DTH-ENC-115-DST-14R
+        interface 2 destinations:
+            - OXF-DTH-ENC-115-DST-14
+            - OXF-DTH-ENC-115-DST-14R
+            - OXF-DSR-ENC-129-DST-4
+            - OXF-DSR-ENC-130-DST-4
+    NBCNNHD:
+        interface 1 sub: NBCNNHD-PT-SUB
+        interface 2 sub: NBCNNHD-PT-SUB
+        routable_sub: NBCNNHD-PT-SUB
+        routable_dst_ART:
+        routable_dst_OXF:
+            - OXF-DSR-ENC-126-DST-9
+            - OXF-DSR-ENC-128-DST-9
+        interface 1 destinations:
+        interface 2 destinations:
+            - OXF-DSR-ENC-126-DST-9
+            - OXF-DSR-ENC-128-DST-9
+    MSNBC:
+        interface 1 sub: MSNBC_SD-PT-SUB
+        interface 2 sub: MSNBC_SD-PT-SUB
+        routable_sub: MSNBC_SD-PT-SUB
+        routable_dst_ART:
+            - ART-DTH-ENC-111-DST-4
+            - ART-DTH-ENC-111-DST-4R
+        routable_dst_OXF:
+            - OXF-DTH-ENC-111-DST-4
+            - OXF-DTH-ENC-111-DST-4R
+            - OXF-DSR-ENC-121-DST-14
+            - OXF-DSR-ENC-123-DST-14
+        interface 1 destinations:
+            - ART-DTH-ENC-111-DST-4
+            - ART-DTH-ENC-111-DST-4R
+        interface 2 destinations:
+            - OXF-DTH-ENC-111-DST-4
+            - OXF-DTH-ENC-111-DST-4R
+            - OXF-DSR-ENC-121-DST-14
+            - OXF-DSR-ENC-123-DST-14
