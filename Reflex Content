@@ -1,0 +1,525 @@
+#Define the primary and backup hosts for the InSite server
+insite:
+    primary: 10.23.166.15    #10.100.3.186
+    # backup: 10.23.168.15
+
+#Define the host:port of the interfaces that will be referenced in the script for look ups
+router control:
+    interface 1: sdvn://10.23.166.20:12050/Operations #ART site
+    interface 2: sdvn://10.233.166.20:12050/Operations  #OXF site
+    interface 3: sdvn://10.243.166.20:12050/Operations    #MAC site
+
+cluster ips:
+    art: 10.23.166.20
+    oxf: 10.233.166.20
+    mac: 10.243.166.20
+
+vlpro_ack_cor_buttons:
+    - ACK All
+    - COR All
+
+weblink:
+    primary: http://10.23.166.13:8080/WebLink/main
+    secondary: http://10.23.166.14:8080/WebLink/main
+
+weblink_button:
+    - Weblink Primary
+    - Weblink Secondary
+
+sensors:
+    penalty_box:
+        type: vue.penaltybox
+    
+    stackload:
+        type: vue.stack
+
+    vue_context:
+        type: vue.context
+
+    interface 1 listener:
+        type: magnum.destination
+        host: {{router control.interface 1 }}
+        name: >
+            {%comment %}
+                Goes through all the services, gathering all the destination names that exist as interface 1 destinations
+            {%endcomment %}
+
+            {%filter flatten %}
+                {%for items in services|keys %}
+                    {{services[items].interface 1 destinations }}
+                {%endfor %}
+            {%endfilter %}
+            
+    interface 2 listener:
+        type: magnum.destination
+        host: {{router control.interface 2 }}
+        name: >
+            {%comment %}
+                Goes through all the services, gathering all the destination names that exist as interface 2 destinations
+            {%endcomment %}
+
+            {%filter flatten %}
+                {%for items in services|keys %}
+                    {{services[items].interface 2 destinations }}
+                {%endfor %}
+            {%endfilter %}
+
+    source_button:
+        type: vue.button
+
+    interface 3 listener:       #This is for MCQ site
+        type: magnum.destination
+        host: {{router control.interface 3 }}
+        name: >
+            {%comment %}
+                Goes through all the services, gathering all the destination names that exist as interface 1 destinations
+            {%endcomment %}
+
+            {%filter flatten %}
+                {%for items in services|keys %}
+                    {{services[items].interface 3 destinations }}
+                {%endfor %}
+            {%endfilter %}
+
+triggers:
+
+    when a button is pressed on service select widget:                                                                 
+        sensor: penalty_box
+        if: widget == "Service Block"
+        actions:
+            #Fires a macro on VLPro to update the service that is selected by the vue
+            - reflex.context.set:
+                 key: {{vue }}.service_selected
+                 value: {{service }}
+
+            #Posts to the login endpoint on InSite so that we can get an authentication token.
+            # Params: 
+            #   url: The endpoint to target
+            #   insecure: if InSite is not HTTPS encrypted, then 'true'
+            #   headers: Default heads for API call
+            #   data: the login parameters for the administrator account. ENSURE THESE ARE ACCURATE
+            #   block: 'true' indicates that we need to wait for a response from this API call before we proceed to the next action
+            - reflex.context.set:
+                key: {{vue }}.location
+                value: |
+                    {%with sensors.interface 1 listener.system as router%}                     
+                        {%if router.destinations[services[service].interface 1 sub].source in tielines|keys%}
+                            {%with router.destinations[services[service].interface 1 sub].source as tieline source %}
+                                {%if '2A' in tieline source or '2B' in tieline source%}
+                                    {{cluster ips.oxf }}
+                                {%elif '3A' in tieline source or '3B' in tieline source%}
+                                    {{cluster ips.mac }}
+                                {%else %}
+                                    {{cluster ips.art }}
+                                {%endif %}
+                            {%endwith %}
+                        {%else %}
+                            {{cluster ips.art}}
+                        {%endif %}
+                    {%endwith %}
+            #Create a list of the sources within the selected services destinations
+            - reflex.context.set:
+                key: {{vue }}.list_sources
+                value: |
+                    {%with sensors.interface 1 listener.system as router%}                     
+                        {%if router.destinations[services[service].interface 1 sub].source in tielines|keys%}
+                            {%with router.destinations[services[service].interface 1 sub].source as tieline source,
+                            tielines[tieline source] as tieline dest %}
+                                {%if '2A' in tieline source or '2B' in tieline source %}
+                                    {%with sensors.interface 2 listener.system as router2 %}
+                                        {{router2.destinations[tieline dest].source }}    
+                                    {%endwith %}
+                                {%elif '3A' in tieline source or '3B' in tieline source%}
+                                    {%with sensors.interface 3 listener.system as router3 %}
+                                        {{router3.destinations[tieline dest].source }}    
+                                    {%endwith %}
+                                {%else %}
+                                    {%with sensors.interface 1 listener.system as router1 %}
+                                        {{router1.destinations[tieline dest].source }}    
+                                    {%endwith %}
+                                {%endif %}
+                            {%endwith %}
+                        {%elif router.destinations[services[service].interface 1 sub].source|defined%}
+                            {{router.destinations[services[service].interface 1 sub].source }}
+                        {%else%}
+                            CLEAR{%endif %}
+                    {%endwith %}
+
+                    
+            - reflex.context.set:
+                key: {{vue }}.vue_insite_url
+                value: https://{{insite.primary}}:5605/device/ipst?view-type=network&magnum-cluster-ip={{context[vue].location}}&source-mnemonic-nameset=Operations&source-mnemonic={{context[vue].list_sources|replace(from=' ' , to='%20')}}
+            # #Posts the sources that are currently routed to the 4 service destinations to InSite!
+            # Params:
+            #   target_url: InSite endpoint we are posting the data to, along with the sources
+            #   authentication: authentication token required for the API call, received from the above API call to the login endpoint
+            # - api post insite:
+            #     #target_url: {{insite.primary }}/proxy/insite/sdvn-1/device/ipst?view-type=network&magnum-cluster-ip={{context[vue].location}}&source-mnemonic-nameset=Operations&source-mnemonic={{context[vue].list_sources|replace(from=' ' , to='%20')}}
+            #     # authentication: {{result.response.otbt-is}}
+
+            #     target_url: https://{{insite.primary}}:5605/device/ipst?view-type=network&magnum-cluster-ip={{context[vue].location}}&source-mnemonic-nameset=Operations&source-mnemonic={{context[vue].list_sources|replace(from=' ' , to='%20')}}
+            
+                sleep: 250
+            - reflex.http.post:
+                url: http://10.23.166.13:8082/vistalink/1/macro/VUE_Change_Service/run.json
+                headers:
+                    Content-Type: application/x-www-form-urlencoded
+                data: variables=%5B%7B%22VUE_STATION%22:%20%22{{vue}}%22,%20%22SERVICE_NAME%22:%20%22{{service}}%22%7D%5D
+                sleep: 250
+                
+            - reflex.http.post:
+                url: http://10.23.166.14:8082/vistalink/1/macro/VUE_Change_Service/run.json
+                headers:
+                    Content-Type: application/x-www-form-urlencoded
+                data: variables=%5B%7B%22VUE_STATION%22:%20%22{{vue}}%22,%20%22SERVICE_NAME%22:%20%22{{service}}%22%7D%5D
+
+            - vue.widget.update:
+                widgets:
+                    Eng_Stack: 
+                        page: 3
+                    Vis_Stack:
+                        page: 1
+
+    switch_weblink_server_to_primary:
+        sensor: source_button
+        if: widget == 'WebLink' and 'Primary' in button
+        actions:
+            - reflex.context.set:
+                key: {{vue }}.weblink_url
+                value: {{weblink.primary }}/view/Foxtel?u={{vue}}&p=VUE
+
+            - reflex.context.set:
+                key: {{vue }}.highlight_selected_weblink
+                value: {{button }}
+
+    switch_weblink_server_to_secondary:
+        sensor: source_button
+        if: widget == 'WebLink' and 'Secondary' in button
+        actions:
+            - reflex.context.set:
+                key: {{vue}}.weblink_url
+                value: {{weblink.secondary }}/view/Foxtel?u={{vue}}&p=VUE
+
+            - reflex.context.set:
+                key: {{vue }}.highlight_selected_weblink
+                value: {{button }}
+
+            # - vistalink.macro.run:
+            #     name: VUE_Change_Service
+            #     host: 10.23.166.13
+            #     variables:
+            #         VUE_STATION: {{vue }}
+            #         SERVICE_NAME: {{service }}
+
+    Source_Route_1A_1B:
+        sensor: source_button
+        if: widget == 'Source' and '-1' in button
+        actions: 
+            - reflex.context.set:    
+                key: {{vue}}.source_highlight
+                value: {{button}}
+
+            - reflex.context.set:
+                key: {{vue }}.source_vlpro
+                value: {{button }}
+
+            - update vlpro source:
+                    vue used: {{vue }}
+                    service name: {{context[vue].service_selected}}
+                    source pressed: {{button}}
+
+            - reflex.context.set:
+                key: {{vue}}.source_sub
+                value: {{services[context[vue].service_selected].routable_sub }} 
+
+            - magnum.route: #ART route that is local to ART and needs to also be sent to OXF over tieline(s)
+                host: {{router control.interface 1 }}
+                source: {{button}}
+                destination: {{context[vue].source_sub }}{{tieline_routing[button].tieline_dsts}}                     
+
+            - magnum.route: #ART route of subscription to expected edge devices
+                host: {{router control.interface 1}}
+                source: {{context[vue].source_sub }} 
+                destination: {{services[context[vue].service_selected].routable_dst_ART }}            
+
+            - magnum.route:  #OXF route of tielined source into subscription
+                host: {{router control.interface 2 }}
+                source: {{ROUTING_OXF[button]}}
+                destination: {{context[vue].source_sub }}
+
+            - magnum.route: #OXF route of subscription to expected edge devices
+                host: {{router control.interface 2}}
+                source: {{context[vue].source_sub }} 
+                destination: {{services[context[vue].service_selected].routable_dst_OXF }}   
+
+            - magnum.route:  #MAC route of tielined source into subscription
+                host: {{router control.interface 3 }}
+                source: {{ROUTING_MAC[button]}}
+                destination: {{context[vue].source_sub }}
+
+            - magnum.route: #MAC route of subscription to expected edge devices
+                host: {{router control.interface 3}}
+                source: {{context[vue].source_sub }} 
+                destination: {{services[context[vue].service_selected].routable_dst_MAC }}   
+
+            - reflex.context.set:
+                key: {{vue}}.source_sub
+                value: null
+                    
+    Source_Route_2A_2B:
+        sensor: source_button
+        if: widget == 'Source' and '-2' in button
+        actions: 
+            - reflex.context.set:
+                key: {{vue}}.source_highlight
+                value: {{button}}
+
+            - reflex.context.set:
+                key: {{vue }}.source_vlpro
+                value: {{button }} 
+
+            - update vlpro source:
+                    vue used: {{vue }}
+                    service name: {{context[vue].service_selected}}
+                    source pressed: {{button}}
+
+            - reflex.context.set:
+                key: {{vue}}.source_sub
+                value: {{services[context[vue].service_selected].routable_sub }} 
+
+            - magnum.route:  #ART route of tielines source into subscription
+                host: {{router control.interface 1 }}
+                source: {{ROUTING_ART[button]}}
+                destination: {{context[vue].source_sub }} 
+
+            - magnum.route:
+                host: {{router control.interface 1}}
+                source: {{context[vue].source_sub }} 
+                destination: {{services[context[vue].service_selected].routable_dst_ART }} 
+
+            - magnum.route:  #first route of OXF
+                host: {{router control.interface 2 }}
+                source: {{button}}
+                destination: {{context[vue].source_sub }} {{tieline_routing[button].tieline_dsts}}
+
+##add the tieline here
+#              - magnum.route:
+#                    host: {{router control.interface 2 }}
+#                    source: {{ROUTING_OXF[button]}}
+#                    destination: {{tieline_routing[button]}}                       
+
+            - magnum.route:
+                host: {{router control.interface 2}}
+                source: {{context[vue].source_sub }} 
+                destination: {{services[context[vue].service_selected].routable_dst_OXF}}   
+
+            - magnum.route:  #MAC route of tielined source into subscription
+                host: {{router control.interface 3 }}
+                source: {{ROUTING_MAC[button]}}
+                destination: {{context[vue].source_sub }}
+
+            - magnum.route: #MAC route of subscription to expected edge devices
+                host: {{router control.interface 3}}
+                source: {{context[vue].source_sub }} 
+                destination: {{services[context[vue].service_selected].routable_dst_MAC }}   
+
+            - reflex.context.set:
+                key: {{vue}}.source_sub
+                value: null  
+
+
+    Source_Route_3A_3B:
+        sensor: source_button
+        if: widget == 'Source' and '-3' in button
+        actions: 
+                - reflex.context.set:
+                    key: {{vue}}.source_highlight
+                    value: {{button}}
+
+                - reflex.context.set:
+                    key: {{vue }}.source_vlpro
+                    value: {{button }} 
+
+                - update vlpro source:
+                    vue used: {{vue }}
+                    service name: {{context[vue].service_selected}}
+                    source pressed: {{button}}
+                
+                - reflex.context.set:
+                    key: {{vue}}.source_sub
+                    value: {{services[context[vue].service_selected].routable_sub }} 
+
+                - magnum.route:  #Local MAC source to tieline. No MAC edge devices to route to (yet).
+                    host: {{router control.interface 3 }}
+                    source: {{button}}   
+                    destination: {{tieline_routing[button].tieline_dsts}}
+
+    #add the tieline here
+                - magnum.route:
+                    host: {{router control.interface 1 }}
+                    source: {{ROUTING_ART[button]}}
+                    destination: {{context[vue].source_sub }}                        
+
+                - magnum.route: #ART SUB to ART DSTs
+                    host: {{router control.interface 1}}
+                    source: {{context[vue].source_sub }} 
+                    destination: {{services[context[vue].service_selected].routable_dst_ART }}  
+
+                - magnum.route:  #first route of OXF
+                    host: {{router control.interface 2 }}
+                    source: {{ROUTING_OXF[button]}}
+                    destination: {{context[vue].source_sub }} 
+
+    # #add the tieline here
+    #             - magnum.route:
+    #                 host: {{router control.interface 3 }}
+    #                 source: {{ROUTING_MAC[button]}}
+    #                 destination: {{tieline_routing[button]}}                       
+
+                - magnum.route:
+                    host: {{router control.interface 2}}
+                    source: {{context[vue].source_sub }} 
+                    destination: {{services[context[vue].service_selected].routable_dst_OXF}}  
+
+                - reflex.context.set:
+                    key: {{vue}}.source_sub
+                    value: null  
+                       
+    when a route is made in interface 1:                                                             
+        sensor: interface 1 listener
+        actions:
+            # Given a route update to a destination on interface 1, we first the service associated with the destination  
+            # E.g. ART-MIO-BLA-011-DST-1 -> FOXTELSAMPLE
+
+            # Then, we run a macro on VLPro providing the service name we just evaluated
+            # Params:
+            #   service_name: name of the service whose destination was just routed to
+            - update vlpro macro primary:
+                service_name: {{services|findKey(destination)|split('.')|first }}
+            - update vlpro macro secondary:
+                service_name: {{services|findKey(destination)|split('.')|first }}
+
+    when a route is made in interface 2:                                                             
+        sensor: interface 2 listener
+        actions:
+            # Same logic as the trigger above, but for interface 2
+            - update vlpro macro primary:
+                service_name: {{services|findKey(destination)|split('.')|first }}
+            - update vlpro macro secondary:
+                service_name: {{services|findKey(destination)|split('.')|first }}
+
+    when a route is made in interface 3:                                                             
+        sensor: interface 3 listener
+        actions:
+            # Same logic as the trigger above, but for interface 3
+            - update vlpro macro primary:
+                service_name: {{services|findKey(destination)|split('.')|first }}
+            - update vlpro macro secondary:
+                service_name: {{services|findKey(destination)|split('.')|first }}
+
+    service_ack_button:
+        sensor: source_button
+        if: widget == 'VLPro_Ack-Cor' and button == 'ACK All'
+        actions:
+            - vlpro service ack all macro primary:
+                service_name: {{context[vue].service_selected }}
+            - vlpro service ack all macro secondary:
+                service_name: {{context[vue].service_selected }}
+
+    service_cor_button:
+        sensor: source_button
+        if: widget == 'VLPro_Ack-Cor' and button == 'COR All'
+        actions:
+            - vlpro service cor all macro primary:
+                service_name: {{context[vue].service_selected }}
+            - vlpro service cor all macro secondary:
+                service_name: {{context[vue].service_selected }}
+
+
+actions:
+
+    # Generic action to run VUE_Change_Service macro on VLPro
+    # We are expecting a service_name param when action is invoked
+    # Params:
+    #   SERVICE_NAME: the name of the service that will be sent to the macro to update the VUE service
+    update vlpro macro primary:
+        service: reflex.http.post
+        service_name: (dynamically populated when called)
+        url: http://10.23.166.13:8082/vistalink/1/macro/VUE_Service_Route_Change/run.json
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+        data: variables=%5B%7B%22SERVICE_NAME%22:%20%22{{service_name}}%22%7D%5D
+
+    update vlpro macro secondary:
+        service: reflex.http.post
+        service_name: (dynamically populated when called)
+        url: http://10.23.166.14:8082/vistalink/1/macro/VUE_Service_Route_Change/run.json
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+        data: variables=%5B%7B%22SERVICE_NAME%22:%20%22{{service_name}}%22%7D%5D
+
+    update vlpro source primary:
+        service: reflex.http.post
+        vue used: Passed in
+        service name: Passed in
+        source pressed: Passed in
+        url: http://10.23.166.13:8082/vistalink/1/macro/VUE_Change_Source/run.json
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+        data: variables=%5B%7B%22VUE_STATION%22:%20%22{{vue}}%22,%20%22SERVICE_NAME%22:%20%22{{context[vue].service_selected}}%22,%20%22SOURCE%22:%20%22{{button}}%22%7D%5D
+
+    update vlpro source secondary:
+        service: reflex.http.post
+        vue used: Passed in
+        service name: Passed in
+        source pressed: Passed in
+        url: http://10.23.166.14:8082/vistalink/1/macro/VUE_Change_Source/run.json
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+        data: variables=%5B%7B%22VUE_STATION%22:%20%22{{vue}}%22,%20%22SERVICE_NAME%22:%20%22{{context[vue].service_selected}}%22,%20%22SOURCE%22:%20%22{{button}}%22%7D%5D
+
+    vlpro service ack all macro primary:
+        service: reflex.http.post
+        url: http://10.23.166.13:8082/vistalink/1/macro/Vue_ACK_Service/run.json
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+        data: variables=%5B%7B%22SERVICE_NAME%22:%20%22{{service_name}}%22%7D%5D
+
+    vlpro service ack all macro secondary:
+        service: reflex.http.post
+        url: http://10.23.166.14:8082/vistalink/1/macro/Vue_ACK_Service/run.json
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+        data: variables=%5B%7B%22SERVICE_NAME%22:%20%22{{service_name}}%22%7D%5D
+
+    vlpro service cor all primary:
+        service: reflex.http.post
+        url: http://10.23.166.13:8082/vistalink/1/macro/Vue_COR_Service/run.json
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+        data: variables=%5B%7B%22SERVICE_NAME%22:%20%22{{service_name}}%22%7D%5D
+
+    vlpro service cor all secondary:
+        service: reflex.http.post
+        url: http://10.23.166.14:8082/vistalink/1/macro/Vue_COR_Service/run.json
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+        data: variables=%5B%7B%22SERVICE_NAME%22:%20%22{{service_name}}%22%7D%5D
+
+    # Generic action post sources to an insite endpoint, namely when a VUE selects a service manually
+    # We are expecting target_url, target_sources params when action is invoked
+    # Params:
+    #   url: The InSite endpoint we want to be sending this post command to
+    #   sources: The sources of the service that was just selected by VUE
+    # api post insite:
+    #     service: reflex.http.get
+    #     target_url: (dynamically populated when called)
+    #     # authentication: (dynamically populated when called)
+    #     url: {{target_url }}
+    #     insecure: true
+    #     headers:
+    #         Accept: application/json
+    #         Content-Type: application/json
+    #         # otbt-is: {{authentication }} 
+    #     data: 
+    #         sources: {{target_sources }}
