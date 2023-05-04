@@ -1,0 +1,910 @@
+# Source to Tieline is configured here
+tieline_routing:
+    10Bris_SD-PT-1A:
+        tieline_dsts:
+            - 10Bris_SD-PT-2T1A-DST
+    10Bris_SD-PT-2A:
+        tieline_dsts:
+            - 10Bris_SD-PT-1T2A-DST
+    10Mel_SD-PT-1A:
+        tieline_dsts:
+            - 10Mel_SD-PT-2T1A-DST
+    10Mel_SD-PT-2A:
+        tieline_dsts:
+            - 10Mel_SD-PT-1T2A-DST
+    10Syd_SD-PT-1A:
+        tieline_dsts:
+            - 10Syd_SD-PT-2T1A-DST
+    10Syd_SD-PT-2A:
+        tieline_dsts:
+            - 10Syd_SD-PT-1T2A-DST
+    10PeachBris_SD-PT-1A:
+        tieline_dsts:
+            - 10PeachBris_SD-PT-2T1A-DST
+    10PeachBris_SD-PT-2A:
+        tieline_dsts:
+            - 10PeachBris_SD-PT-1T2A-DST
+    10PeachMel_SD-PT-1A:
+        tieline_dsts:
+            - 10PeachMel_SD-PT-2T1A-DST
+    10PeachMel_SD-PT-2A:
+        tieline_dsts:
+            - 10PeachMel_SD-PT-1T2A-DST
+    10PeachSyd_SD-PT-1A:
+        tieline_dsts:
+            - 10PeachSyd_SD-PT-2T1A-DST
+    10PeachSyd_SD-PT-2A:
+        tieline_dsts:
+            - 10PeachSyd_SD-PT-1T2A-DST
+    7Bris_SD-PT-1A:
+        tieline_dsts:
+            - 7Bris_SD-PT-2T1A-DST
+    7Bris_SD-PT-2A:
+        tieline_dsts:
+            - 7Bris_SD-PT-1T2A-DST
+    7mateBris_SD-PT-1A:
+        tieline_dsts:
+            - 7mateBris_SD-PT-2T1A-DST
+    7mateBris_SD-PT-2A:
+        tieline_dsts:
+            - 7mateBris_SD-PT-1T2A-DST
+    7mateMel_SD-PT-1A:
+        tieline_dsts:
+            - 7mateMel_SD-PT-2T1A-DST
+    7mateMel_SD-PT-2A:
+        tieline_dsts:
+            - 7mateMel_SD-PT-1T2A-DST
+    7mateSyd_SD-PT-1A:
+        tieline_dsts:
+            - 7mateSyd_SD-PT-2T1A-DST
+    7mateSyd_SD-PT-2A:
+        tieline_dsts:
+            - 7mateSyd_SD-PT-1T2A-DST
+    7Mel_SD-PT-1A:
+        tieline_dsts:
+            - 7Mel_SD-PT-2T1A-DST
+    7Mel_SD-PT-2A:
+        tieline_dsts:
+            - 7Mel_SD-PT-1T2A-DST
+    7Syd_SD-PT-1A:
+        tieline_dsts:
+            - 7Syd_SD-PT-2T1A-DST
+    7Syd_SD-PT-2A:
+        tieline_dsts:
+            - 7Syd_SD-PT-1T2A-DST
+    9Bris_SD-PT-1A:
+        tieline_dsts:
+            - 9Bris_SD-PT-2T1A-DST
+    9Bris_SD-PT-2A:
+        tieline_dsts:
+            - 9Bris_SD-PT-1T2A-DST
+    9Mel_SD-PT-1A:
+        tieline_dsts:
+            - 9Mel_SD-PT-2T1A-DST
+    9Mel_SD-PT-2A:
+        tieline_dsts:
+            - 9Mel_SD-PT-1T2A-DST
+    9Syd_SD-PT-1A:
+        tieline_dsts:
+            - 9Syd_SD-PT-2T1A-DST
+    9Syd_SD-PT-2A:
+        tieline_dsts:
+            - 9Syd_SD-PT-1T2A-DST
+    AEHD-PO-1A:
+        tieline_dsts:
+            - AEHD-PO-2T1A-DST
+    AEHD-PO-2A:
+        tieline_dsts:
+            - AEHD-PO-1T2A-DST
+    AlJazeera_SD-PT-1X:
+        tieline_dsts:
+            - AlJazeera_SD-PT-2T1A-DST
+    AlJazeera_SD-PT-2X:
+        tieline_dsts:
+            - AlJazeera_SD-PT-1T2A-DST
+    AnimalPlanet_SD-PT-1X:
+        tieline_dsts:
+            - AnimalPlanet_SD-PT-2T1A-DST
+    AnimalPlanet_SD-PT-2X:
+        tieline_dsts:
+            - AnimalPlanet_SD-PT-1T2A-DST
+    Antenna_SD-PT-1X:
+        tieline_dsts:
+            - Antenna_SD-PT-2T1A-DST
+    Antenna_SD-PT-2X:
+        tieline_dsts:
+            - Antenna_SD-PT-1T2A-DST
+    Aurora_SD-PT-1A:
+        tieline_dsts:
+            - Aurora_SD-PT-2T1A-DST
+    Aurora_SD-PT-2A:
+        tieline_dsts:
+            - Aurora_SD-PT-1T2A-DST
+    BBCCBeebiesNZ_SD-PO-1A:
+        tieline_dsts:
+            - BBCCBeebiesNZ_SD-PO-2T1A-DST
+    BBCCBeebiesNZ_SD-PO-2A:
+        tieline_dsts:
+            - BBCCBeebiesNZ_SD-PO-1T2A-DST
+    BBCCBeebies_SD-PO-1A:
+        tieline_dsts:
+            - BBCCBeebies_SD-PO-2T1A-DST
+    BBCCBeebies_SD-PO-2A:
+        tieline_dsts:
+            - BBCCBeebies_SD-PO-1T2A-DST
+    BBCEarthHD-PO-1A:
+        tieline_dsts:
+            - BBCEarthHD-PO-2T1A-DST
+    BBCEarthHD-PO-2A:
+        tieline_dsts:
+            - BBCEarthHD-PO-1T2A-DST
+    BBCEarthNZHD-PO-1A:
+        tieline_dsts:
+            - BBCEarthNZHD-PO-2T1A-DST
+    BBCEarthNZHD-PO-2A:
+        tieline_dsts:
+            - BBCEarthNZHD-PO-1T2A-DST
+    BBCFirstHD-PO-1A:
+        tieline_dsts:
+            - BBCFirstHD-PO-2T1A-DST
+    BBCFirstHD-PO-2A:
+        tieline_dsts:
+            - BBCFirstHD-PO-1T2A-DST
+    BBCWldNews_SD-PT-1A:
+        tieline_dsts:
+            - BBCWldNews_SD-PT-2T1A-DST
+    BBCWldNews_SD-PT-2A:
+        tieline_dsts:
+            - BBCWldNews_SD-PT-1T2A-DST
+    beINSpts1HD-PT-1X:
+        tieline_dsts:
+            - beINSpts1HD-PT-2T1A-DST
+    beINSpts1HD-PT-2X:
+        tieline_dsts:
+            - beINSpts1HD-PT-1T2A-DST
+    beINSpts2HD-PT-1X:
+        tieline_dsts:
+            - beINSpts2HD-PT-2T1A-DST
+    beINSpts2HD-PT-2X:
+        tieline_dsts:
+            - beINSpts2HD-PT-1T2A-DST
+    beINSpts3HD-PT-1X:
+        tieline_dsts:
+            - beINSpts3HD-PT-2T1A-DST
+    beINSpts3HD-PT-2X:
+        tieline_dsts:
+            - beINSpts3HD-PT-1T2A-DST
+    Bloomberg_HD-PT-1X:
+        tieline_dsts:
+            - Bloomberg_HD-PT-2T1A-DST
+    Bloomberg_HD-PT-2X:
+        tieline_dsts:
+            - Bloomberg_HD-PT-1T2A-DST
+    Boomerang_SD-PT-1A:
+        tieline_dsts:
+            - Boomerang_SD-PT-2T1A-DST
+    Boomerang_SD-PT-2A:
+        tieline_dsts:
+            - Boomerang_SD-PT-1T2A-DST
+    BoxSetsHD-PO-1A:
+        tieline_dsts:
+            - BoxSetsHD-PO-2T1A-DST
+    BoxSetsHD-PO-2A:
+        tieline_dsts:
+            - BoxSetsHD-PO-1T2A-DST
+    Cartoon_SD-PT-1A:
+        tieline_dsts:
+            - Cartoon_SD-PT-2T1A-DST
+    Cartoon_SD-PT-2A:
+        tieline_dsts:
+            - Cartoon_SD-PT-1T2A-DST
+    CGTNDoco_SD-PT-1A:
+        tieline_dsts:
+            - CGTNDoco_SD-PT-2T1A-DST
+    CGTNDoco_SD-PT-2A:
+        tieline_dsts:
+            - CGTNDoco_SD-PT-1T2A-DST
+    CGTN_SD-PT-1A:
+        tieline_dsts:
+            - CGTN_SD-PT-2T1A-DST
+    CGTN_SD-PT-2A:
+        tieline_dsts:
+            - CGTN_SD-PT-1T2A-DST
+    ClubMTV_SD-PT-1A:
+        tieline_dsts:
+            - ClubMTV_SD-PT-2T1A-DST
+    ClubMTV_SD-PT-2A:
+        tieline_dsts:
+            - ClubMTV_SD-PT-1T2A-DST
+    CMT_SD-PT-1A:
+        tieline_dsts:
+            - CMT_SD-PT-2T1A-DST
+    CMT_SD-PT-2A:
+        tieline_dsts:
+            - CMT_SD-PT-1T2A-DST
+    CNBC_SD-PT-1X:
+        tieline_dsts:
+            - CNBC_SD-PT-2T1A-DST
+    CNBC_SD-PT-2X:
+        tieline_dsts:
+            - CNBC_SD-PT-1T2A-DST
+    CNN_HD-PT-1A:
+        tieline_dsts:
+            - CNN_HD-PT-2T1A-DST
+    CNN_HD-PT-2A:
+        tieline_dsts:
+            - CNN_HD-PT-1T2A-DST
+    CRIMEINVESTNZ_SD-PO-1A:
+        tieline_dsts:
+            - CRIMEINVESTNZ_SD-PO-2T1A-DST
+    CRIMEINVESTNZ_SD-PO-2A:
+        tieline_dsts:
+            - CRIMEINVESTNZ_SD-PO-1T2A-DST
+    CRIMEINVESTHD-PO-1A:
+        tieline_dsts:
+            - CRIMEINVESTHD-PO-2T1A-DST
+    CRIMEINVESTHD-PO-2A:
+        tieline_dsts:
+            - CRIMEINVESTHD-PO-1T2A-DST
+    DayStar_SD-PT-1A:
+        tieline_dsts:
+            - Daystar_SD-PT-2T1A-DST
+    DayStar_SD-PT-2A:
+        tieline_dsts:
+            - Daystar_SD-PT-1T2A-DST
+    DiscoveryHD-PT-1X:
+        tieline_dsts:
+            - DiscoveryHD-PT-2T1A-DST
+    DiscoveryHD-PT-2X:
+        tieline_dsts:
+            - DiscoveryHD-PT-1T2A-DST
+    DiscTurbo_SD-PT-1X:
+        tieline_dsts:
+            - DiscTurbo_SD-PT-2T1A-DST
+    DiscTurbo_SD-PT-2X:
+        tieline_dsts:
+            - DiscTurbo_SD-PT-1T2A-DST
+    DreamWorks_HD-PT-1X:
+        tieline_dsts:
+            - DreamWorks_HD-PT-2T1A-DST
+    DreamWorks_HD-PT-2X:
+        tieline_dsts:
+            - DreamWorks_HD-PT-1T2A-DST
+    EntPopUpHD-PO-1A:
+        tieline_dsts:
+            - EntPopUpHD-PO-2T1A-DST
+    EntPopUpHD-PO-2A:
+        tieline_dsts:
+            - EntPopUpHD-PO-1T2A-DST
+    ESPN2HD-PT-1A:
+        tieline_dsts:
+            - ESPN2HD-PT-2T1A-DST
+    ESPN2HD-PT-2A:
+        tieline_dsts:
+            - ESPN2HD-PT-1T2A-DST
+    ESPNHD-PT-1A:
+        tieline_dsts:
+            - ESPNHD-PT-2T1A-DST
+    ESPNHD-PT-2A:
+        tieline_dsts:
+            - ESPNHD-PT-1T2A-DST
+    EXPO_SD-PT-1A:
+        tieline_dsts:
+            - EXPO_SD-PT-2T1A-DST
+    EXPO_SD-PT-2A:
+        tieline_dsts:
+            - EXPO_SD-PT-1T2A-DST
+    FOX8HD-PO-2A:
+        tieline_dsts:
+            - FOX8HD-PO-1T2A-DST
+    FOX8HD-PO-1A:
+        tieline_dsts:
+            - FOX8HD-PO-2T1A-DST
+    FoxARENAHD-PO-1A:
+        tieline_dsts:
+            - FoxARENAHD-PO-2T1A-DST
+    FoxARENAHD-PO-2A:
+        tieline_dsts:
+            - FoxARENAHD-PO-1T2A-DST
+    FoxClassics_SD-PO-1A:
+        tieline_dsts:
+            - FoxClassics_SD-PO-2T1A-DST
+    FoxClassics_SD-PO-2A:
+        tieline_dsts:
+            - FoxClassics_SD-PO-1T2A-DST
+    FoxComedyHD-PO-1A:
+        tieline_dsts:
+            - FoxComedyHD-PO-2T1A-DST
+    FoxComedyHD-PO-2A:
+        tieline_dsts:
+            - FoxComedyHD-PO-1T2A-DST
+    FoxCricketHD-PO-1A:
+        tieline_dsts:
+            - FoxCricketHD-PO-2T1A-DST
+    FoxCricketHD-PO-1B:
+        tieline_dsts:
+            - FoxCricketHD-PO-2T1B-DST
+    FoxCricketHDLV-PO-1A:
+        tieline_dsts:
+            - FoxCricketHDLV-PO-2T1A-DST
+    FoxCricketHDLV-PO-1B:
+        tieline_dsts:
+            - FoxCricketHDLV-PO-2T1B-DST
+    FoxCricketLV_SD-PO-1A:
+        tieline_dsts:
+            - FoxCricketLV_SD-PO-2T1A-DST
+    FoxCricketLV_SD-PO-1B:
+        tieline_dsts:
+            - FoxCricketLV_SD-PO-2T1B-DST
+    FoxCricket_SD-PO-1A:
+        tieline_dsts:
+            - FoxCricket_SD-PO-2T1A-DST
+    FoxCricket_SD-PO-1B:
+        tieline_dsts:
+            - FoxCricket_SD-PO-2T1B-DST
+    FoxCrimeHD-PO-1A:
+        tieline_dsts:
+            - FoxCrimeHD-PO-2T1A-DST
+    FoxCrimeHD-PO-2A:
+        tieline_dsts:
+            - FoxCrimeHD-PO-1T2A-DST
+    FoxDocosHD-PO-1A:
+        tieline_dsts:
+            - FoxDocosHD-PO-2T1A-DST
+    FoxDocosHD-PO-2A:
+        tieline_dsts:
+            - FoxDocosHD-PO-1T2A-DST
+    FoxFootyHD-PO-1A:
+        tieline_dsts:
+            - FoxFootyHD-PO-2T1A-DST
+    FoxFootyHD-PO-1B:
+        tieline_dsts:
+            - FoxFootyHD-PO-2T1B-DST
+    FoxFootyHDLV-PO-1A:
+        tieline_dsts:
+            - FoxFootyHDLV-PO-2T1A-DST
+    FoxFootyHDLV-PO-1B:
+        tieline_dsts:
+            - FoxFootyHDLV-PO-2T1B-DST
+    FoxFootyLV_SD-PO-1A:
+        tieline_dsts:
+            - FoxFootyLV_SD-PO-2T1A-DST
+    FoxFootyLV_SD-PO-1B:
+        tieline_dsts:
+            - FoxFootyLV_SD-PO-2T1B-DST
+    FoxFooty_SD-PO-1A:
+        tieline_dsts:
+            - FoxFooty_SD-PO-2T1A-DST
+    FoxFooty_SD-PO-1B:
+        tieline_dsts:
+            - FoxFooty_SD-PO-2T1B-DST
+    RealLifeHD-PO-1A:
+        tieline_dsts:
+            - RealLifeHD-PO-2T1A-DST
+    RealLifeHD-PO-2A:
+        tieline_dsts:
+            - RealLifeHD-PO-1T2A-DST
+    FoxLeagueHD-PO-1A:
+        tieline_dsts:
+            - FoxLeagueHD-PO-2T1A-DST
+    FoxLeagueHD-PO-1B:
+        tieline_dsts:
+            - FoxLeagueHD-PO-2T1B-DST
+    FoxLeagueHDLV-PO-1A:
+        tieline_dsts:
+            - FoxLeagueHDLV-PO-2T1A-DST
+    FoxLeagueHDLV-PO-1B:
+        tieline_dsts:
+            - FoxLeagueHDLV-PO-2T1B-DST
+    FoxLeagueLV_SD-PO-1A:
+        tieline_dsts:
+            - FoxLeagueLV_SD-PO-2T1A-DST
+    FoxLeagueLV_SD-PO-1B:
+        tieline_dsts:
+            - FoxLeagueLV_SD-PO-2T1B-DST
+    FoxLeague_SD-PO-1A:
+        tieline_dsts:
+            - FoxLeague_SD-PO-2T1A-DST
+    FoxLeague_SD-PO-1B:
+        tieline_dsts:
+            - FoxLeague_SD-PO-2T1B-DST
+    FoxNewsHD-PT-1A:
+        tieline_dsts:
+            - FoxNewsHD-PT-2T1A-DST
+    FoxNewsHD-PT-2A:
+        tieline_dsts:
+            - FOXNewsHD-PT-1T2A-DST
+    FoxOneHD-PO-1A:
+        tieline_dsts:
+            - FoxOneHD-PO-2T1A-DST
+    FoxOneHD-PO-2A:
+        tieline_dsts:
+            - FoxOneHD-PO-1T2A-DST
+    FoxSciFiHD-PO-1A:
+        tieline_dsts:
+            - FoxSciFiHD-PO-2T1A-DST
+    FoxSciFiHD-PO-2A:
+        tieline_dsts:
+            - FoxSciFiHD-PO-1T2A-DST
+    FoxShowcaseHD-PO-1A:
+        tieline_dsts:
+            - FoxShowcaseHD-PO-2T1A-DST
+    FoxShowcaseHD-PO-2A:
+        tieline_dsts:
+            - FoxShowcaseHD-PO-1T2A-DST
+    FoxSleuthHD-PO-2A:
+        tieline_dsts:
+            - FoxSleuthHD-PO-1T2A-DST
+    FoxSleuthHD-PO-1A:
+        tieline_dsts:
+            - FoxSleuthHD-PO-2T1A-DST
+    FoxSpts503HD-PO-1A:
+        tieline_dsts:
+            - FoxSpts503HD-PO-2T1A-DST
+    FoxSpts503HD-PO-1B:
+        tieline_dsts:
+            - FoxSpts503HD-PO-2T1B-DST
+    FoxSpts503_SD-PO-1A:
+        tieline_dsts:
+            - FoxSpts503_SD-PO-2T1A-DST
+    FoxSpts503_SD-PO-1B:
+        tieline_dsts:
+            - FoxSpts503_SD-PO-2T1B-DST
+    FoxSpts505HD-PO-1A:
+        tieline_dsts:
+            - FoxSpts505HD-PO-2T1A-DST
+    FoxSpts505HD-PO-1B:
+        tieline_dsts:
+            - FoxSpts505HD-PO-2T1B-DST
+    FoxSpts505_SD-PO-1A:
+        tieline_dsts:
+            - FoxSpts505_SD-PO-2T1A-DST
+    FoxSpts505_SD-PO-1B:
+        tieline_dsts:
+            - FoxSpts505_SD-PO-2T1B-DST
+    FoxSpts506HD-PO-1A:
+        tieline_dsts:
+            - FoxSpts506HD-PO-2T1A-DST
+    FoxSpts506HD-PO-1B:
+        tieline_dsts:
+            - FoxSpts506HD-PO-2T1B-DST
+    FoxSpts506_SD-PO-1A:
+        tieline_dsts:
+            - FoxSpts506_SD-PO-2T1A-DST
+    FoxSpts506_SD-PO-1B:
+        tieline_dsts:
+            - FoxSpts506_SD-PO-2T1B-DST
+    FoxSptsMoreHD-PO-1A:
+        tieline_dsts:
+            - FoxSptsMoreHD-PO-2T1A-DST
+    FoxSptsMoreHD-PO-1B:
+        tieline_dsts:
+            - FoxSptsMoreHD-PO-2T1B-DST
+    FoxSptsMore_SD-PO-1A:
+        tieline_dsts:
+            - FoxSptsMore_SD-PO-2T1A-DST
+    FoxSptsMore_SD-PO-1B:
+        tieline_dsts:
+            - FoxSptsMore_SD-PO-2T1B-DST
+    FoxSptsNewsHD-PT-1A:
+        tieline_dsts:
+            - FoxSptsNewsHD-PT-2T1A-DST
+    FoxSptsNewsHD-PT-2A:
+        tieline_dsts:
+            - FoxSptsNewsHD-PT-1T2A-DST
+    FoxSptsUHD1-PO-1A:
+        tieline_dsts:
+            - FoxSptsUHD1-PO-2T1A-DST
+    FoxSptsUHD2-PO-1A:
+        tieline_dsts:
+            - FoxSptsUHD2-PO-2T1A-DST
+    FoxSptsUHD3-PO-1A:
+        tieline_dsts:
+            - FoxSptsUHD3-PO-2T1A-DST
+    FoxSptsUHD4-PO-1A:
+        tieline_dsts:
+            - FoxSptsUHD4-PO-2T1A-DST
+    FoxSptsUHD5-PO-1A:
+        tieline_dsts:
+            - FoxSptsUHD5-PO-2T1A-DST
+    FoxSptsUHD6-PO-1A:
+        tieline_dsts:
+            - FoxSptsUHD6-PO-2T1A-DST
+    France24HD-PT-1X:
+        tieline_dsts:
+            - France24HD-PT-2T1A-DST
+    France24HD-PT-2X:
+        tieline_dsts:
+            - France24HD-PT-1T2A-DST
+    France24HD-PT-1A:
+        tieline_dsts:
+            - France24HD-PT-2T1A-DST
+    France24HD-PT-2A:
+        tieline_dsts:
+            - France24HD-PT-1T2A-DST
+    GOOD_SD-1A:
+        tieline_dsts:
+            - GOOD_SD-PT-2T1A-DST
+    GOOD_SD-2A:
+        tieline_dsts:
+            - GOOD_SD-PT-1T2A-DST
+    HISTORYHD-PO-1A:
+        tieline_dsts:
+            - HISTORYHD-PO-2T1A-DST
+    HISTORYHD-PO-2A:
+        tieline_dsts:
+            - HISTORYHD-PO-1T2A-DST
+    HISTORYNZ_SD-PO-1A:
+        tieline_dsts:
+            - HISTORYNZ_SD-PO-2T1A-DST
+    HISTORYNZ_SD-PO-2A:
+        tieline_dsts:
+            - HISTORYNZ_SD-PO-1T2A-DST
+    ID_SD-PT-1X:
+        tieline_dsts:
+            - ID_SD-PT-2T1A-DST
+    ID_SD-PT-2X:
+        tieline_dsts:
+            - ID_SD-PT-1T2A-DST
+    KidsPopUp_SD-PT-3A:
+        tieline_dsts:
+            - KidsPopUp-PT-1T3A-DST
+            - KidsPopUp_SD-PT-2T3A-DST
+    KidsPopUp_SD-PT-3B:
+        tieline_dsts:
+            - KidsPopUp-PT-1T3B-DST
+            - KidsPopUp_SD-PT-2T3B-DST
+    LifeStyleFood_SD-PO-1A:
+        tieline_dsts:
+            - LifeStyleFood_SD-PO-2T1A-DST
+    LifeStyleFood_SD-PO-2A:
+        tieline_dsts:
+            - LifeStyleFood_SD-PO-1T2A-DST
+    LifeStyleHD-PO-1A:
+        tieline_dsts:
+            - LifeStyleHD-PO-2T1A-DST
+    LifeStyleHD-PO-2A:
+        tieline_dsts:
+            - LifeStyleHD-PO-1T2A-DST
+    LifeStyleHome_SD-PO-1A:
+        tieline_dsts:
+            - LifeStyleHome_SD-PO-2T1A-DST
+    LifeStyleHome_SD-PO-2A:
+        tieline_dsts:
+            - LifeStyleHome_SD-PO-1T2A-DST
+    MainEventHD-PO-1A:
+        tieline_dsts:
+            - MainEventHD-PO-2T1A-DST
+    MainEventHD-PO-2A:
+        tieline_dsts:
+            - MainEventHD-PO-1T2A-DST
+    MovActionHD-PO-1A:
+        tieline_dsts:
+            - MovActionHD-PO-2T1A-DST
+    MovActionHD-PO-2A:
+        tieline_dsts:
+            - MovActionHD-PO-1T2A-DST
+    MovComedyHD-PO-1A:
+        tieline_dsts:
+            - MovComedyHD-PO-2T1A-DST
+    MovComedyHD-PO-2A:
+        tieline_dsts:
+            - MovComedyHD-PO-1T2A-DST
+    MovDramaHD-PO-1A:
+        tieline_dsts:
+            - MovDramaHD-PO-2T1A-DST
+    MovDramaHD-PO-2A:
+        tieline_dsts:
+            - MovDramaHD-PO-1T2A-DST
+    MovFamilyHD-PO-1A:
+        tieline_dsts:
+            - MovFamilyHD-PO-2T1A-DST
+    MovFamilyHD-PO-2A:
+        tieline_dsts:
+            - MovFamilyHD-PO-1T2A-DST
+    MovGreatsHD-PO-1A:
+        tieline_dsts:
+            - MovGreatsHD-PO-2T1A-DST
+    MovGreatsHD-PO-2A:
+        tieline_dsts:
+            - MovGreatsHD-PO-1T2A-DST
+    MovHitsHD-PO-1A:
+        tieline_dsts:
+            - MovHitsHD-PO-2T1A-DST
+    MovHitsHD-PO-2A:
+        tieline_dsts:
+            - MovHitsHD-PO-1T2A-DST
+    MovKidsHD-PO-1A:
+        tieline_dsts:
+            - MovKidsHD-PO-2T1A-DST
+    MovKidsHD-PO-2A:
+        tieline_dsts:
+            - MovKidsHD-PO-1T2A-DST
+    MovLMNHD-PO-2A:
+        tieline_dsts:
+            - MovLMNHD-PO-1T2A-DST
+    MovLMNHD-PO-1A:
+        tieline_dsts:
+            - MovLMNHD-PO-2T1A-DST
+    MovPremiereHD-PO-2A:
+        tieline_dsts:
+            - MovPremiereHD-PO-1T2A-DST
+    MovPremiereHD-PO-1A:
+        tieline_dsts:
+            - MovPremiereHD-PO-2T1A-DST
+    MovRomanceHD-PO-1A:
+        tieline_dsts:
+            - MovRomanceHD-PO-2T1A-DST
+    MovRomanceHD-PO-2A:
+        tieline_dsts:
+            - MovRomanceHD-PO-1T2A-DST
+    MovThrillerHD-PO-2A:
+        tieline_dsts:
+            - MovThrillerHD-PO-1T2A-DST
+    MovThrillerHD-PO-1A:
+        tieline_dsts:
+            - MovThrillerHD-PO-2T1A-DST
+    MTVClassic_SD-PT-1A:
+        tieline_dsts:
+            - MTVClassic_SD-PT-2T1A-DST
+    MTVClassic_SD-PT-2A:
+        tieline_dsts:
+            - MTVClassic_SD-PT-1T2A-DST
+    MTVHits_SD-PT-1A:
+        tieline_dsts:
+            - MTVHits_SD-PT-2T1A-DST
+    MTVHits_SD-PT-2A:
+        tieline_dsts:
+            - MTVHits_SD-PT-1T2A-DST
+    MTV_SD-PT-1A:
+        tieline_dsts:
+            - MTV_SD-PT-2T1A-DST
+    MTV_SD-PT-2A:
+        tieline_dsts:
+            - MTV_SD-PT-1T2A-DST
+    NHKWorld_SD-PT-1A:
+        tieline_dsts:
+            - NHKWorld_SD-PT-2T1A-DST
+    NHKWorld_SD-PT-2A:
+        tieline_dsts:
+            - NHKWorld_SD-PT-1T2A-DST
+    Nickelodeon_SD-PT-1A:
+        tieline_dsts:
+            - Nickelodeon_SD-PT-2T1A-DST
+    Nickelodeon_SD-PT-2A:
+        tieline_dsts:
+            - Nickelodeon_SD-PT-1T2A-DST
+    NickJr_SD-PT-1A:
+        tieline_dsts:
+            - NickJr_SD-PT-2T1A-DST
+    NickJr_SD-PT-2A:
+        tieline_dsts:
+            - NickJr_SD-PT-1T2A-DST
+    NickMusic_SD-PT-1A:
+        tieline_dsts:
+            - NickMusic_SD-PT-2T1A-DST
+    NickMusic_SD-PT-2A:
+        tieline_dsts:
+            - NickMusic_SD-PT-1T2A-DST
+    PBSKIDS_HD-PT-1X:
+        tieline_dsts:
+            - PBSKIDS_HD-PT-2T1A-DST
+    PBSKIDS_HD-PT-2X:
+        tieline_dsts:
+            - PBSKIDS_HD-PT-1T2A-DST
+    RACINGCOM_SD-PT-1A:
+        tieline_dsts:
+            - RACINGCOM_SD-PT-2T1A-DST
+    RACINGCOM_SD-PT-2A:
+        tieline_dsts:
+            - RACINGCOM_SD-PT-1T2A-DST
+    RAI_SD-PT-1A:
+        tieline_dsts:
+            - RAI_SD-PT-2T1A-DST
+    RAI_SD-PT-2A:
+        tieline_dsts:
+            - RAI_SD-PT-1T2A-DST
+    RAIRadio1-RD-1X:
+        tieline_dsts:
+            - RAIRadio1-RD-2T1A-DST
+    RAIRadio1-RD-2X:
+        tieline_dsts:
+            - RAIRadio1-RD-1T2A-DST
+    SkyNewsExtra_SD-PT-1A:
+        tieline_dsts:
+            - SkyNewsExtra_SD-PT-2T1A-DST
+    SkyNewsExtra_SD-PT-2A:
+        tieline_dsts:
+            - SkyNewsExtra_SD-PT-1T2A-DST
+    SkyNewsHD-PT-1A:
+        tieline_dsts:
+            - SKYNewsHD-PT-2T1A-DST
+    SkyNewsHD-PT-2A:
+        tieline_dsts:
+            - SkyNewsHD-PT-1T2A-DST
+    SkyNewsUKHD-PT-1A:
+        tieline_dsts:
+            - SkyNewsUKHD-PT-2T1A-DST
+    SkyNewsUKHD-PT-2A:
+        tieline_dsts:
+            - SkyNewsUKHD-PT-1T2A-DST
+    SkyRacing1HD-PT-1A:
+        tieline_dsts:
+            - SkyRacing1HD-PT-2T1A-DST
+    SkyRacing1HD-PT-2A:
+        tieline_dsts:
+            - SkyRacing1HD-PT-1T2A-DST
+    SkyRacing2HD-PT-1A:
+        tieline_dsts:
+            - SkyRacing2HD-PT-2T1A-DST
+    SkyRacing2HD-PT-2A:
+        tieline_dsts:
+            - SkyRacing2HD-PT-1T2A-DST
+    SkyTbredHD-PT-1A:
+        tieline_dsts:
+            - SkyTbredHD-PT-2T1A-DST
+    SkyTbredHD-PT-2A:
+        tieline_dsts:
+            - SkyTbredHD-PT-1T2A-DST
+    SKYWeather_SD-PT-1A:
+        tieline_dsts:
+            - SKYWeather_SD-PT-2T1A-DST
+    SKYWeather_SD-PT-2A:
+        tieline_dsts:
+            - SKYWeather_SD-PT-1T2A-DST
+    SonLife_SD-PT-1X:
+        tieline_dsts:
+            - SonLife_SD-PT-2T1A-DST
+    SonLife_SD-PT-2X:
+        tieline_dsts:
+            - SonLife_SD-PT-1T2A-DST
+    TBNInspire_SD-PT-1A:
+        tieline_dsts:
+            - TBNInspire_SD-PT-2T1A-DST
+    TBNInspire_SD-PT-2A:
+        tieline_dsts:
+            - TBNInspire_SD-PT-1T2A-DST
+    TLC_SD-PT-1X:
+        tieline_dsts:
+            - TLC_SD-PT-2T1A-DST
+    TLC_SD-PT-2X:
+        tieline_dsts:
+            - TLC_SD-PT-1T2A-DST
+    TVSN_SD-PT-1A:
+        tieline_dsts:
+            - TVSN_SD-PT-2T1A-DST
+    TVSN_SD-PT-2A:
+        tieline_dsts:
+            - TVSN_SD-PT-1T2A-DST
+    UKTVNZHD-PO-1A:
+        tieline_dsts:
+            - UKTVNZHD-PO-2T1A-DST
+    UKTVNZHD-PO-2A:
+        tieline_dsts:
+            - UKTVNZHD-PO-1T2A-DST
+    UKTV_SD-PO-1A:
+        tieline_dsts:
+            - UKTV_SD-PO-2T1A-DST
+    UKTV_SD-PO-2A:
+        tieline_dsts:
+            - UKTV_SD-PO-1T2A-DST
+    UniversalTVHD-PT-1X:
+        tieline_dsts:
+            - UniversalTVHD-PT-2T1A-DST
+    UniversalTVHD-PT-2X:
+        tieline_dsts:
+            - UniversalTVHD-PT-1T2A-DST
+    WWEHD-PO-1A:
+        tieline_dsts:
+            - WWEHD-PO-2T1A-DST
+    WWEHD-PO-2A:
+        tieline_dsts:
+            - WWEHD-PO-1T2A-DST
+    MoviesUHD-PO-1A:
+        tieline_dsts:
+            - MoviesUHD-PO-2T1A-DST
+    MoviesUHD-PO-2A:
+        tieline_dsts:
+            - MoviesUHD-PO-1T2A-DST
+    HELP_BBCWldRadio-PT-1X:
+        tieline_dsts:
+            - HELP_BBCWldRadio-PT-2T1A-DST
+    HELP_BBCWldRadio-PT-2X:
+        tieline_dsts:
+            - HELP_BBCWldRadio-PT-1T2A-DST
+    MSNBC_SD-PT-1A:
+        tieline_dsts:
+            - MSNBC_SD-PT-2T1A-DST
+    MSNBC_SD-PT-2A:
+        tieline_dsts:
+            - MSNBC_SD-PT-1T2A-DST
+    Lifeboat1HD-PO-1A:
+        tieline_dsts:
+            - Lifeboat1HD-PO-2T1A-DST
+    Lifeboat1HD-PO-2A:
+        tieline_dsts:
+            - Lifeboat1HD-PO-1T2A-DST
+    Lifeboat2HD-PO-1A:
+        tieline_dsts:
+            - Lifeboat2HD-PO-2T1A-DST
+    Lifeboat2HD-PO-2A:
+        tieline_dsts:
+            - Lifeboat2HD-PO-1T2A-DST
+    Lifeboat3HD-PO-1A:
+        tieline_dsts:
+            - Lifeboat3HD-PO-2T1A-DST
+    Lifeboat3HD-PO-2A:
+        tieline_dsts:
+            - Lifeboat3HD-PO-1T2A-DST
+    Lifeboat4_SD-PO-1A:
+        tieline_dsts:
+            - Lifeboat4_SD-PO-2T1A-DST
+    Lifeboat4_SD-PO-2A:
+        tieline_dsts:
+            - Lifeboat4_SD-PO-1T2A-DST
+    Lifeboat5_SD-PO-1A:
+        tieline_dsts:
+            - Lifeboat5_SD-PO-2T1A-DST
+    Lifeboat5_SD-PO-2A:
+        tieline_dsts:
+            - Lifeboat5_SD-PO-1T2A-DST
+    Lifeboat6_SD-PO-1A:
+        tieline_dsts:
+            - Lifeboat6_SD-PO-2T1A-DST
+    Lifeboat6_SD-PO-2A:
+        tieline_dsts:
+            - Lifeboat6_SD-PO-1T2A-DST
+    Lifeboat7UHD-PO-1A:
+        tieline_dsts:
+            - Lifeboat7UHD-PO-2T1A-DST
+    Lifeboat7UHD-PO-2A:
+        tieline_dsts:
+            - Lifeboat7UHD-PO-1T2A-DST
+    NBCNNHD-PT-1X:
+        tieline_dsts:
+            - NBCNNHD-PT-2T1A-DST
+    NBCNNHD-PT-2X:
+        tieline_dsts:
+            - NBCNNHD-PT-1T2A-DST
+    Lifeboat1HD-PO-1A:
+        tieline_dsts:
+            - Lifeboat1HD-PO-2T1A-DST
+    Lifeboat1HD-PO-2A:
+        tieline_dsts:
+            - Lifeboat1HD-PO-1T2A-DST
+    Lifeboat2HD-PO-1A:
+        tieline_dsts:
+            - Lifeboat2HD-PO-2T1A-DST
+    Lifeboat2HD-PO-2A:
+        tieline_dsts:
+            - Lifeboat2HD-PO-1T2A-DST
+    Lifeboat3HD-PO-1A:
+        tieline_dsts:
+            - Lifeboat3HD-PO-2T1A-DST
+    Lifeboat3HD-PO-2A:
+        tieline_dsts:
+            - Lifeboat3HD-PO-1T2A-DST
+    Lifeboat4_SD-PO-1A:
+        tieline_dsts:
+            - Lifeboat4_SD-PO-2T1A-DST
+    Lifeboat4_SD-PO-2A:
+        tieline_dsts:
+            - Lifeboat4_SD-PO-1T2A-DST
+    Lifeboat5_SD-PO-1A:
+        tieline_dsts:
+            - Lifeboat5_SD-PO-2T1A-DST
+    Lifeboat5_SD-PO-2A:
+        tieline_dsts:
+            - Lifeboat5_SD-PO-1T2A-DST
+    Lifeboat6_SD-PO-1A:
+        tieline_dsts:
+            - Lifeboat6_SD-PO-2T1A-DST
+    Lifeboat6_SD-PO-2A:
+        tieline_dsts:
+            - Lifeboat6_SD-PO-1T2A-DST
+    Lifeboat7UHD-PO-1A:
+        tieline_dsts:
+            - Lifeboat7UHD-PO-2T1A-DST
+    Lifeboat7UHD-PO-2A:
+        tieline_dsts:
+            - Lifeboat7UHD-PO-1T2A-DST
