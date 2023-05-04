@@ -7,4 +7,6 @@ Reflex document export from Magnum is in SQL Lite format, with each individual d
 
 The additional YAML documents presented here serve the purpose of a readable collection for understanding the inner workings of this Reflex code, as well as tracking any edits performed when services are added, removed, or modified.
 
+This document is specific to Artarmon site only. For Oxford Falls, care must be taken to change IP addresses from 10.23.166.x to 10.233.166.x.
+
 Any questions arising from this code should be raised with Tony Antoniou or Jayesh Kothiya.
