@@ -1,0 +1,583 @@
+SERVICES:
+    UKTV:
+        - UKTV_SD-PO-1A
+        - UKTV_SD-PO-2A
+    FoxClassics:
+        - FoxClassics_SD-PO-1A
+        - FoxClassics_SD-PO-2A
+    Nickelodeon:
+        - Nickelodeon_SD-PT-1A
+        - Nickelodeon_SD-PT-2A
+    FoxSpts503:
+        - FoxSpts503_SD-PO-1A
+        - FoxSpts503_SD-PO-1B
+    FoxCricket:
+        - FoxCricket_SD-PO-1A
+        - FoxCricket_SD-PO-1B
+    FoxLeague:
+        - FoxLeague_SD-PO-1A
+        - FoxLeague_SD-PO-1B
+    FoxSptsMore:
+        - FoxSptsMore_SD-PO-1A
+        - FoxSptsMore_SD-PO-1B
+    Boomerang:
+        - Boomerang_SD-PT-1A
+        - Boomerang_SD-PT-2A
+    CNN:
+        - CNN_HD-PT-1A
+        - CNN_HD-PT-2A
+    TVSN:
+        - TVSN_SD-PT-1A
+        - TVSN_SD-PT-2A
+    RAI:
+        - RAI_SD-PT-1A
+        - RAI_SD-PT-2A
+    RAIRadio:
+        - RAIRadio1-RD-1X
+        - RAIRadio1-RD-2X
+    Antenna:
+        - Antenna_SD-PT-1X
+        - Antenna_SD-PT-2X
+    Bloomberg:
+        - Bloomberg_HD-PT-1X
+        - Bloomberg_HD-PT-2X
+    AnimalPlanet:
+        - AnimalPlanet_SD-PT-1X
+        - AnimalPlanet_SD-PT-2X
+    SKYWeather:
+        - SKYWeather_SD-PT-1A
+        - SKYWeather_SD-PT-2A
+    LifeStyleFood:
+        - LifeStyleFood_SD-PO-1A
+        - LifeStyleFood_SD-PO-2A
+    NickJr:
+        - NickJr_SD-PT-1A
+        - NickJr_SD-PT-2A
+    FoxFootyLV:
+        - FoxFootyLV_SD-PO-1A
+        - FoxFootyLV_SD-PO-1B
+    BBCWldNews:
+        - BBCWldNews_SD-PT-1A
+        - BBCWldNews_SD-PT-2A
+    ID:
+        - ID_SD-PT-1X
+        - ID_SD-PT-2X
+    NHKWorld:
+        - NHKWorld_SD-PT-1A
+        - NHKWorld_SD-PT-2A
+    FoxSpts505:
+        - FoxSpts505_SD-PO-1A
+        - FoxSpts505_SD-PO-1B
+    CRIMEINVEST:
+        - CRIMEINVESTHD-PO-1A
+        - CRIMEINVESTHD-PO-2A
+    CRIMEINVESTHD:
+        - CRIMEINVESTHD-PO-1A
+        - CRIMEINVESTHD-PO-2A
+    MTV:
+        - MTV_SD-PT-1A
+        - MTV_SD-PT-2A
+    MTVClassic:
+        - MTVClassic_SD-PT-1A
+        - MTVClassic_SD-PT-2A
+    RACINGCOM:
+        - RACINGCOM_SD-PT-1A
+        - RACINGCOM_SD-PT-2A
+    ClubMTV:
+        - ClubMTV_SD-PT-1A
+        - ClubMTV_SD-PT-2A
+    10PeachBris:
+        - 10PeachBris_SD-PT-1A
+        - 10PeachBris_SD-PT-2A
+    10PeachMel:
+        - 10PeachMel_SD-PT-1A
+        - 10PeachMel_SD-PT-2A
+    10PeachSyd:
+        - 10PeachSyd_SD-PT-1A
+        - 10PeachSyd_SD-PT-2A
+    7mateBris:
+        - 7mateBris_SD-PT-1A
+        - 7mateBris_SD-PT-2A
+    7mateMel:
+        - 7mateMel_SD-PT-1A
+        - 7mateMel_SD-PT-2A
+    7mateSyd:
+        - 7mateSyd_SD-PT-1A
+        - 7mateSyd_SD-PT-2A
+    FoxSpts506:
+        - FoxSpts506_SD-PO-1A
+        - FoxSpts506_SD-PO-1B
+    FoxComedy:
+        - FoxComedyHD-PO-1A
+        - FoxComedyHD-PO-2A
+    FoxComedyHD:
+        - FoxComedyHD-PO-1A
+        - FoxComedyHD-PO-2A
+    NickMusic:
+        - NickMusic_SD-PT-1A
+        - NickMusic_SD-PT-2A
+    TLC:
+        - TLC_SD-PT-1X
+        - TLC_SD-PT-2X
+    CMT:
+        - CMT_SD-PT-1A
+        - CMT_SD-PT-2A
+    Cartoon:
+        - Cartoon_SD-PT-1A
+        - Cartoon_SD-PT-2A
+    ESPN2:
+        - ESPN2HD-PT-1A
+        - ESPN2HD-PT-2A
+    ESPN2HD:
+        - ESPN2HD-PT-1A
+        - ESPN2HD-PT-2A
+    FoxCricketHDLV:
+        - FoxCricketHDLV-PO-1A
+        - FoxCricketHDLV-PO-1B
+    Discovery:
+        - DiscoveryHD-PT-1X
+        - DiscoveryHD-PT-2X
+    DiscoveryHD:
+        - DiscoveryHD-PT-1X
+        - DiscoveryHD-PT-2X
+    FOX8:
+        - FOX8HD-PO-1A
+        - FOX8HD-PO-2A
+    FOX8HD:
+        - FOX8HD-PO-1A
+        - FOX8HD-PO-2A
+    FoxLeagueHD:
+        - FoxLeagueHD-PO-1A
+        - FoxLeagueHD-PO-1B
+    ESPN:
+        - ESPNHD-PT-1A
+        - ESPNHD-PT-2A
+    ESPNHD:
+        - ESPNHD-PT-1A
+        - ESPNHD-PT-2A
+    MovThriller:
+        - MovThrillerHD-PO-1A
+        - MovThrillerHD-PO-2A
+    MovThrillerHD:
+        - MovThrillerHD-PO-1A
+        - MovThrillerHD-PO-2A
+    MovKids:
+        - MovKidsHD-PO-1A
+        - MovKidsHD-PO-2A
+    MovKidsHD:
+        - MovKidsHD-PO-1A
+        - MovKidsHD-PO-2A
+    FoxSpts503HD:
+        - FoxSpts503HD-PO-1A
+        - FoxSpts503HD-PO-1B
+    BBCFirst:
+        - BBCFirstHD-PO-1A
+        - BBCFirstHD-PO-2A
+    BBCFirstHD:
+        - BBCFirstHD-PO-1A
+        - BBCFirstHD-PO-2A
+    FoxOne:
+        - FoxOneHD-PO-1A
+        - FoxOneHD-PO-2A
+    FoxOneHD:
+        - FoxOneHD-PO-1A
+        - FoxOneHD-PO-2A
+    MovAction:
+        - MovActionHD-PO-1A
+        - MovActionHD-PO-2A
+    MovActionHD:
+        - MovActionHD-PO-1A
+        - MovActionHD-PO-2A
+    MainEvent:
+        - MainEventHD-PO-1A
+        - MainEventHD-PO-2A
+    MainEventHD:
+        - MainEventHD-PO-1A
+        - MainEventHD-PO-2A
+    FoxNews:
+        - FoxNewsHD-PT-1A
+        - FoxNewsHD-PT-2A
+    FoxNewsHD:
+        - FoxNewsHD-PT-1A
+        - FoxNewsHD-PT-2A
+    FoxSpts505HD:
+        - FoxSpts505HD-PO-1A
+        - FoxSpts505HD-PO-1B
+    FoxFooty:
+        - FoxFooty_SD-PO-1A
+        - FoxFooty_SD-PO-1B
+    SkyRacing1:
+        - SkyRacing1HD-PT-1A
+        - SkyRacing1HD-PT-2A
+    SkyRacing1HD:
+        - SkyRacing1HD-PT-1A
+        - SkyRacing1HD-PT-2A
+    SkyRacing2:
+        - SkyRacing2HD-PT-1A
+        - SkyRacing2HD-PT-2A
+    SkyRacing2HD:
+        - SkyRacing2HD-PT-1A
+        - SkyRacing2HD-PT-2A
+    SkyTbred:
+        - SkyTbredHD-PT-1A
+        - SkyTbredHD-PT-2A
+    SkyTbredHD:
+        - SkyTbredHD-PT-1A
+        - SkyTbredHD-PT-2A
+    CNBC:
+        - CNBC_SD-PT-1X
+        - CNBC_SD-PT-2X
+    BBCCBeebies:
+        - BBCCBeebies_SD-PO-1A
+        - BBCCBeebies_SD-PO-2A
+    FoxFootyHDLV:
+        - FoxFootyHDLV-PO-1A
+        - FoxFootyHDLV-PO-1B
+    FoxLeagueHDLV:
+        - FoxLeagueHDLV-PO-1A
+        - FoxLeagueHDLV-PO-1B
+    EntPopUp:
+        - EntPopUpHD-PO-1A
+        - EntPopUpHD-PO-2A
+    EntPopUpHD:
+        - EntPopUpHD-PO-1A
+        - EntPopUpHD-PO-2A
+    DreamWorks:
+        - DreamWorks_HD-PT-1X
+        - DreamWorks_HD-PT-2X
+    DreamWorksHD:
+        - DreamWorks_HD-PT-1X
+        - DreamWorks_HD-PT-2X
+    PBSKIDS:
+        - PBSKIDS_HD-PT-1X
+        - PBSKIDS_HD-PT-2X
+    PBSKIDSHD:
+        - PBSKIDS_HD-PT-1X
+        - PBSKIDS_HD-PT-2X
+    EXPO:
+        - EXPO_SD-PT-1A
+        - EXPO_SD-PT-2A
+    MovPremiere:
+        - MovPremiereHD-PO-1A
+        - MovPremiereHD-PO-2A
+    MovPremiereHD:
+        - MovPremiereHD-PO-1A
+        - MovPremiereHD-PO-2A
+    FoxShowcase:
+        - FoxShowcaseHD-PO-1A
+        - FoxShowcaseHD-PO-2A
+    FoxShowcaseHD:
+        - FoxShowcaseHD-PO-1A
+        - FoxShowcaseHD-PO-2A
+    MovComedy:
+        - MovComedyHD-PO-1A
+        - MovComedyHD-PO-2A
+    MovComedyHD:
+        - MovComedyHD-PO-1A
+        - MovComedyHD-PO-2A
+    MovRomance:
+        - MovRomanceHD-PO-1A
+        - MovRomanceHD-PO-2A
+    MovRomanceHD:
+        - MovRomanceHD-PO-1A
+        - MovRomanceHD-PO-2A
+    FoxCricketHD:
+        - FoxCricketHD-PO-1A
+        - FoxCricketHD-PO-1B
+    BBCEarth:
+        - BBCEarthHD-PO-1A
+        - BBCEarthHD-PO-2A
+    BBCEarthHD:
+        - BBCEarthHD-PO-1A
+        - BBCEarthHD-PO-2A
+    AE:
+        - AEHD-PO-1A
+        - AEHD-PO-2A
+    AEHD:
+        - AEHD-PO-1A
+        - AEHD-PO-2A
+    MovLMN:
+        - MovLMNHD-PO-1A
+        - MovLMNHD-PO-2A
+    MovLMNHD:
+        - MovLMNHD-PO-1A
+        - MovLMNHD-PO-2A
+    KidsPopUp:
+        - KidsPopUp_SD-PT-3A
+        - KidsPopUp_SD-PT-3B
+    MTVHits:
+        - MTVHits_SD-PT-1A
+        - MTVHits_SD-PT-2A
+    SkyNewsExtra:
+        - SkyNewsExtra_SD-PT-1A
+        - SkyNewsExtra_SD-PT-2A
+    Aurora:
+        - Aurora_SD-PT-1A
+        - Aurora_SD-PT-2A
+    FoxLeagueLV:
+        - FoxLeagueLV_SD-PO-1A
+        - FoxLeagueLV_SD-PO-1B
+    FoxCricketLV:
+        - FoxCricketLV_SD-PO-1A
+        - FoxCricketLV_SD-PO-1B
+    LifeStyleHome:
+        - LifeStyleHome_SD-PO-1A
+        - LifeStyleHome_SD-PO-2A
+    FoxSptsUHD1:
+        - FoxSptsUHD1-PO-1A
+        - FoxSptsUHD2-PO-1A
+        - FoxSptsUHD3-PO-1A
+        - FoxSptsUHD4-PO-1A
+        - FoxSptsUHD5-PO-1A
+        - FoxSptsUHD6-PO-1A
+    FoxSptsUHD2:
+        - FoxSptsUHD1-PO-1A
+        - FoxSptsUHD2-PO-1A
+        - FoxSptsUHD3-PO-1A
+        - FoxSptsUHD4-PO-1A
+        - FoxSptsUHD5-PO-1A
+        - FoxSptsUHD6-PO-1A
+    FoxSptsUHD3:
+        - FoxSptsUHD1-PO-1A
+        - FoxSptsUHD2-PO-1A
+        - FoxSptsUHD3-PO-1A
+        - FoxSptsUHD4-PO-1A
+        - FoxSptsUHD5-PO-1A
+        - FoxSptsUHD6-PO-1A
+    FoxSptsUHD4:
+        - FoxSptsUHD1-PO-1A
+        - FoxSptsUHD2-PO-1A
+        - FoxSptsUHD3-PO-1A
+        - FoxSptsUHD4-PO-1A
+        - FoxSptsUHD5-PO-1A
+        - FoxSptsUHD6-PO-1A
+    FoxSptsUHD5:
+        - FoxSptsUHD1-PO-1A
+        - FoxSptsUHD2-PO-1A
+        - FoxSptsUHD3-PO-1A
+        - FoxSptsUHD4-PO-1A
+        - FoxSptsUHD5-PO-1A
+        - FoxSptsUHD6-PO-1A
+    FoxSptsUHD6:
+        - FoxSptsUHD1-PO-1A
+        - FoxSptsUHD2-PO-1A
+        - FoxSptsUHD3-PO-1A
+        - FoxSptsUHD4-PO-1A
+        - FoxSptsUHD5-PO-1A
+        - FoxSptsUHD6-PO-1A
+    beINSpts1:
+        - beINSpts1HD-PT-1X
+        - beINSpts1HD-PT-2X
+    beINSpts1HD:
+        - beINSpts1HD-PT-1X
+        - beINSpts1HD-PT-2X
+    beINSpts2:
+        - beINSpts2HD-PT-1X
+        - beINSpts2HD-PT-2X
+    beINSpts2HD:
+        - beINSpts2HD-PT-1X
+        - beINSpts2HD-PT-2X
+    beINSpts3:
+        - beINSpts3HD-PT-1X
+        - beINSpts3HD-PT-2X
+    beINSpts3HD:
+        - beINSpts3HD-PT-1X
+        - beINSpts3HD-PT-2X
+    FoxSptsMoreHD:
+        - FoxSptsMoreHD-PO-1A
+        - FoxSptsMoreHD-PO-1B
+    FoxCrime:
+        - FoxCrimeHD-PO-1A
+        - FoxCrimeHD-PO-2A
+    FoxCrimeHD:
+        - FoxCrimeHD-PO-1A
+        - FoxCrimeHD-PO-2A
+    RealLife:
+        - RealLifeHD-PO-1A
+        - RealLifeHD-PO-2A
+    RealLifeHD:
+        - RealLifeHD-PO-1A
+        - RealLifeHD-PO-2A
+    SkyNewsUK:
+        - SkyNewsUKHD-PT-1A
+        - SkyNewsUKHD-PT-2A
+    SkyNewsUKHD:
+        - SkyNewsUKHD-PT-1A
+        - SkyNewsUKHD-PT-2A
+    MovHits:
+        - MovHitsHD-PO-1A
+        - MovHitsHD-PO-2A
+    MovHitsHD:
+        - MovHitsHD-PO-1A
+        - MovHitsHD-PO-2A
+    FoxSpts506HD:
+        - FoxSpts506HD-PO-1A
+        - FoxSpts506HD-PO-1B
+    FoxSciFi:
+        - FoxSciFiHD-PO-1A
+        - FoxSciFiHD-PO-2A
+    FoxSciFiHD:
+        - FoxSciFiHD-PO-1A
+        - FoxSciFiHD-PO-2A
+    LifeStyle:
+        - LifeStyleHD-PO-1A
+        - LifeStyleHD-PO-2A
+    LifeStyleHD:
+        - LifeStyleHD-PO-1A
+        - LifeStyleHD-PO-2A
+    MovFamily:
+        - MovFamilyHD-PO-1A
+        - MovFamilyHD-PO-2A
+    MovFamilyHD:
+        - MovFamilyHD-PO-1A
+        - MovFamilyHD-PO-2A
+    FoxFootyHD:
+        - FoxFootyHD-PO-1A
+        - FoxFootyHD-PO-1B
+    MovDrama:
+        - MovDramaHD-PO-1A
+        - MovDramaHD-PO-2A
+    MovDramaHD:
+        - MovDramaHD-PO-1A
+        - MovDramaHD-PO-2A
+    MovGreats:
+        - MovGreatsHD-PO-1A
+        - MovGreatsHD-PO-2A
+    MovGreatsHD:
+        - MovGreatsHD-PO-1A
+        - MovGreatsHD-PO-2A
+    BoxSets:
+        - BoxSetsHD-PO-1A
+        - BoxSetsHD-PO-2A
+    BoxSetsHD:
+        - BoxSetsHD-PO-1A
+        - BoxSetsHD-PO-2A
+    FoxSleuth:
+        - FoxSleuthHD-PO-1A
+        - FoxSleuthHD-PO-2A
+    FoxSleuthHD:
+        - FoxSleuthHD-PO-1A
+        - FoxSleuthHD-PO-2A
+    HISTORY:
+        - HISTORYHD-PO-1A
+        - HISTORYHD-PO-2A
+    HISTORYHD:
+        - HISTORYHD-PO-1A
+        - HISTORYHD-PO-2A
+    UniversalTV:
+        - UniversalTVHD-PT-1X
+        - UniversalTVHD-PT-2X
+    UniversalTVHD:
+        - UniversalTVHD-PT-1X
+        - UniversalTVHD-PT-2X
+    FoxARENA:
+        - FoxARENAHD-PO-1A
+        - FoxARENAHD-PO-2A
+    FoxARENAHD:
+        - FoxARENAHD-PO-1A
+        - FoxARENAHD-PO-2A
+    FoxSptsNews:
+        - FoxSptsNewsHD-PT-1A
+        - FoxSptsNewsHD-PT-2A
+    FoxSptsNewsHD:
+        - FoxSptsNewsHD-PT-1A
+        - FoxSptsNewsHD-PT-2A
+    FoxDocos:
+        - FoxDocosHD-PO-1A
+        - FoxDocosHD-PO-2A
+    FoxDocosHD:
+        - FoxDocosHD-PO-1A
+        - FoxDocosHD-PO-2A
+    SkyNews:
+        - SkyNewsHD-PT-1A
+        - SkyNewsHD-PT-2A
+    SkyNewsHD:
+        - SkyNewsHD-PT-1A
+        - SkyNewsHD-PT-2A
+    10Bris:
+        - 10Bris_SD-PT-1A
+        - 10Bris_SD-PT-2A
+    10Mel:
+        - 10Mel_SD-PT-1A
+        - 10Mel_SD-PT-2A
+    10Syd:
+        - 10Syd_SD-PT-1A
+        - 10Syd_SD-PT-2A
+    9Bris:
+        - 9Bris_SD-PT-1A
+        - 9Bris_SD-PT-2A
+    9Mel:
+        - 9Mel_SD-PT-1A
+        - 9Mel_SD-PT-2A
+    9Syd:
+        - 9Syd_SD-PT-1A
+        - 9Syd_SD-PT-2A
+    7Bris:
+        - 7Bris_SD-PT-1A
+        - 7Bris_SD-PT-2A
+    7Mel:
+        - 7Mel_SD-PT-1A
+        - 7Mel_SD-PT-2A
+    7Syd:
+        - 7Syd_SD-PT-1A
+        - 7Syd_SD-PT-2A
+    TBNInspire:
+        - TBNInspire_SD-PT-1A
+        - TBNInspire_SD-PT-2A
+    GOOD:
+        - GOOD_SD-PT-1A
+        - GOOD_SD-PT-2A
+    SonLife:
+        - SonLife_SD-PT-1X
+        - SonLife_SD-PT-2X
+    CGTN:
+        - CGTN_SD-PT-1A
+        - CGTN_SD-PT-2A
+    AlJazeera:
+        - AlJazeera_SD-PT-1X
+        - AlJazeera_SD-PT-2X
+    CGTNDoco:
+        - CGTNDoco_SD-PT-1A
+        - CGTNDoco_SD-PT-2A
+    Daystar:
+        - Daystar_SD-PT-1A
+        - Daystar_SD-PT-2A
+    France24:
+        - France24HD-PT-1X
+        - France24HD-PT-2X
+    France24HD:
+        - France24HD-PT-1X
+        - France24HD-PT-2X
+    DiscTurbo:
+        - DiscTurbo_SD-PT-1X
+        - DiscTurbo_SD-PT-2X
+    BBCEarthNZHD:
+        - BBCEarthNZHD-PO-1A
+        - BBCEarthNZHD-PO-2A
+    BBCCBeebiesNZ:
+        - BBCCBeebiesNZ_SD-PO-1A
+        - BBCCBeebiesNZ_SD-PO-2A
+    CRIMEINVESTNZ:
+        - CRIMEINVESTNZ_SD-PO-1A
+        - CRIMEINVESTNZ_SD-PO-2A
+    HISTORYNZ:
+        - HISTORYNZ_SD-PO-1A
+        - HISTORYNZ_SD-PO-2A
+    UKTVNZHD:
+        - UKTVNZHD-PO-1A
+        - UKTVNZHD-PO-2A
+    WWEHD:
+        - WWEHD-PO-1A
+        - WWEHD-PO-2A
+    MoviesUHD:
+        - MoviesUHD-PO-1A
+        - MoviesUHD-PO-2A
+    HELP_BBCWldRadio:
+        - HELP_BBCWldRadio-PT-1X
+        - HELP_BBCWldRadio-PT-2X
+    MSNBC:
+        - MSNBC_SD-PT-1A
+        - MSNBC_SD-PT-2A
+    NBCNNHD:
+        - NBCNNHD-PT-1X
+        - NBCNNHD-PT-2X
